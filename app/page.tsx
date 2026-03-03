@@ -1,11 +1,19 @@
-import Home from "./sections/Home";
-import About from "./sections/About";
+import Hero from "./components/Hero";
+import Services from "./components/Services";
+import Gallery from "./components/Gallery";
+import About from "./components/About";
+import Testimonials from "./components/Testimonials";
+import FloatingWA from "./components/FloatingWA";
 
 export default function Page() {
   return (
-    <div className="">
-      <Home />
+    <main className="overflow-x-hidden">
+      <Hero />
+      <Services />
+      <Gallery />
       <About />
-    </div>
+      <Testimonials />
+      <FloatingWA />
+    </main>
   );
 }
