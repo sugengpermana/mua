@@ -2,68 +2,106 @@
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-ivory">
-      <div className="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-        <div className="relative order-2 md:order-1">
-          <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl aspect-[4/5]">
-            <img
-              src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=800"
-              alt="Nuryanti - Professional MUA"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-primary/20 rounded-full blur-3xl -z-0" />
-          <div className="absolute -top-6 -left-6 w-48 h-48 bg-secondary/30 rounded-full blur-3xl -z-0" />
-        </div>
-        <div className="space-y-8 order-1 md:order-2">
-          <div className="space-y-4">
-            <h2 className="text-4xl md:text-5xl font-serif text-foreground">
-              Meet Your Artist
-            </h2>
-            <div className="w-20 h-1 bg-primary rounded-full" />
-          </div>
-          <p className="text-lg text-gray-700 leading-relaxed italic font-serif">
-            "Kecantikan bukan hanya tentang apa yang Anda lihat, tapi bagaimana
-            perasaan Anda saat melihat diri sendiri."
+    <section id="about" className="section-padding bg-cream">
+      <div className="max-w-7xl mx-auto px-5 md:px-8">
+        {/* Section Header */}
+        <div className="text-center mb-12 md:mb-16">
+          <p className="text-primary text-sm font-semibold tracking-[0.2em] uppercase mb-3">
+            Get to Know
           </p>
-          <div className="space-y-6 text-gray-600 leading-relaxed">
-            <p>
-              Halo, saya **Nuryanti**. Berawal dari kecintaan saya pada dunia
-              seni dan kecantikan, saya telah mendedikasikan bertahun-tahun
-              untuk membantu para wanita menemukan versi terbaik diri mereka di
-              momen paling spesial.
-            </p>
-            <p>
-              Dengan teknik riasan yang terus berkembang dan penggunaan produk
-              premium (High-End), saya memastikan setiap klien mendapatkan hasil
-              yang *flawless*, tahan lama, dan tetap terasa ringan di wajah.
-            </p>
-            <p>
-              Visi saya sederhana: **Elegansi yang Timeless**. Saya percaya
-              setiap wajah memiliki karakter unik yang layak ditonjolkan tanpa
-              harus mengubah identitas aslinya.
-            </p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-charcoal">
+            Meet Your Artist
+          </h2>
+          <div className="w-16 h-[2px] bg-primary mx-auto mt-4 rounded-full" />
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+          {/* Photo Left */}
+          <div className="relative order-2 md:order-1">
+            <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl aspect-3/4 max-w-md mx-auto">
+              <img
+                src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=800"
+                alt="Nuryanti - Professional Makeup Artist"
+                className="w-full h-full object-cover"
+              />
+              {/* Overlay gradient at bottom */}
+              <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/40 to-transparent" />
+              <div className="absolute bottom-6 left-6 right-6 z-10">
+                <p className="text-white font-serif text-lg md:text-xl font-semibold">
+                  Nuryanti
+                </p>
+                <p className="text-white/70 text-sm">Professional MUA</p>
+              </div>
+            </div>
+            {/* Decorative elements */}
+            <div className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 w-32 h-32 md:w-48 md:h-48 bg-primary/10 rounded-full blur-3xl" />
+            <div className="absolute -top-4 -left-4 md:-top-6 md:-left-6 w-32 h-32 md:w-48 md:h-48 bg-secondary/30 rounded-full blur-3xl" />
+            {/* Frame accent */}
+            <div className="absolute top-4 left-4 md:top-6 md:left-6 w-full h-full border-2 border-primary/20 rounded-3xl -z-0 max-w-md mx-auto" />
           </div>
-          <div className="pt-6 grid grid-cols-2 gap-8 border-t border-gray-200">
-            <div>
-              <p className="text-3xl font-serif text-primary">5+</p>
-              <p className="text-sm text-gray-500 uppercase tracking-wider">
-                Years Experience
+
+          {/* Description Right */}
+          <div className="space-y-6 md:space-y-8 order-1 md:order-2">
+            <p className="text-lg md:text-xl text-muted leading-relaxed italic font-serif">
+              "Kecantikan bukan hanya tentang apa yang Anda lihat, tapi
+              bagaimana perasaan Anda saat melihat diri sendiri."
+            </p>
+
+            <div className="space-y-4 text-charcoal/80 leading-relaxed text-sm md:text-base">
+              <p>
+                Halo, saya <strong className="text-charcoal">Nuryanti</strong>.
+                Berawal dari kecintaan pada dunia seni dan kecantikan, saya
+                telah mendedikasikan bertahun-tahun untuk membantu para wanita
+                menemukan versi terbaik diri mereka di momen paling spesial.
+              </p>
+              <p>
+                Dengan teknik riasan yang terus berkembang dan penggunaan produk
+                premium, saya memastikan setiap klien mendapatkan hasil yang{" "}
+                <em>flawless</em>, tahan lama, dan tetap terasa ringan di wajah.
+              </p>
+              <p>
+                Visi saya sederhana:{" "}
+                <strong className="text-charcoal">
+                  Elegansi yang Timeless
+                </strong>
+                . Setiap wajah memiliki karakter unik yang layak ditonjolkan
+                tanpa mengubah identitas aslinya.
               </p>
             </div>
-            <div>
-              <p className="text-3xl font-serif text-primary">500+</p>
-              <p className="text-sm text-gray-500 uppercase tracking-wider">
-                Happy Clients
-              </p>
+
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-4 md:gap-8 pt-4 border-t border-charcoal/10">
+              <div>
+                <p className="text-2xl md:text-3xl font-serif text-primary font-bold">
+                  5+
+                </p>
+                <p className="text-xs text-muted uppercase tracking-wider mt-1">
+                  Tahun
+                </p>
+              </div>
+              <div>
+                <p className="text-2xl md:text-3xl font-serif text-primary font-bold">
+                  500+
+                </p>
+                <p className="text-xs text-muted uppercase tracking-wider mt-1">
+                  Klien
+                </p>
+              </div>
+              <div>
+                <p className="text-2xl md:text-3xl font-serif text-primary font-bold">
+                  ⭐ 4.9
+                </p>
+                <p className="text-xs text-muted uppercase tracking-wider mt-1">
+                  Rating
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="pt-4">
+
             <a
-              href="https://wa.me/6281234567890?text=Halo%20Nuryanti,%20saya%20ingin%20konsultasi%20make%20up."
-              className="inline-block bg-accent hover:bg-foreground text-white px-8 py-3 rounded-full transition-all shadow-md"
+              href="https://wa.me/6281234567890?text=Halo%20Nuryanti,%20saya%20ingin%20konsultasi%20makeup."
+              className="inline-block bg-charcoal hover:bg-primary text-white px-8 py-3 rounded-full transition-all shadow-md hover:shadow-lg text-sm font-semibold"
             >
-              Hubungi Nuryanti
+              Hubungi Nuryanti →
             </a>
           </div>
         </div>

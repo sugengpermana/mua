@@ -1,18 +1,22 @@
 import Hero from "./components/Hero";
-import Services from "./components/Services";
-import Gallery from "./components/Gallery";
+import BrandCarousel from "./components/BrandCarousel";
 import About from "./components/About";
+import Gallery from "./components/Gallery";
+import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
+import Contact from "./components/Contact";
 import FloatingWA from "./components/FloatingWA";
 
 export default function Page() {
   return (
     <main className="overflow-x-hidden">
       <Hero />
-      <Services />
-      <Gallery />
+      <BrandCarousel />
       <About />
+      <Gallery />
+      <Services />
       <Testimonials />
+      <Contact />
       <FloatingWA />
     </main>
   );
