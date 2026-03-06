@@ -11,6 +11,8 @@ export const metadata: Metadata = {
     "MUA",
     "Makeup Artist",
     "MUA Jakarta",
+    "MUA jabodetabek",
+    "MUA Artist",
     "MUA Tangerang",
     "Makeup Wisuda",
     "Makeup Wedding",
@@ -73,15 +75,15 @@ export default function RootLayout({
                 addressRegion: "Banten",
                 addressCountry: "ID",
               },
-              telephone: "+6281234567890",
-              priceRange: "Rp 300.000 - Rp 3.500.000",
+              telephone: "+628568890683",
+              priceRange: "Rp 350.000 - Rp 2.500.000",
               openingHours: "Mo-Su 08:00-21:00",
               sameAs: ["https://instagram.com/nuryantimua"],
             }),
           }}
         />
       </head>
-      <body className="antialiased ">
+      <body className="antialiased">
         <Navbar />
         {children}
         <Footer />

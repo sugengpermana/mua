@@ -55,18 +55,26 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background */}
+      {/* Background Video */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=2000"
-          alt="Nuryanti MUA - Professional Makeup Artist Background"
-          className="w-full h-full object-cover animate-slow-zoom"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/80" />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+          poster="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=2000"
+        >
+          <source
+            src="https://cdn.pixabay.com/video/2020/05/25/40130-424930032_large.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/50 to-black/80" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-5 md:px-8 text-center space-y-6 md:space-y-8 pt-20">
+      <div className="relative z-10 max-w-5xl mx-auto px-5 md:px-8 text-center space-y-6 md:space-y-8 pt-20 mb-30">
         <div className="inline-block px-5 py-2 rounded-full bg-white/10 backdrop-blur-md text-primary text-xs md:text-sm font-semibold tracking-[0.2em] uppercase border border-primary/20 animate-fade-in">
           ✦ Professional Makeup Artist ✦
         </div>
@@ -102,28 +110,6 @@ export default function Hero() {
             Lihat Portofolio
           </a>
         </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-28 md:bottom-32 left-1/2 -translate-x-1/2 z-10 animate-bounce">
-        <a
-          href="#about"
-          className="text-white/40 hover:text-white/70 transition-opacity"
-        >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={1.5}
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </a>
       </div>
     </section>
   );
