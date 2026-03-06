@@ -24,7 +24,7 @@ export default function Contact() {
           <div className="space-y-6 md:space-y-8">
             {/* Location */}
             <div className="flex items-start gap-4">
-              <div className="w-11 h-11 md:w-12 md:h-12 bg-primary/15 rounded-xl flex items-center justify-center flex-shrink-0">
+              <div className="w-11 h-11 md:w-12 md:h-12 bg-primary/15 rounded-xl flex items-center justify-center shrink-0">
                 <svg
                   className="w-5 h-5 text-primary"
                   fill="none"
@@ -57,7 +57,7 @@ export default function Contact() {
 
             {/* Phone */}
             <div className="flex items-start gap-4">
-              <div className="w-11 h-11 md:w-12 md:h-12 bg-primary/15 rounded-xl flex items-center justify-center flex-shrink-0">
+              <div className="w-11 h-11 md:w-12 md:h-12 bg-primary/15 rounded-xl flex items-center justify-center shrink-0">
                 <svg
                   className="w-5 h-5 text-primary"
                   fill="none"
@@ -84,7 +84,7 @@ export default function Contact() {
 
             {/* Email */}
             <div className="flex items-start gap-4">
-              <div className="w-11 h-11 md:w-12 md:h-12 bg-primary/15 rounded-xl flex items-center justify-center flex-shrink-0">
+              <div className="w-11 h-11 md:w-12 md:h-12 bg-primary/15 rounded-xl flex items-center justify-center shrink-0">
                 <svg
                   className="w-5 h-5 text-primary"
                   fill="none"
@@ -111,7 +111,7 @@ export default function Contact() {
 
             {/* Hours */}
             <div className="flex items-start gap-4">
-              <div className="w-11 h-11 md:w-12 md:h-12 bg-primary/15 rounded-xl flex items-center justify-center flex-shrink-0">
+              <div className="w-11 h-11 md:w-12 md:h-12 bg-primary/15 rounded-xl flex items-center justify-center shrink-0">
                 <svg
                   className="w-5 h-5 text-primary"
                   fill="none"

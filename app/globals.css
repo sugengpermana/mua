@@ -218,54 +218,6 @@ h4,
   background: var(--color-accent);
 }
 
-/* ──── Gallery Abstract Card ──── */
-.gallery-card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 1.5rem;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.gallery-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(201, 169, 110, 0) 0%,
-    rgba(201, 169, 110, 0.3) 100%
-  );
-  opacity: 0;
-  transition: opacity 0.5s;
-  z-index: 2;
-}
-
-.gallery-card:hover::before {
-  opacity: 1;
-}
-
-.gallery-card:hover {
-  transform: translateY(-8px) rotate(-1deg);
-  box-shadow: 0 20px 60px -10px rgba(201, 169, 110, 0.25);
-}
-
-.gallery-card img {
-  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.gallery-card:hover img {
-  transform: scale(1.12);
-}
-
-/* Geometric clip for alternate cards */
-.gallery-card-geo {
-  clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
-}
-
-.gallery-card-geo-alt {
-  clip-path: polygon(0 0%, 100% 4%, 100% 100%, 0% 96%);
-}
-
 /* ──── Brand Carousel ──── */
 .brand-track {
   display: flex;
@@ -281,36 +233,4 @@ h4,
 /* ──── Counter Animation ──── */
 .counter-value {
   font-variant-numeric: tabular-nums;
-}
-
-/* ──── Notification Badge ──── */
-.notification-badge {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  z-index: 10;
-  padding: 0.35rem 0.85rem;
-  border-radius: 100px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  animation: fade-in 0.5s ease-out;
-}
-
-.badge-new {
-  background: rgba(201, 169, 110, 0.9);
-  color: #fff;
-}
-
-.badge-popular {
-  background: rgba(232, 83, 83, 0.9);
-  color: #fff;
-}
-
-.badge-premium {
-  background: rgba(13, 13, 13, 0.85);
-  color: #c9a96e;
-  border: 1px solid rgba(201, 169, 110, 0.3);
 }

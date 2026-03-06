@@ -38,7 +38,7 @@ export default function FloatingWA() {
       {/* Floating WA Button */}
       <button
         onClick={openModal}
-        className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-[100] group flex items-center cursor-pointer"
+        className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-100 group flex items-center cursor-pointer"
         aria-label="Contact on WhatsApp"
       >
         <div className="mr-3 bg-white px-4 py-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-all translate-x-4 group-hover:translate-x-0 font-semibold text-charcoal text-sm hidden sm:block">
@@ -58,7 +58,7 @@ export default function FloatingWA() {
 
       {/* Chat Modal */}
       {isOpen && (
-        <div className="fixed inset-0 z-[200] flex items-end justify-end p-4 md:p-6">
+        <div className="fixed inset-0 z-200 flex items-end justify-end p-4 md:p-6">
           {/* Backdrop */}
           <div
             className={`absolute inset-0 bg-black/30 transition-opacity duration-300 ${
@@ -77,7 +77,7 @@ export default function FloatingWA() {
             style={{ maxHeight: "min(520px, 80vh)" }}
           >
             {/* Navbar */}
-            <div className="bg-[#075E54] text-white px-4 py-3 flex items-center justify-between flex-shrink-0">
+            <div className="bg-[#075E54] text-white px-4 py-3 flex items-center justify-between shrink-0">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-[#25D366] flex items-center justify-center">
                   <svg
@@ -146,7 +146,7 @@ export default function FloatingWA() {
             </div>
 
             {/* Chat Input / CTA */}
-            <div className="px-3 py-3 bg-[#F0F0F0] flex items-center gap-2 flex-shrink-0">
+            <div className="px-3 py-3 bg-[#F0F0F0] flex items-center gap-2 shrink-0">
               <a
                 href={`https://wa.me/${waNumber}?text=${waMessage}`}
                 target="_blank"
@@ -169,7 +169,7 @@ export default function FloatingWA() {
                     "_blank",
                   );
                 }}
-                className="w-10 h-10 bg-[#25D366] hover:bg-[#1fba59] rounded-full flex items-center justify-center text-white transition-all hover:shadow-lg flex-shrink-0 cursor-pointer"
+                className="w-10 h-10 bg-[#25D366] hover:bg-[#1fba59] rounded-full flex items-center justify-center text-white transition-all hover:shadow-lg shrink-0 cursor-pointer"
                 aria-label="Send message"
               >
                 <svg

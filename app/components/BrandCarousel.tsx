@@ -25,15 +25,15 @@ export default function BrandCarousel() {
       {/* Carousel Container */}
       <div className="relative">
         {/* Gradient fades */}
-        <div className="absolute left-0 top-0 bottom-0 w-20 md:w-32 bg-gradient-to-r from-charcoal to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-20 md:w-32 bg-gradient-to-l from-charcoal to-transparent z-10 pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-20 md:w-32 bg-linear-to-r from-charcoal to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-20 md:w-32 bg-linear-to-l from-charcoal to-transparent z-10 pointer-events-none" />
 
         {/* Track */}
         <div className="brand-track">
           {[...brands, ...brands].map((brand, index) => (
             <div
               key={index}
-              className="flex items-center gap-3 flex-shrink-0 px-6 py-3 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 transition-colors cursor-default"
+              className="flex items-center gap-3 shrink-0 px-6 py-3 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 transition-colors cursor-default"
             >
               <span className="text-2xl">{brand.logo}</span>
               <span className="text-white/60 font-medium text-sm whitespace-nowrap">

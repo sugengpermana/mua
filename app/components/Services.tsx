@@ -46,6 +46,29 @@ function AnimatedCounter({
   );
 }
 
+const services = [
+  {
+    title: "Makeup Karakter",
+    image:
+      "https://images.unsplash.com/photo-1595991209266-5126c15bf2f0?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    title: "Makeup Wedding",
+    image:
+      "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    title: "Makeup Wisuda",
+    image:
+      "https://images.unsplash.com/photo-1523240715630-971c034747a2?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    title: "Makeup Reguler",
+    image:
+      "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=800",
+  },
+];
+
 const packages = [
   {
     name: "Wisuda / Graduation",
@@ -138,15 +161,78 @@ const packages = [
 
 export default function Services() {
   return (
-    <section id="services" className="section-padding bg-cream">
+    <section id="services" className="py-20 bg-[#faf8f5]">
       <div className="max-w-7xl mx-auto px-5 md:px-8">
-        {/* Header */}
-        <div className="text-center mb-10 md:mb-14 space-y-3">
+        {/* Makeup Artist Service Categories */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-[40px] font-sans text-charcoal font-normal tracking-wide">
+            Makeup Artist Service
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-20">
+          {services.map((service, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <div className="w-full aspect-square mb-6 overflow-hidden bg-gray-100">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-xl md:text-[22px] font-sans text-center text-charcoal font-normal mb-6 max-w-[200px] leading-snug">
+                {service.title.split(" ").map((word, i) => (
+                  <span key={i}>
+                    {word}
+                    <br />
+                  </span>
+                ))}
+              </h3>
+              <a
+                href={`https://wa.me/6281234567890?text=Halo%20Nuryanti%20MUA,%20saya%20ingin%20booking%20${encodeURIComponent(service.title)}.`}
+                className="inline-block border border-charcoal text-charcoal px-10 py-2.5 hover:bg-charcoal hover:text-white transition-colors duration-300 font-sans text-[15px] tracking-wide"
+              >
+                Book Now
+              </a>
+            </div>
+          ))}
+        </div>
+
+        {/* Track Record Stats */}
+        <div className="bg-charcoal rounded-2xl md:rounded-3xl p-6 md:p-10 grid grid-cols-1 md:grid-cols-3 gap-6 mb-24 text-center">
+          <div>
+            <p className="text-3xl md:text-4xl font-serif font-bold text-primary">
+              <AnimatedCounter target={500} suffix="+" />
+            </p>
+            <p className="text-white/70 text-sm md:text-base mt-2">
+              Total Client
+            </p>
+          </div>
+          <div className="md:border-x border-white/10">
+            <p className="text-3xl md:text-4xl font-serif font-bold text-primary">
+              <AnimatedCounter target={99} suffix="%" />
+            </p>
+            <p className="text-white/70 text-sm md:text-base mt-2">
+              Client Puas
+            </p>
+          </div>
+          <div>
+            <p className="text-3xl md:text-4xl font-serif font-bold text-primary">
+              <AnimatedCounter target={5} suffix="+" />
+            </p>
+            <p className="text-white/70 text-sm md:text-base mt-2">
+              Tahun Pengalaman
+            </p>
+          </div>
+        </div>
+
+        {/* Paket & Layanan */}
+        <div className="text-center mb-12 space-y-3">
           <p className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">
-            Layanan Kami
+            Pricing
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-charcoal">
-            Paket & Harga
+            Paket & Layanan
           </h2>
           <div className="w-16 h-[2px] bg-primary mx-auto rounded-full" />
           <p className="text-muted max-w-lg mx-auto text-sm md:text-base pt-1">
@@ -154,43 +240,6 @@ export default function Services() {
           </p>
         </div>
 
-        {/* Track Record Stats */}
-        <div className="bg-charcoal rounded-2xl md:rounded-3xl p-6 md:p-10 grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 md:mb-16 text-center">
-          <div>
-            <p className="text-2xl md:text-3xl font-serif font-bold text-primary">
-              <AnimatedCounter target={500} suffix="+" />
-            </p>
-            <p className="text-white/50 text-xs md:text-sm mt-1">
-              Total Client
-            </p>
-          </div>
-          <div>
-            <p className="text-2xl md:text-3xl font-serif font-bold text-primary">
-              <AnimatedCounter target={200} suffix="+" />
-            </p>
-            <p className="text-white/50 text-xs md:text-sm mt-1">
-              Wedding MakeUp
-            </p>
-          </div>
-          <div>
-            <p className="text-2xl md:text-3xl font-serif font-bold text-primary">
-              <AnimatedCounter target={150} suffix="+" />
-            </p>
-            <p className="text-white/50 text-xs md:text-sm mt-1">
-              Graduation MakeUp
-            </p>
-          </div>
-          <div>
-            <p className="text-2xl md:text-3xl font-serif font-bold text-primary">
-              <AnimatedCounter target={150} suffix="+" />
-            </p>
-            <p className="text-white/50 text-xs md:text-sm mt-1">
-              Event & Party
-            </p>
-          </div>
-        </div>
-
-        {/* Pricing Cards */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
           {packages.map((pkg, index) => (
             <div
@@ -201,14 +250,11 @@ export default function Services() {
                   : "bg-white shadow-card border border-charcoal/5"
               }`}
             >
-              {/* Popular Badge */}
               {pkg.popular && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-4 py-1 rounded-full tracking-wider uppercase">
                   Recommended
                 </div>
               )}
-
-              {/* Header */}
               <div className="flex items-center justify-between mb-4 md:mb-6">
                 <div>
                   <h3
@@ -224,20 +270,16 @@ export default function Services() {
                 </div>
                 <span className="text-2xl md:text-3xl">{pkg.icon}</span>
               </div>
-
-              {/* Price */}
               <p
                 className={`text-2xl md:text-3xl font-serif font-bold mb-5 md:mb-6 ${pkg.popular ? "text-primary" : "text-charcoal"}`}
               >
                 {pkg.price}
               </p>
-
-              {/* Features */}
               <ul className="space-y-2.5 md:space-y-3 mb-6 md:mb-8 flex-1">
                 {pkg.features.map((feature, i) => (
                   <li key={i} className="flex items-start gap-2.5 text-sm">
                     <svg
-                      className={`w-4 h-4 mt-0.5 flex-shrink-0 ${pkg.popular ? "text-primary" : "text-primary"}`}
+                      className={`w-4 h-4 mt-0.5 shrink-0 ${pkg.popular ? "text-primary" : "text-primary"}`}
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -257,8 +299,6 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
-
-              {/* CTA */}
               <a
                 href={`https://wa.me/6281234567890?text=Halo%20Nuryanti%20MUA,%20saya%20tertarik%20paket%20${encodeURIComponent(pkg.name)}.`}
                 className={`block text-center py-3 rounded-full font-semibold text-sm transition-all ${
@@ -272,12 +312,6 @@ export default function Services() {
             </div>
           ))}
         </div>
-
-        {/* Note */}
-        <p className="text-center text-muted text-xs md:text-sm mt-8 md:mt-10">
-          * Harga dapat bervariasi tergantung lokasi dan kebutuhan tambahan.
-          Konsultasi gratis via WhatsApp.
-        </p>
       </div>
     </section>
   );

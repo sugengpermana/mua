@@ -3,7 +3,6 @@ import BrandCarousel from "./components/BrandCarousel";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
 import Services from "./components/Services";
-import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import FloatingWA from "./components/FloatingWA";
 
@@ -15,7 +14,6 @@ export default function Page() {
       <About />
       <Gallery />
       <Services />
-      <Testimonials />
       <Contact />
       <FloatingWA />
     </main>

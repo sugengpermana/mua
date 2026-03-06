@@ -91,7 +91,7 @@ export default function Testimonials() {
               </div>
 
               {/* Subtle gradient stripe */}
-              <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-primary/0 via-primary/40 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-linear-to-r from-primary/0 via-primary/40 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
           ))}
         </div>

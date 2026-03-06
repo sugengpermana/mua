@@ -25,7 +25,7 @@ export default function About() {
                 className="w-full h-full object-cover"
               />
               {/* Overlay gradient at bottom */}
-              <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/40 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-linear-to-t from-black/40 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6 z-10">
                 <p className="text-white font-serif text-lg md:text-xl font-semibold">
                   Nuryanti
@@ -37,7 +37,7 @@ export default function About() {
             <div className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 w-32 h-32 md:w-48 md:h-48 bg-primary/10 rounded-full blur-3xl" />
             <div className="absolute -top-4 -left-4 md:-top-6 md:-left-6 w-32 h-32 md:w-48 md:h-48 bg-secondary/30 rounded-full blur-3xl" />
             {/* Frame accent */}
-            <div className="absolute top-4 left-4 md:top-6 md:left-6 w-full h-full border-2 border-primary/20 rounded-3xl -z-0 max-w-md mx-auto" />
+            <div className="absolute top-4 left-4 md:top-6 md:left-6 w-full h-full border-2 border-primary/20 rounded-3xl z-0 max-w-md mx-auto" />
           </div>
 
           {/* Description Right */}
