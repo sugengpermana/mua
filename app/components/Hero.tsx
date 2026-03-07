@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useEffect, useRef, useState } from "react";
 
 function AnimatedCounter({
@@ -97,18 +99,18 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-4 justify-center pt-2 animate-fade-in-up"
           style={{ animationFillMode: "backwards", animationDelay: "0.5s" }}
         >
-          <a
-            href="https://wa.me/6281234567890?text=Halo%20Nuryanti%20MUA,%20saya%20ingin%20booking."
-            className="bg-primary hover:bg-accent text-white px-8 md:px-10 py-3.5 md:py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-sm md:text-base"
+          <Link
+            href="/services"
+            className="bg-primary text-white px-8 md:px-10 py-3.5 md:py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 md:text-base hover:bg-accent"
           >
-            Booking Sekarang
-          </a>
-          <a
-            href="#gallery"
-            className="glass text-white px-8 md:px-10 py-3.5 md:py-4 rounded-full font-semibold transition-all hover:bg-white/20 text-sm md:text-base"
+            Lihat Layanan Kami
+          </Link>
+          <Link
+            href="/gallery"
+            className="text-white px-8 md:px-10 py-3.5 md:py-4 rounded-full font-semibold transition-all hover:bg-white/20 md:text-base"
           >
-            Lihat Portofolio
-          </a>
+            Lihat Portofolio Kami
+          </Link>
         </div>
       </div>
     </section>

@@ -2,77 +2,132 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-const navLinks = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Gallery", href: "#gallery" },
-  { name: "Services", href: "#services" },
-  { name: "Contact", href: "#contact" },
+const desktopLinks = [
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Gallery", href: "/gallery" },
+  {
+    name: "Services",
+    href: "/services",
+    dropdown: [
+      { name: "Makeup Wisuda", href: "/services#wisuda" },
+      { name: "Wedding", href: "/services#wedding" },
+      { name: "Prewedding", href: "/services#prewedding" },
+      { name: "Photoshoot", href: "/services#photoshoot" },
+      { name: "Engagement", href: "/services#engagement" },
+    ],
+  },
+  { name: "Contact", href: "/contact" },
+];
+
+const mobileLinks = [
+  { name: "Home", href: "/" },
+  { name: "Makeup Wisuda", href: "/services#wisuda" },
+  { name: "Wedding", href: "/services#wedding" },
+  { name: "Prewedding", href: "/services#prewedding" },
+  { name: "Photoshoot", href: "/services#photoshoot" },
+  { name: "Engagement", href: "/services#engagement" },
+  { name: "Contact Us", href: "/contact" },
 ];
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeDropdown, setActiveDropdown] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
-
-      // Active section detection
-      const sections = navLinks.map((l) => l.href.replace("#", ""));
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const el = document.getElementById(sections[i]);
-        if (el) {
-          const rect = el.getBoundingClientRect();
-          if (rect.top <= 150) {
-            setActiveSection(sections[i]);
-            break;
-          }
-        }
-      }
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Close mobile menu on path change
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
 
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-500 ${
         isScrolled || isOpen
           ? "glass-dark py-3 shadow-lg"
-          : "bg-transparent py-5"
+          : pathname === "/"
+            ? "bg-transparent py-5"
+            : "bg-charcoal py-4 shadow-md"
       }`}
     >
       <div className="max-w-7xl mx-auto px-5 md:px-8 flex justify-between items-center">
         <Link
           href="/"
-          className="text-xl md:text-2xl font-serif font-bold tracking-[0.2em] text-primary hover:opacity-80 transition-opacity"
+          className="text-xl md:text-2xl font-serif font-bold tracking-[0.2em] text-primary hover:opacity-80 transition-opacity z-50"
         >
           NURYANTI<span className="text-white font-light"> MUA</span>
         </Link>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-1">
-          {navLinks.map((link) => (
-            <Link
+          {desktopLinks.map((link) => (
+            <div
               key={link.name}
-              href={link.href}
-              className={`relative px-4 py-2 text-sm font-medium tracking-wide transition-colors rounded-full ${
-                activeSection === link.href.replace("#", "")
-                  ? "text-primary"
-                  : "text-white/70 hover:text-white"
-              }`}
+              className="relative"
+              onMouseEnter={() => link.dropdown && setActiveDropdown(true)}
+              onMouseLeave={() => link.dropdown && setActiveDropdown(false)}
             >
-              {link.name}
-              {activeSection === link.href.replace("#", "") && (
-                <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-primary rounded-full" />
+              <Link
+                href={link.href}
+                className={`flex items-center gap-1 relative px-4 py-2 text-sm font-medium tracking-wide transition-colors rounded-full ${
+                  pathname === link.href ||
+                  (link.href !== "/" && pathname.startsWith(link.href))
+                    ? "text-primary"
+                    : "text-white/70 hover:text-white"
+                }`}
+              >
+                {link.name}
+                {link.dropdown && (
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                )}
+                {pathname === link.href && (
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-primary rounded-full" />
+                )}
+              </Link>
+
+              {/* Dropdown Menu */}
+              {link.dropdown && activeDropdown && (
+                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 w-48 animate-fade-in-up">
+                  <div className="bg-white rounded-xl shadow-premium border border-black/5 overflow-hidden flex flex-col p-2">
+                    {link.dropdown.map((dropItem) => (
+                      <Link
+                        key={dropItem.name}
+                        href={dropItem.href}
+                        className="px-4 py-2.5 text-sm text-charcoal hover:bg-primary/10 hover:text-primary rounded-lg transition-colors"
+                      >
+                        {dropItem.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
               )}
-            </Link>
+            </div>
           ))}
           <Link
-            href="https://wa.me/6281234567890?text=Halo%20Nuryanti%20MUA,%20saya%20ingin%20booking."
+            href="https://wa.me/628568890683?"
             className="ml-4 bg-primary hover:bg-accent text-white text-sm px-6 py-2.5 rounded-full font-semibold transition-all shadow-md hover:shadow-lg hover:scale-105 active:scale-95"
           >
             Book Now
@@ -81,7 +136,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-white/90 focus:outline-none p-2"
+          className="md:hidden text-white/90 focus:outline-none p-2 z-50"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
@@ -112,32 +167,75 @@ export default function Navbar() {
 
       {/* Mobile Nav */}
       <div
-        className={`md:hidden transition-all duration-400 overflow-hidden ${
-          isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+        className={`md:hidden fixed inset-0 bg-charcoal/95 backdrop-blur-xl transition-all duration-400 z-40 flex flex-col overflow-y-auto ${
+          isOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
         }`}
       >
-        <div className="flex flex-col px-5 pb-6 pt-4 gap-1">
-          {navLinks.map((link) => (
+        <div className="flex flex-col px-6 pt-20 pb-8 gap-1 flex-grow">
+          {mobileLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
-              className={`py-3 px-4 rounded-xl text-sm font-medium transition-all ${
-                activeSection === link.href.replace("#", "")
+              className={`py-3.5 px-4 rounded-xl text-base font-medium transition-all ${
+                pathname === link.href
                   ? "text-primary bg-white/5"
-                  : "text-white/70 hover:text-white hover:bg-white/5"
+                  : "text-white/80 hover:text-white hover:bg-white/5"
               }`}
-              onClick={() => setIsOpen(false)}
             >
               {link.name}
             </Link>
           ))}
-          <Link
-            href="https://wa.me/6281234567890?text=Halo%20Nuryanti%20MUA,%20saya%20ingin%20booking."
-            className="mt-3 bg-primary text-white text-center py-3 rounded-full font-semibold shadow-md active:scale-95 transition-transform text-sm"
-            onClick={() => setIsOpen(false)}
-          >
-            Book Now
-          </Link>
+
+          <div className="mt-auto pt-6 border-t border-white/10 space-y-4">
+            <div className="flex flex-col gap-2">
+              <span className="text-white/50 text-xs font-semibold uppercase tracking-wider">
+                Hubungi Kami
+              </span>
+              <a
+                href="https://wa.me/628568890683"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white text-lg font-medium hover:text-primary transition-colors flex items-center gap-2"
+              >
+                +62 856-8890-683
+              </a>
+            </div>
+
+            <div className="flex justify-start gap-5 pt-2 text-white/70">
+              <a
+                href="https://instagram.com/nuryantimua"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors"
+                aria-label="Instagram"
+              >
+                <svg
+                  className="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                </svg>
+              </a>
+              <a
+                href="https://tiktok.com/@nuryantimua"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors"
+                aria-label="TikTok"
+              >
+                <svg
+                  className="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1.04-.1z" />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </nav>

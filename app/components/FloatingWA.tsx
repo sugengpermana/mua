@@ -38,7 +38,7 @@ export default function FloatingWA() {
       {/* Floating WA Button */}
       <button
         onClick={openModal}
-        className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-100 group flex items-center cursor-pointer"
+        className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-30 group flex items-center cursor-pointer"
         aria-label="Contact on WhatsApp"
       >
         <div className="mr-3 bg-white px-4 py-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-all translate-x-4 group-hover:translate-x-0 font-semibold text-charcoal text-sm hidden sm:block">
@@ -58,7 +58,7 @@ export default function FloatingWA() {
 
       {/* Chat Modal */}
       {isOpen && (
-        <div className="fixed inset-0 z-200 flex items-end justify-end p-4 md:p-6">
+        <div className="fixed inset-0 z-[60] flex items-end justify-end p-4 md:p-6">
           {/* Backdrop */}
           <div
             className={`absolute inset-0 bg-black/30 transition-opacity duration-300 ${

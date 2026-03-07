@@ -4,17 +4,17 @@
   --font-serif: "Cormorant Garamond", serif;
   --font-sans: "DM Sans", sans-serif;
 
-  --color-primary: #c9a96e;
-  --color-secondary: #e8d5d0;
-  --color-accent: #8b7355;
-  --color-cream: #f8f5f0;
-  --color-charcoal: #1a1a1a;
-  --color-dark: #0d0d0d;
-  --color-muted: #6b6b6b;
+  --color-primary: #b08d7b;
+  --color-secondary: #e3d3cc;
+  --color-accent: #8b6b5d;
+  --color-cream: #fbf9f6;
+  --color-charcoal: #2a2726;
+  --color-dark: #0f0e0d;
+  --color-muted: #736b68;
 
   --shadow-premium: 0 10px 40px -10px rgba(0, 0, 0, 0.12);
   --shadow-card: 0 4px 24px -4px rgba(0, 0, 0, 0.08);
-  --shadow-glow: 0 0 40px rgba(201, 169, 110, 0.15);
+  --shadow-glow: 0 0 40px rgba(176, 141, 123, 0.15);
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-bg-dark: rgba(13, 13, 13, 0.85);
   --glass-border: rgba(255, 255, 255, 0.2);
@@ -63,7 +63,7 @@ h4,
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #c9a96e 0%, #e8d5d0 50%, #c9a96e 100%);
+  background: linear-gradient(135deg, #b08d7b 0%, #e3d3cc 50%, #b08d7b 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -130,13 +130,13 @@ h4,
 
 @keyframes pulse-gold {
   0% {
-    box-shadow: 0 0 0 0 rgba(201, 169, 110, 0.4);
+    box-shadow: 0 0 0 0 rgba(176, 141, 123, 0.4);
   }
   70% {
-    box-shadow: 0 0 0 14px rgba(201, 169, 110, 0);
+    box-shadow: 0 0 0 14px rgba(176, 141, 123, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(201, 169, 110, 0);
+    box-shadow: 0 0 0 0 rgba(176, 141, 123, 0);
   }
 }
 

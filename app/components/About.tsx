@@ -88,21 +88,12 @@ export default function About() {
                 </p>
               </div>
               <div>
-                <p className="text-2xl md:text-3xl font-serif text-primary font-bold">
-                  ⭐ 4.9
-                </p>
+                <p className="text-2xl md:text-3xl font-serif text-primary font-bold"></p>
                 <p className="text-xs text-muted uppercase tracking-wider mt-1">
                   Rating
                 </p>
               </div>
             </div>
-
-            <a
-              href="https://wa.me/6281234567890?text=Halo%20Nuryanti,%20saya%20ingin%20konsultasi%20makeup."
-              className="inline-block bg-charcoal hover:bg-primary text-white px-8 py-3 rounded-full transition-all shadow-md hover:shadow-lg text-sm font-semibold"
-            >
-              Hubungi Nuryanti →
-            </a>
           </div>
         </div>
       </div>

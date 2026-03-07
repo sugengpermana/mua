@@ -1,0 +1,97 @@
+import Breadcrumb from "../../components/Breadcrumb";
+import { portfolioItems } from "../../data/portfolio";
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import Contact from "../../components/Contact";
+import FloatingWA from "../../components/FloatingWA";
+
+export function generateStaticParams() {
+  return portfolioItems.map((item) => ({
+    id: item.id,
+  }));
+}
+
+export default function GalleryDetailPage({
+  params,
+}: {
+  params: { id: string };
+}) {
+  const item = portfolioItems.find((p) => p.id === params.id);
+
+  if (!item) {
+    notFound();
+  }
+
+  return (
+    <main className="overflow-x-hidden min-h-screen bg-white">
+      <Breadcrumb pageName={item.title} />
+
+      <section className="py-20 md:py-32">
+        <div className="max-w-4xl mx-auto px-5 md:px-8">
+          <Link
+            href="/gallery"
+            className="inline-flex items-center gap-2 text-muted hover:text-primary transition-colors mb-8 text-sm font-medium"
+          >
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+            Kembali ke Gallery
+          </Link>
+
+          <div className="bg-cream rounded-3xl overflow-hidden shadow-premium border border-charcoal/5">
+            {item.type === "video" ? (
+              <video
+                src={item.src}
+                poster={item.poster}
+                controls
+                autoPlay
+                className="w-full aspect-video object-cover"
+              />
+            ) : (
+              <img
+                src={item.src}
+                alt={item.title}
+                className="w-full h-auto max-h-[80vh] object-cover"
+              />
+            )}
+
+            <div className="p-8 md:p-16 text-center max-w-2xl mx-auto">
+              <span className="text-primary text-sm font-semibold tracking-[0.2em] uppercase block mb-4">
+                {item.category}
+              </span>
+              <h2 className="text-3xl md:text-5xl font-serif text-charcoal mb-6">
+                {item.title}
+              </h2>
+              <div className="w-12 h-[2px] bg-primary mx-auto rounded-full mb-8" />
+              <p className="text-muted leading-relaxed text-base md:text-lg mb-10">
+                {item.description}
+              </p>
+
+              <div className="mt-10">
+                <a
+                  href={`https://wa.me/6281234567890?text=Halo%20Nuryanti%20MUA,%20saya%20tertarik%20dengan%20look%20${encodeURIComponent(item.title)}.`}
+                  className="inline-block bg-charcoal hover:bg-primary text-white px-10 py-4 rounded-full font-semibold transition-colors duration-300 shadow-lg text-[15px] tracking-wide"
+                >
+                  Book This Look
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Contact />
+      <FloatingWA />
+    </main>
+  );
+}
