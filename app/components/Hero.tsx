@@ -77,7 +77,7 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-5 md:px-8 text-center space-y-6 md:space-y-8 pt-20 mb-30">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-[1.1] animate-fade-in-up">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-serif text-white leading-[1.1] animate-fade-in-up">
           Makeup Beauty by <span className="text-primary">Nuryanti</span>
         </h1>
 
@@ -97,13 +97,14 @@ export default function Hero() {
         >
           <Link
             href="/about"
-            className="bg-accent text-white px-8 md:px-8 py-3.5 md:py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 md:text-base hover:bg-accent"
+            className="bg-primary text-white
+           px-8 md:px-8 lg:px-12 py-3.5 md:py-4 lg:py-5 rounded-full transition-all font-sans shadow-lg hover:shadow-xl hover:-translate-y-0.5 md:text-base lg:text-2xl hover:bg-secondary hover:text-black"
           >
             Tentang Kami
           </Link>
           <Link
             href="/gallery"
-            className="bg-primary text-white px-8 md:px-8 py-3.5 md:py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 md:text-base hover:bg-accent"
+            className="bg-secondary text-black px-8 md:px-8 lg:px-12 py-3.5 md:py-4 lg:py-5 rounded-full font-sans transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 md:text-base lg:text-2xl hover:bg-primary hover:text-white"
           >
             Portofolio Kami
           </Link>

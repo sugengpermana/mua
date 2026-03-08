@@ -2,6 +2,19 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { Playfair_Display, Inter } from "next/font/google";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "600"],
+  variable: "--font-serif",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "600"],
+  variable: "--font-sans",
+});
 
 export const metadata: Metadata = {
   title: "| Professional Makeup Artist — Wedding, Wisuda & Event",
@@ -58,7 +71,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id">
+    <html lang="en">
       <head>
         <script
           type="application/ld+json"
@@ -83,7 +96,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="antialiased">
+      <body className={`${playfair.variable} ${inter.variable} antialiased`}>
         <Navbar />
         {children}
         <Footer />

@@ -64,7 +64,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-5 md:px-8 flex justify-between items-center">
         <Link
           href="/"
-          className="text-xl md:text-2xl font-serif font-bold tracking-[0.2em] text-primary hover:opacity-80 transition-opacity z-50"
+          className="text-lg md:text-xl lg:text-2xl font-serif font-bold tracking-[0.2em] text-primary hover:opacity-80 transition-opacity z-50"
         >
           NURYANTI<span className="text-white font-light"> MUA</span>
         </Link>
@@ -126,12 +126,6 @@ export default function Navbar() {
               )}
             </div>
           ))}
-          <Link
-            href="https://wa.me/628568890683?"
-            className="ml-4 bg-primary hover:bg-accent text-white text-sm px-6 py-2.5 rounded-full font-semibold transition-all shadow-md hover:shadow-lg hover:scale-105 active:scale-95"
-          >
-            Book Now
-          </Link>
         </div>
 
         {/* Mobile Menu Button */}
