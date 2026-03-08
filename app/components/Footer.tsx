@@ -21,11 +21,11 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5">
               {[
-                { name: "Home", href: "#home" },
-                { name: "About", href: "#about" },
-                { name: "Gallery", href: "#gallery" },
-                { name: "Services", href: "#services" },
-                { name: "Contact", href: "#contact" },
+                { name: "Home", href: "/" },
+                { name: "About", href: "/about" },
+                { name: "Gallery", href: "/gallery" },
+                { name: "Services", href: "/services" },
+                { name: "Contact", href: "/contact" },
               ].map((link) => (
                 <li key={link.name}>
                   <a
@@ -46,19 +46,19 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5">
               {[
-                "Wedding",
-                "Graduation",
-                "Prewedding",
-                "Engagement",
-                "Sweet 17",
-                "Party",
+                { name: "Wedding", href: "/services/#wedding" },
+                { name: "Graduation", href: "/services/#wisuda" },
+                { name: "Prewedding", href: "/services/#prewedding" },
+                { name: "Engagement", href: "/services/#engagement" },
+                { name: "Sweet 17", href: "/services/#sweet-17" },
+                { name: "Party", href: "/services/#party" },
               ].map((service) => (
-                <li key={service}>
+                <li key={service.name}>
                   <a
-                    href="#services"
+                    href={service.href}
                     className="text-white/40 hover:text-white transition-colors text-sm"
                   >
-                    {service}
+                    {service.name}
                   </a>
                 </li>
               ))}
@@ -72,13 +72,13 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5 text-white/40 text-sm">
               <li className="flex items-center gap-2">
-                <span>📍</span> Tangerang, Banten
+                <span>📍</span> Jabodetabek
               </li>
               <li className="flex items-center gap-2">
-                <span>📱</span> +62 812-3456-7890
+                <span>📱</span> +62 856-8890-683
               </li>
               <li className="flex items-center gap-2">
-                <span>✉️</span> hello@nuryantimua.com
+                <span>✉️</span> nury@gmail.com
               </li>
             </ul>
           </div>
@@ -89,7 +89,7 @@ export default function Footer() {
           <p>
             &copy; {new Date().getFullYear()} Nuryanti MUA. All rights reserved.
           </p>
-          <p>Crafted with ♥ for beauty enthusiasts</p>
+          <p>Crafted with ♥ by Nuryanti MUA</p>
         </div>
       </div>
     </footer>

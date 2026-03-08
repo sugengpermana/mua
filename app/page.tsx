@@ -150,14 +150,15 @@ export default function Page() {
         <div className="max-w-7xl mx-auto px-5 md:px-8">
           <div className="text-center mb-16 space-y-3">
             <p className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">
-              Highlight
+              Portfolio
             </p>
             <h2 className="text-3xl md:text-[40px] font-sans text-charcoal font-normal tracking-wide">
-              Featured Portfolio
+              Our Signature Looks
             </h2>
             <div className="w-16 h-[2px] bg-primary mx-auto rounded-full" />
             <p className="text-muted max-w-lg mx-auto text-sm md:text-base pt-1">
-              Karya terbaik dari artist kami untuk momen spesial Anda.
+              Lihat beberapa koleksi tampilan makeup terbaik kami untuk berbagai
+              acara spesial.
             </p>
           </div>
 
@@ -168,7 +169,7 @@ export default function Page() {
                 key={index}
                 className="group flex flex-col items-center cursor-pointer"
               >
-                <div className="w-full aspect-[4/5] mb-6 overflow-hidden bg-gray-100 relative rounded-xl shadow-sm group-hover:shadow-2xl transition-all duration-500">
+                <div className="w-full aspect-4/5 mb-6 overflow-hidden bg-gray-100 relative rounded-xl shadow-sm group-hover:shadow-2xl transition-all duration-500">
                   <img
                     src={work.src}
                     alt={work.title}
@@ -192,7 +193,7 @@ export default function Page() {
               href="/gallery"
               className="inline-block border border-charcoal text-charcoal px-10 py-3 rounded-full hover:bg-charcoal hover:text-white transition-colors duration-300 font-sans text-[15px] tracking-wide"
             >
-              Lihat Semua Portfolio
+              Lihat Semua Koleksi
             </Link>
           </div>
         </div>

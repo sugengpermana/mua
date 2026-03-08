@@ -85,7 +85,9 @@ export default function About() {
                 </p>
               </div>
               <div>
-                <p className="text-2xl md:text-3xl font-serif text-primary font-bold"></p>
+                <p className="text-2xl md:text-3xl font-serif text-primary font-bold">
+                  4.9/5
+                </p>
                 <p className="text-xs text-muted uppercase tracking-wider mt-1">
                   Rating
                 </p>

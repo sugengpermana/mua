@@ -54,7 +54,7 @@ export default function Gallery() {
                 className="relative group rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 block"
               >
                 {/* Media */}
-                <div className="w-full aspect-[4/5] bg-gray-100 relative">
+                <div className="w-full aspect-4/5 bg-gray-100 relative">
                   {item.type === "video" ? (
                     <>
                       <video

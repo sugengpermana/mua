@@ -49,9 +49,7 @@ export default function Contact() {
                 <p className="text-white font-semibold text-sm md:text-base">
                   Lokasi
                 </p>
-                <p className="text-white/50 text-sm mt-0.5">
-                  Tangerang, Banten, Indonesia
-                </p>
+                <p className="text-white/50 text-sm mt-0.5">Jabodetabek</p>
               </div>
             </div>
 
@@ -76,9 +74,7 @@ export default function Contact() {
                 <p className="text-white font-semibold text-sm md:text-base">
                   Telepon / WhatsApp
                 </p>
-                <p className="text-white/50 text-sm mt-0.5">
-                  +62 812-3456-7890
-                </p>
+                <p className="text-white/50 text-sm mt-0.5">+62 856-8890-683</p>
               </div>
             </div>
 

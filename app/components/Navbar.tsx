@@ -167,7 +167,7 @@ export default function Navbar() {
             : "opacity-0 pointer-events-none"
         }`}
       >
-        <div className="flex flex-col px-6 pt-20 pb-8 gap-1 flex-grow">
+        <div className="flex flex-col px-6 pt-20 pb-8 gap-1 grow">
           {mobileLinks.map((link) => (
             <Link
               key={link.name}
