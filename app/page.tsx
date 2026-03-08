@@ -65,8 +65,8 @@ export default function Page() {
                   />
                 </svg>
               </span>
-              <span className="font-serif text-charcoal text-base md:text-lg font-medium group-hover:text-primary transition-colors">
-                About Us
+              <span className="font-sans text-charcoal text-[14px] md:text-lg group-hover:text-primary transition-colors">
+                About Us →
               </span>
             </Link>
 
@@ -89,8 +89,8 @@ export default function Page() {
                   />
                 </svg>
               </span>
-              <span className="font-serif text-charcoal text-base md:text-lg font-medium group-hover:text-primary transition-colors">
-                Gallery
+              <span className="font-sans text-charcoal text-[14px] md:text-lg group-hover:text-primary transition-colors">
+                Gallery →
               </span>
             </Link>
 
@@ -113,8 +113,8 @@ export default function Page() {
                   />
                 </svg>
               </span>
-              <span className="font-serif text-charcoal text-base md:text-lg font-medium group-hover:text-primary transition-colors">
-                Services
+              <span className="font-sans text-charcoal text-[14px] md:text-lg group-hover:text-primary transition-colors">
+                Services →
               </span>
             </Link>
 
@@ -137,8 +137,8 @@ export default function Page() {
                   />
                 </svg>
               </span>
-              <span className="font-serif text-charcoal text-base md:text-lg font-medium group-hover:text-primary transition-colors">
-                Contact
+              <span className="font-sans text-charcoal text-[14px] md:text-lg group-hover:text-primary transition-colors">
+                Contact →
               </span>
             </Link>
           </div>
