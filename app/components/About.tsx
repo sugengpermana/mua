@@ -6,11 +6,8 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-5 md:px-8">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
-          <p className="text-primary text-sm font-semibold tracking-[0.2em] uppercase mb-3">
-            Get to Know
-          </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-charcoal">
-            Meet Your Artist
+            Tentang Saya
           </h2>
           <div className="w-16 h-[2px] bg-primary mx-auto mt-4 rounded-full" />
         </div>
