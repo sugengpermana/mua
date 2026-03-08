@@ -77,39 +77,35 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-5 md:px-8 text-center space-y-6 md:space-y-8 pt-20 mb-30">
-        <div className="inline-block px-5 py-2 rounded-full bg-white/10 backdrop-blur-md text-primary text-xs md:text-sm font-semibold tracking-[0.2em] uppercase border border-primary/20 animate-fade-in">
-          ✦ Professional Makeup Artist ✦
-        </div>
-
-        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif text-white leading-[1.1] animate-fade-in-up">
-          Reveal Your
-          <br />
-          <span className="text-gradient italic">Timeless Beauty</span>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-[1.1] animate-fade-in-up">
+          Makeup Beauty by <span className="text-primary">Nuryanti</span>
         </h1>
 
         <p
-          className="text-base md:text-lg text-white/70 max-w-xl mx-auto leading-relaxed animate-fade-in-up delay-200"
+          className="text-sm md:text-lg lg:text-2xl text-white/70 max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-200"
           style={{ animationFillMode: "backwards", animationDelay: "0.3s" }}
         >
-          Abadikan momen spesial Anda dengan sentuhan makeup profesional.
-          Spesialisasi Wedding, Graduation, Pre-Wedding & Event.
+          Kami menyediakan makeup profesional untuk wedding, engagement,
+          photoshoot, dan event spesial lainnya dengan sentuhan makeup
+          profesional, kami membantu kamu tampil percaya diri, cantik dan
+          flawless
         </p>
 
         <div
-          className="flex flex-col sm:flex-row gap-4 justify-center pt-2 animate-fade-in-up"
+          className="flex flex-col sm:flex-row gap-4 justify-center pt-4 animate-fade-in-up"
           style={{ animationFillMode: "backwards", animationDelay: "0.5s" }}
         >
           <Link
-            href="/services"
-            className="bg-primary text-white px-8 md:px-10 py-3.5 md:py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 md:text-base hover:bg-accent"
+            href="/about"
+            className="bg-accent text-white px-8 md:px-8 py-3.5 md:py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 md:text-base hover:bg-accent"
           >
-            Lihat Layanan Kami
+            Tentang Kami
           </Link>
           <Link
             href="/gallery"
-            className="text-white px-8 md:px-10 py-3.5 md:py-4 rounded-full font-semibold transition-all hover:bg-white/20 md:text-base"
+            className="bg-primary text-white px-8 md:px-8 py-3.5 md:py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 md:text-base hover:bg-accent"
           >
-            Lihat Portofolio Kami
+            Portofolio Kami
           </Link>
         </div>
       </div>

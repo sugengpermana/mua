@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "Nuryanti MUA | Professional Makeup Artist — Wedding, Wisuda & Event",
+  title: "| Professional Makeup Artist — Wedding, Wisuda & Event",
   description:
     "Jasa makeup artist profesional untuk wedding, wisuda, prewedding, engagement, sweet seventeen & event. Hasil flawless, produk premium, pengalaman 5+ tahun. Booking sekarang via WhatsApp!",
   keywords: [
