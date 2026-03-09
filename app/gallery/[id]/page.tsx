@@ -79,7 +79,7 @@ export default function GalleryDetailPage({
 
               <div className="mt-10">
                 <a
-                  href={`https://wa.me/6281234567890?text=Halo%20Nuryanti%20MUA,%20saya%20tertarik%20dengan%20look%20${encodeURIComponent(item.title)}.`}
+                  href={`https://wa.me/6281234567890?${encodeURIComponent(item.title)}.`}
                   className="inline-block bg-charcoal hover:bg-primary text-white px-10 py-4 rounded-full font-semibold transition-colors duration-300 shadow-lg text-[15px] tracking-wide"
                 >
                   Book This Look

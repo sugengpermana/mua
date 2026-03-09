@@ -2,18 +2,18 @@
 
 export default function Contact() {
   return (
-    <section id="contact" className="section-padding bg-charcoal">
+    <section id="contact" className="section-padding bg-[#faf8f5]">
       <div className="max-w-7xl mx-auto px-5 md:px-8">
         {/* Header */}
         <div className="text-center mb-10 md:mb-14 space-y-3">
           <p className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">
             Get In Touch
           </p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-white">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-charcoal">
             Hubungi Kami
           </h2>
           <div className="w-16 h-[2px] bg-primary mx-auto rounded-full" />
-          <p className="text-white/50 max-w-lg mx-auto text-sm md:text-base pt-1">
+          <p className="text-charcoal/70 max-w-lg mx-auto text-sm md:text-base pt-1">
             Siap membantu Anda tampil cantik di hari spesial. Hubungi kami untuk
             konsultasi gratis!
           </p>
@@ -46,10 +46,10 @@ export default function Contact() {
                 </svg>
               </div>
               <div>
-                <p className="text-white font-semibold text-sm md:text-base">
+                <p className="text-charcoal font-semibold text-sm md:text-base">
                   Lokasi
                 </p>
-                <p className="text-white/50 text-sm mt-0.5">Jabodetabek</p>
+                <p className="text-charcoal/60 text-sm mt-0.5">Jabodetabek</p>
               </div>
             </div>
 
@@ -71,10 +71,12 @@ export default function Contact() {
                 </svg>
               </div>
               <div>
-                <p className="text-white font-semibold text-sm md:text-base">
+                <p className="text-charcoal font-semibold text-sm md:text-base">
                   Telepon / WhatsApp
                 </p>
-                <p className="text-white/50 text-sm mt-0.5">+62 856-8890-683</p>
+                <p className="text-charcoal/60 text-sm mt-0.5">
+                  +62 856-8890-683
+                </p>
               </div>
             </div>
 
@@ -96,10 +98,10 @@ export default function Contact() {
                 </svg>
               </div>
               <div>
-                <p className="text-white font-semibold text-sm md:text-base">
+                <p className="text-charcoal font-semibold text-sm md:text-base">
                   Email
                 </p>
-                <p className="text-white/50 text-sm mt-0.5">
+                <p className="text-charcoal/60 text-sm mt-0.5">
                   hello@nuryantimua.com
                 </p>
               </div>
@@ -123,18 +125,18 @@ export default function Contact() {
                 </svg>
               </div>
               <div>
-                <p className="text-white font-semibold text-sm md:text-base">
+                <p className="text-charcoal font-semibold text-sm md:text-base">
                   Jam Operasional
                 </p>
-                <p className="text-white/50 text-sm mt-0.5">
+                <p className="text-charcoal/60 text-sm mt-0.5">
                   Senin — Minggu: 08:00 — 21:00 WIB
                 </p>
               </div>
             </div>
 
             {/* Social Media */}
-            <div className="pt-4 border-t border-white/10">
-              <p className="text-white/40 text-xs uppercase tracking-wider mb-4">
+            <div className="pt-4 border-t border-charcoal/10">
+              <p className="text-charcoal/50 text-xs uppercase tracking-wider mb-4">
                 Follow Us
               </p>
               <div className="flex gap-3">
@@ -142,7 +144,7 @@ export default function Contact() {
                   href="https://instagram.com/nuryantimua"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 md:w-11 md:h-11 rounded-xl bg-white/5 hover:bg-primary/20 flex items-center justify-center text-white/60 hover:text-primary transition-all"
+                  className="w-10 h-10 md:w-11 md:h-11 rounded-xl bg-charcoal/5 hover:bg-primary/20 flex items-center justify-center text-charcoal/60 hover:text-primary transition-all"
                   aria-label="Instagram"
                 >
                   <svg
@@ -157,7 +159,7 @@ export default function Contact() {
                   href="https://tiktok.com/@nuryantimua"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 md:w-11 md:h-11 rounded-xl bg-white/5 hover:bg-primary/20 flex items-center justify-center text-white/60 hover:text-primary transition-all"
+                  className="w-10 h-10 md:w-11 md:h-11 rounded-xl bg-charcoal/5 hover:bg-primary/20 flex items-center justify-center text-charcoal/60 hover:text-primary transition-all"
                   aria-label="TikTok"
                 >
                   <svg
@@ -172,7 +174,7 @@ export default function Contact() {
                   href="https://wa.me/6281234567890"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 md:w-11 md:h-11 rounded-xl bg-white/5 hover:bg-primary/20 flex items-center justify-center text-white/60 hover:text-primary transition-all"
+                  className="w-10 h-10 md:w-11 md:h-11 rounded-xl bg-charcoal/5 hover:bg-primary/20 flex items-center justify-center text-charcoal/60 hover:text-primary transition-all"
                   aria-label="WhatsApp"
                 >
                   <svg
@@ -188,7 +190,7 @@ export default function Contact() {
           </div>
 
           {/* Right — CTA Card */}
-          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl md:rounded-3xl p-6 md:p-8 flex flex-col justify-center space-y-6">
+          <div className="bg-white shadow-card border border-charcoal/5 rounded-2xl md:rounded-3xl p-6 md:p-8 flex flex-col justify-center space-y-6">
             <div className="text-center space-y-3">
               <div className="w-16 h-16 md:w-20 md:h-20 bg-primary/15 rounded-full flex items-center justify-center mx-auto">
                 <svg
@@ -199,10 +201,10 @@ export default function Contact() {
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 0 5.414 0 12.05c0 2.123.553 4.197 1.603 6.023L0 24l6.163-1.617a11.828 11.828 0 005.887 1.564h.005c6.637 0 12.05-5.414 12.05-12.05 0-3.217-1.252-6.241-3.522-8.514" />
                 </svg>
               </div>
-              <h3 className="text-white text-xl md:text-2xl font-serif font-bold">
+              <h3 className="text-charcoal text-xl md:text-2xl font-serif font-bold">
                 Konsultasi Gratis
               </h3>
-              <p className="text-white/50 text-sm leading-relaxed">
+              <p className="text-charcoal/70 text-sm leading-relaxed">
                 Chat langsung via WhatsApp untuk diskusi kebutuhan makeup Anda.
                 Respon cepat & ramah!
               </p>
@@ -216,7 +218,7 @@ export default function Contact() {
             </a>
 
             <div className="text-center">
-              <p className="text-white/30 text-xs">
+              <p className="text-charcoal/50 text-xs">
                 Respon rata-rata dalam 15 menit
               </p>
             </div>

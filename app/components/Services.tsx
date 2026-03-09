@@ -189,7 +189,7 @@ export default function Services() {
                 ))}
               </h3>
               <a
-                href={`https://wa.me/6281234567890?text=Halo%20Nuryanti%20MUA,%20saya%20ingin%20booking%20${encodeURIComponent(service.title)}.`}
+                href={`https://wa.me/6281234567890?${encodeURIComponent(service.title)}.`}
                 className="inline-block border border-charcoal text-charcoal px-10 py-2.5 hover:bg-charcoal hover:text-white transition-colors duration-300 font-sans text-[15px] tracking-wide"
               >
                 Book Now

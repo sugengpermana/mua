@@ -159,50 +159,80 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Nav */}
+      {/* Mobile Nav Overlay */}
       <div
-        className={`md:hidden fixed inset-0 bg-charcoal/95 backdrop-blur-xl transition-all duration-400 z-40 flex flex-col overflow-y-auto ${
+        className={`md:hidden fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-400 z-40 ${
           isOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
         }`}
+        onClick={() => setIsOpen(false)}
+      />
+
+      {/* Mobile Nav Panel */}
+      <div
+        className={`md:hidden fixed top-0 right-0 bottom-0 w-[70%] sm:w-[50%] bg-[#faf8f5] shadow-2xl transition-transform duration-500 ease-out z-50 flex flex-col overflow-y-auto ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
       >
-        <div className="flex flex-col px-6 pt-20 pb-8 gap-1 grow">
+        <div className="flex justify-end p-5">
+          <button
+            className="text-charcoal focus:outline-none p-2 bg-charcoal/5 rounded-full hover:bg-charcoal/10 transition"
+            onClick={() => setIsOpen(false)}
+            aria-label="Close menu"
+          >
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div className="flex flex-col px-6 pt-2 pb-8 gap-1 grow text-right">
           {mobileLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
               className={`py-3.5 px-4 rounded-xl text-base font-medium transition-all ${
                 pathname === link.href
-                  ? "text-primary bg-white/5"
-                  : "text-white/80 hover:text-white hover:bg-white/5"
+                  ? "text-primary bg-primary/10"
+                  : "text-charcoal/80 hover:text-charcoal hover:bg-charcoal/5"
               }`}
             >
               {link.name}
             </Link>
           ))}
 
-          <div className="mt-auto pt-6 border-t border-white/10 space-y-4">
-            <div className="flex flex-col gap-2">
-              <span className="text-white/50 text-xs font-semibold uppercase tracking-wider">
+          <div className="mt-auto pt-6 border-t border-charcoal/10 space-y-4">
+            <div className="flex flex-col gap-2 items-end">
+              <span className="text-charcoal/50 text-xs font-semibold uppercase tracking-wider">
                 Hubungi Kami
               </span>
               <a
                 href="https://wa.me/628568890683"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white text-lg font-medium hover:text-primary transition-colors flex items-center gap-2"
+                className="text-charcoal text-lg font-medium hover:text-primary transition-colors flex items-center justify-end gap-2"
               >
                 +62 856-8890-683
               </a>
             </div>
 
-            <div className="flex justify-start gap-5 pt-2 text-white/70">
+            <div className="flex justify-end gap-3 pt-2">
               <a
                 href="https://instagram.com/nuryantimua"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-primary transition-colors"
+                className="text-charcoal/50 hover:text-primary p-2 bg-charcoal/5 rounded-full transition-colors"
                 aria-label="Instagram"
               >
                 <svg
@@ -217,7 +247,7 @@ export default function Navbar() {
                 href="https://tiktok.com/@nuryantimua"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-primary transition-colors"
+                className="text-charcoal/50 hover:text-primary p-2 bg-charcoal/5 rounded-full transition-colors"
                 aria-label="TikTok"
               >
                 <svg
