@@ -67,10 +67,11 @@ export default async function GalleryDetailPage({
 
             {/* content descripsi galery */}
             <div className="max-w-3xl">
-              <span className="text-primary text-sm font-semibold tracking-[0.2em] uppercase block mb-4">
+              <span className="text-primary text-sm lg:text-lg  font-semibold tracking-[0.2em] uppercase block mb-4 border border-black rounded-xl px-4 py-1 max-w-fit">
                 {item.category}
               </span>
-              <h2 className="text-3xl md:text-5xl font-serif text-charcoal mb-8">
+              <hr className="mt-5 mb-5" />
+              <h2 className=" text-3xl md:text-5xl font-serif text-charcoal mb-8">
                 {item.title}
               </h2>
 
@@ -78,13 +79,13 @@ export default async function GalleryDetailPage({
                 <p>{item.description}</p>
                 {/* Additional spacing if needed for more description content */}
               </div>
-
+              <hr className="mt-5 mb-5 max-w-xs" />
               <div className="pt-4">
                 <a
-                  href={`https://wa.me/6281234567890?text=${encodeURIComponent(`Hi, I'm interested in the ${item.title} look.`)}`}
+                  href={`https://wa.me/6281234567890?text=${encodeURIComponent(`Hi aku tertarik dengan Makeup ${item.title}`)}`}
                   className="inline-block bg-charcoal hover:bg-primary text-white px-10 py-4 rounded-full font-semibold transition-colors duration-300 shadow-lg text-[15px] tracking-wide"
                 >
-                  Book This Look
+                  Booking Sekarang
                 </a>
               </div>
             </div>
