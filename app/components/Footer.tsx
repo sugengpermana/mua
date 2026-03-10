@@ -3,17 +3,6 @@ export default function Footer() {
     <footer className="bg-dark py-12 md:py-16">
       <div className="max-w-7xl mx-auto px-5 md:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-          {/* Brand */}
-          <div className="col-span-2 md:col-span-1 space-y-4">
-            <h3 className="text-xl font-serif font-bold text-primary tracking-widest">
-              NURYANTI<span className="text-white font-light"> MUA</span>
-            </h3>
-            <p className="text-white/40 leading-relaxed text-sm">
-              Menghadirkan kecantikan terbaik untuk momen paling berharga dalam
-              hidup Anda.
-            </p>
-          </div>
-
           {/* Navigation */}
           <div className="space-y-4">
             <h4 className="text-xs font-semibold uppercase tracking-[0.15em] text-primary">
@@ -75,7 +64,7 @@ export default function Footer() {
                 <span>📍</span> Jabodetabek
               </li>
               <li className="flex items-center gap-2">
-                <span>📱</span> +62 856-8890-683
+                <span>📱</span> +628568890683
               </li>
               <li className="flex items-center gap-2">
                 <span>✉️</span> nury@gmail.com
