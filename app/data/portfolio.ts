@@ -11,7 +11,7 @@ export const categories = [
 
 export const portfolioItems = [
   {
-    id: "romantic-garden-prewedding",
+    id: "Prewedding",
     type: "image",
     src: "https://images.unsplash.com/photo-1621607512214-68297480165e?auto=format&fit=crop&q=80&w=800",
     title: "Romantic Garden Prewedding",
