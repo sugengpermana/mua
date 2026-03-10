@@ -28,7 +28,7 @@ export const portfolioItems = [
       "https://images.unsplash.com/photo-1595991209266-5126c15bf2f0?auto=format&fit=crop&q=80&w=800",
     title: "Elegant Makeup Tutorial",
     category: "Video",
-    aspect: "aspect-[4/5]",
+    aspect: "aspect-6",
     description:
       "Lihat lebih dekat detail riasan elegan dengan teknik profesional kami. Menghasilkan look yang memukau dan tahan lama.",
   },
