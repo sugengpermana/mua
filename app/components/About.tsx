@@ -5,11 +5,11 @@ export default function About() {
     <section id="about" className="section-padding bg-white">
       <div className="max-w-7xl mx-auto px-5 md:px-8">
         {/* Section Header */}
-        <div className="text-center mb-12 md:mb-16">
+        <div className="text-center mb-12 md:mb-16 lg:mt-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-black">
             Tentang Saya
           </h2>
-          <div className="w-16 h-[2px] bg-black mx-auto mt-4 rounded-full" />
+          <div className="w-35 h-[2px] bg-black mx-auto mt-4 rounded-full" />
         </div>
 
         <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">

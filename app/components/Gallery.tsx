@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { categories, portfolioItems } from "../data/portfolio";
@@ -17,14 +16,11 @@ export default function Gallery() {
     <section id="gallery" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-5 md:px-8">
         {/* Header */}
-        <div className="text-center mb-10 md:mb-14 space-y-3">
-          <p className="text-black text-sm font-semibold tracking-[0.2em] uppercase">
-            Portfolio
-          </p>
+        <div className="text-center mb-10 md:mb-14 lg:mt-16 space-y-3">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-charcoal">
-            Our Masterpieces
+            Our Portfolio
           </h2>
-          <div className="w-16 h-[2px] bg-black mx-auto rounded-full" />
+          <div className="w-40 h-[2px] bg-black mx-auto rounded-full" />
         </div>
 
         {/* Category Filter */}
