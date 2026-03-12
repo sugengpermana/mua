@@ -1,6 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
+import { services } from "../data/services";
+import { trackRecordStats } from "../data/services";
 
 function AnimatedCounter({
   target,
@@ -46,39 +49,6 @@ function AnimatedCounter({
   );
 }
 
-const services = [
-  {
-    title: "Makeup Karakter",
-    image:
-      "https://images.unsplash.com/photo-1595991209266-5126c15bf2f0?auto=format&fit=crop&q=80&w=800",
-  },
-  {
-    title: "Makeup Wedding",
-    image:
-      "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=80&w=800",
-  },
-  {
-    title: "Makeup Wisuda",
-    image:
-      "https://images.unsplash.com/photo-1523240715630-971c034747a2?auto=format&fit=crop&q=80&w=800",
-  },
-  {
-    title: "Makeup Reguler",
-    image:
-      "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=800",
-  },
-  {
-    title: "Makeup Reguler",
-    image:
-      "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=800",
-  },
-  {
-    title: "Makeup Reguler",
-    image:
-      "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=800",
-  },
-];
-
 export default function Services() {
   return (
     <section id="services" className="py-20 bg-white">
@@ -94,57 +64,51 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-30">
-          {services.map((service, index) => (
-            <div key={index} className="flex flex-col items-center">
-              <div className="w-full aspect-square mb-6 overflow-hidden bg-gray-100">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-24">
+          {services.map((service) => (
+            <Link
+              href={`/services/${service.slug}`}
+              key={service.slug}
+              className="group flex flex-col items-center bg-white border border-black/8 rounded-2xl overflow-hidden hover:shadow-xl hover:border-black/15 transition-all duration-500 hover:-translate-y-1"
+            >
+              <div className="w-full aspect-4/3 overflow-hidden bg-gray-100 relative">
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-              </div>
-              <h3 className="text-xl md:text-[22px] font-sans text-center text-charcoal font-normal mb-6 max-w-[200px] leading-snug">
-                {service.title.split(" ").map((word, i) => (
-                  <span key={i}>
-                    {word}
-                    <br />
+                {/* Hover overlay */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                  <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white text-charcoal px-6 py-2.5 rounded-full text-sm font-medium shadow-lg">
+                    Lihat Detail →
                   </span>
-                ))}
-              </h3>
-              <a
-                href={`https://wa.me/6281234567890?${encodeURIComponent(service.title)}.`}
-                className="inline-block border border-charcoal text-charcoal px-10 py-2.5 hover:bg-charcoal hover:text-white transition-colors duration-300 font-sans text-[15px] tracking-wide"
-              >
-                Book Now
-              </a>
-            </div>
+                </div>
+              </div>
+              <div className="p-6 text-center w-full">
+                <h3 className="text-lg md:text-xl font-sans text-charcoal font-medium mb-2">
+                  {service.title}
+                </h3>
+                <p className="text-muted text-sm">{service.startingPrice}</p>
+              </div>
+            </Link>
           ))}
         </div>
-        {/* Track Record Stats */}
-        <div className="bg-charcoal rounded-4xl md:rounded-3xl p-8 md:p-10 grid grid-cols-3 md:grid-cols-3 gap-10 mb-6 text-center">
-          <div>
-            <p className="text-2xl md:text-4xl font-serif font-bold text-white">
-              <AnimatedCounter target={500} suffix="+" />
-            </p>
-            <p className="text-white/70 text-xs md:text-base mt-2">Client</p>
-          </div>
-          <div className="md:border-x border-white/10">
-            <p className="text-2xl md:text-4xl font-serif font-bold text-white">
-              <AnimatedCounter target={99} suffix="%" />
-            </p>
-            <p className="text-white/70 text-xs md:text-base mt-2">
-              Happy Client
-            </p>
-          </div>
-          <div>
-            <p className="text-2xl md:text-4xl font-serif font-bold text-white">
-              <AnimatedCounter target={5} suffix="+" />
-            </p>
-            <p className="text-white/70 text-xs md:text-base mt-2">
-              Experience
-            </p>
-          </div>
+
+        {/* Track Record Stats — Individual Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-6">
+          {trackRecordStats.map((stat, index) => (
+            <div
+              key={index}
+              className="border border-black/10 rounded-2xl p-8 md:p-10 text-center hover:border-black/25 hover:shadow-card transition-all duration-300 bg-white"
+            >
+              <p className="text-4xl md:text-5xl font-serif font-bold text-charcoal mb-3">
+                <AnimatedCounter target={stat.value} suffix={stat.suffix} />
+              </p>
+              <p className="text-muted text-sm md:text-base tracking-wide uppercase font-medium">
+                {stat.label}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

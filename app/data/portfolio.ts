@@ -137,3 +137,36 @@ export const portfolioItems = [
       "Riasan wisuda klasik yang timeless. Sangat mendukung penggunaan dress atau kebaya, tahan seharian meski cuaca panas.",
   },
 ];
+
+export const featuredWorks = [
+  {
+    title: "Sacred Akad Nikah",
+    category: "Wedding",
+    src: "https://images.unsplash.com/photo-1594462215124-91d1e463a429?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    title: "Fresh Graduation Glow",
+    category: "Wisuda",
+    src: "https://images.unsplash.com/photo-1523240715630-971c034747a2?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    title: "Romantic Garden",
+    category: "Prewedding",
+    src: "https://images.unsplash.com/photo-1621607512214-68297480165e?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    title: "Elegant Engagement",
+    category: "Engagement",
+    src: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    title: "Bold Party Makeup",
+    category: "Party",
+    src: "https://images.unsplash.com/photo-1526045612212-70caf35c11bc?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    title: "Classic Glamour",
+    category: "Photoshoot",
+    src: "https://images.unsplash.com/photo-1512413316925-fd4b93f31521?auto=format&fit=crop&q=80&w=800",
+  },
+];
