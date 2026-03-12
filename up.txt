@@ -1,0 +1,5 @@
+update service pada saat di click pindah ke page yang di tuju, di page tersebut ada deskripsi detail
+Semua data di pindahin khusus buat data jadi gw edit nya di data
+tambahin paket layanan di services
+track services pisah ga di gabung beda border
+about 

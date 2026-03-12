@@ -85,10 +85,13 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-5 md:px-8">
         {/* Makeup Artist Service Categories */}
         <div className="text-center mb-16 lg:mt-16">
-          <h2 className="text-3xl md:text-[40px] font-sans text-charcoal font-normal tracking-wide">
+          <h2 className="text-3xl md:text-[40px] font-sans text-charcoal font-normal tracking-wide mb-2">
             Paket & Layanan
           </h2>
-          <div className="w-40 h-[2px] bg-black mx-auto mt-4 rounded-full" />
+          <div className="w-30 h-[2px] bg-black mx-auto rounded-full" />
+          <p className="text-charcoal/70 max-w-lg mx-auto text-sm md:text-base pt-1 mt-4">
+            Berikut adalah paket layanan yang kami sediakan
+          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-30">
