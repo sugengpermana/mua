@@ -43,14 +43,14 @@ export default function Page() {
       <BrandCarousel />
 
       {/* Quick Links / Navigation Shortcuts */}
-      <section className="py-12 bg-cream border-b border-black/5">
+      <section className="py-12 bg-white border-b border-black/5">
         <div className="max-w-7xl mx-auto px-5 md:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             <Link
               href="/about"
               className="flex flex-col items-center justify-center p-6 md:p-8 bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 group hover:-translate-y-1"
             >
-              <span className="text-primary mb-4 shrink-0 transition-transform duration-300 group-hover:scale-110 group-hover:text-accent">
+              <span className="text-black mb-4 shrink-0 transition-transform duration-300 group-hover:scale-110 group-hover:text-black">
                 <svg
                   className="w-8 h-8 md:w-10 md:h-10"
                   fill="none"
@@ -65,7 +65,7 @@ export default function Page() {
                   />
                 </svg>
               </span>
-              <span className="font-sans text-charcoal text-[14px] md:text-lg group-hover:text-primary transition-colors">
+              <span className="font-sans text-charcoal text-[14px] md:text-lg group-hover:text-black transition-colors">
                 About Us →
               </span>
             </Link>
@@ -74,7 +74,7 @@ export default function Page() {
               href="/gallery"
               className="flex flex-col items-center justify-center p-6 md:p-8 bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 group hover:-translate-y-1"
             >
-              <span className="text-primary mb-4 shrink-0 transition-transform duration-300 group-hover:scale-110 group-hover:text-accent">
+              <span className="text-black mb-4 shrink-0 transition-transform duration-300 group-hover:scale-110 group-hover:text-black">
                 <svg
                   className="w-8 h-8 md:w-10 md:h-10"
                   fill="none"
@@ -89,7 +89,7 @@ export default function Page() {
                   />
                 </svg>
               </span>
-              <span className="font-sans text-charcoal text-[14px] md:text-lg group-hover:text-primary transition-colors">
+              <span className="font-sans text-charcoal text-[14px] md:text-lg group-hover:text-black transition-colors">
                 Gallery →
               </span>
             </Link>
@@ -98,7 +98,7 @@ export default function Page() {
               href="/services"
               className="flex flex-col items-center justify-center p-6 md:p-8 bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 group hover:-translate-y-1"
             >
-              <span className="text-primary mb-4 shrink-0 transition-transform duration-300 group-hover:scale-110 group-hover:text-accent">
+              <span className="text-black mb-4 shrink-0 transition-transform duration-300 group-hover:scale-110 group-hover:text-black">
                 <svg
                   className="w-8 h-8 md:w-10 md:h-10"
                   fill="none"
@@ -113,7 +113,7 @@ export default function Page() {
                   />
                 </svg>
               </span>
-              <span className="font-sans text-charcoal text-[14px] md:text-lg group-hover:text-primary transition-colors">
+              <span className="font-sans text-charcoal text-[14px] md:text-lg group-hover:text-black transition-colors">
                 Services →
               </span>
             </Link>
@@ -122,7 +122,7 @@ export default function Page() {
               href="/contact"
               className="flex flex-col items-center justify-center p-6 md:p-8 bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 group hover:-translate-y-1"
             >
-              <span className="text-primary mb-4 shrink-0 transition-transform duration-300 group-hover:scale-110 group-hover:text-accent">
+              <span className="text-black mb-4 shrink-0 transition-transform duration-300 group-hover:scale-110 group-hover:text-black">
                 <svg
                   className="w-8 h-8 md:w-10 md:h-10"
                   fill="none"
@@ -149,13 +149,13 @@ export default function Page() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-5 md:px-8">
           <div className="text-center mb-16 space-y-3">
-            <p className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">
+            <p className="text-black text-sm font-semibold tracking-[0.2em] uppercase">
               Portfolio
             </p>
             <h2 className="text-3xl md:text-[40px] font-sans text-charcoal font-normal tracking-wide">
               Our Signature Looks
             </h2>
-            <div className="w-16 h-[2px] bg-primary mx-auto rounded-full" />
+            <div className="w-16 h-[2px] bg-black mx-auto rounded-full" />
             <p className="text-muted max-w-lg mx-auto text-sm md:text-base pt-1">
               Lihat beberapa koleksi tampilan makeup terbaik kami untuk berbagai
               acara spesial.
@@ -176,7 +176,7 @@ export default function Page() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                    <span className="text-primary text-xs font-semibold tracking-wider uppercase mb-1">
+                    <span className="text-white/70 text-xs font-semibold tracking-wider uppercase mb-1">
                       {work.category}
                     </span>
                     <h3 className="text-white font-serif text-xl font-semibold">

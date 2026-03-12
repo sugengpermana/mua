@@ -4,26 +4,26 @@
   --font-serif: "Playfair Display", serif;
   --font-sans: "Inter", sans-serif;
 
-  --color-primary: #b08d7b;
-  --color-secondary: #e8dcd6;
-  --color-accent: #9a7566;
+  --color-primary: #000000;
+  --color-secondary: #ffffff;
+  --color-accent: #333333;
 
-  --color-cream: #fdfaf7;
-  --color-charcoal: #2b2725;
-  --color-dark: #141312;
-  --color-muted: #8a817d;
+  --color-cream: #ffffff;
+  --color-charcoal: #000000;
+  --color-dark: #000000;
+  --color-muted: #666666;
 
-  --shadow-premium: 0 10px 40px -10px rgba(0, 0, 0, 0.12);
-  --shadow-card: 0 4px 24px -4px rgba(0, 0, 0, 0.08);
-  --shadow-glow: 0 0 40px rgba(176, 141, 123, 0.15);
-  --glass-bg: rgba(255, 255, 255, 0.75);
-  --glass-bg-dark: rgba(13, 13, 13, 0.85);
+  --shadow-premium: 0 10px 40px -10px rgba(0, 0, 0, 0.15);
+  --shadow-card: 0 4px 24px -4px rgba(0, 0, 0, 0.1);
+  --shadow-glow: 0 0 40px rgba(0, 0, 0, 0.1);
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-bg-dark: rgba(0, 0, 0, 0.9);
   --glass-border: rgba(255, 255, 255, 0.2);
 }
 
 :root {
-  --background: #faf8f5;
-  --foreground: #1a1a1a;
+  --background: #ffffff;
+  --foreground: #000000;
 }
 
 * {
@@ -64,7 +64,7 @@ h4,
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #b08d7b 0%, #e3d3cc 50%, #b08d7b 100%);
+  background: linear-gradient(135deg, #000 0%, #555 50%, #000 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -129,15 +129,15 @@ h4,
   }
 }
 
-@keyframes pulse-gold {
+@keyframes pulse-bw {
   0% {
-    box-shadow: 0 0 0 0 rgba(176, 141, 123, 0.4);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
   }
   70% {
-    box-shadow: 0 0 0 14px rgba(176, 141, 123, 0);
+    box-shadow: 0 0 0 14px rgba(0, 0, 0, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(176, 141, 123, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
 }
 
@@ -177,7 +177,7 @@ h4,
 }
 
 .animate-pulse-gold {
-  animation: pulse-gold 2s infinite;
+  animation: pulse-bw 2s infinite;
 }
 
 .animate-float {
@@ -212,11 +212,11 @@ h4,
   background: var(--background);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-primary);
+  background: #000;
   border-radius: 100px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-accent);
+  background: #333;
 }
 
 /* ──── Brand Carousel ──── */

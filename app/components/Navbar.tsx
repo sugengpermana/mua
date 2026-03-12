@@ -64,9 +64,12 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-5 md:px-8 flex justify-between items-center">
         <Link
           href="/"
-          className="text-lg md:text-xl lg:text-2xl font-serif font-bold tracking-[0.2em] text-primary hover:opacity-80 transition-opacity z-50"
+          className="text-lg md:text-xl lg:text-2xl font-serif font-bold tracking-[0.2em] text-white hover:opacity-80 transition-opacity z-50"
         >
-          NURYANTI<span className="text-white font-light"> MUA</span>
+          <span className="md:hidden">NURY</span>
+          <span className="hidden md:inline">
+            NURYANTI<span className="font-light"> MUA</span>
+          </span>
         </Link>
 
         {/* Desktop Nav */}
@@ -171,7 +174,7 @@ export default function Navbar() {
 
       {/* Mobile Nav Panel */}
       <div
-        className={`md:hidden fixed top-0 right-0 bottom-0 w-[70%] sm:w-[50%] bg-[#faf8f5] shadow-2xl transition-transform duration-500 ease-out z-50 flex flex-col overflow-y-auto ${
+        className={`md:hidden fixed top-0 right-0 bottom-0 w-[70%] sm:w-[50%] bg-white shadow-2xl transition-transform duration-500 ease-out z-50 flex flex-col overflow-y-auto ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

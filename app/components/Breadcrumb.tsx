@@ -15,10 +15,10 @@ export default function Breadcrumb({ pageName }: { pageName: string }) {
   ];
 
   return (
-    <div className="bg-cream pt-32 pb-8 border-b border-black/5 lg:hidden">
+    <div className="bg-white pt-32 pb-8 border-b border-black/5 lg:hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-5 md:px-8 text-center flex flex-col items-center">
         {/* Title visible on mobile */}
-        <h1 className="text-2xl sm:text-3xl md:text-5xl font-serif text-charcoal mb-4 wrap-break-word max-w-[280px] sm:max-w-full">
+        <h1 className="text-2xl sm:text-3xl md:text-5xl font-serif text-black mb-4 wrap-break-word max-w-[280px] sm:max-w-full">
           {pageName}
         </h1>
 
@@ -34,7 +34,7 @@ export default function Breadcrumb({ pageName }: { pageName: string }) {
                 key={link.name}
                 href={link.href}
                 className={`transition-colors ${
-                  isActive ? "text-primary" : "text-muted hover:text-primary"
+                  isActive ? "text-black" : "text-black/40 hover:text-black"
                 }`}
               >
                 {link.name}

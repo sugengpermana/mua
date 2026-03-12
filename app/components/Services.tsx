@@ -161,7 +161,7 @@ const packages = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 bg-[#faf8f5]">
+    <section id="services" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-5 md:px-8">
         {/* Makeup Artist Service Categories */}
         <div className="text-center mb-16">
@@ -201,7 +201,7 @@ export default function Services() {
         {/* Track Record Stats */}
         <div className="bg-charcoal rounded-2xl md:rounded-3xl p-6 md:p-10 grid grid-cols-1 md:grid-cols-3 gap-6 mb-24 text-center">
           <div>
-            <p className="text-3xl md:text-4xl font-serif font-bold text-primary">
+            <p className="text-3xl md:text-4xl font-serif font-bold text-white">
               <AnimatedCounter target={500} suffix="+" />
             </p>
             <p className="text-white/70 text-sm md:text-base mt-2">
@@ -209,7 +209,7 @@ export default function Services() {
             </p>
           </div>
           <div className="md:border-x border-white/10">
-            <p className="text-3xl md:text-4xl font-serif font-bold text-primary">
+            <p className="text-3xl md:text-4xl font-serif font-bold text-white">
               <AnimatedCounter target={99} suffix="%" />
             </p>
             <p className="text-white/70 text-sm md:text-base mt-2">
@@ -217,7 +217,7 @@ export default function Services() {
             </p>
           </div>
           <div>
-            <p className="text-3xl md:text-4xl font-serif font-bold text-primary">
+            <p className="text-3xl md:text-4xl font-serif font-bold text-white">
               <AnimatedCounter target={5} suffix="+" />
             </p>
             <p className="text-white/70 text-sm md:text-base mt-2">
@@ -228,13 +228,13 @@ export default function Services() {
 
         {/* Paket & Layanan */}
         <div className="text-center mb-12 space-y-3">
-          <p className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">
+          <p className="text-black text-sm font-semibold tracking-[0.2em] uppercase">
             Pricing
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-charcoal">
             Paket & Layanan
           </h2>
-          <div className="w-16 h-[2px] bg-primary mx-auto rounded-full" />
+          <div className="w-16 h-[2px] bg-black mx-auto rounded-full" />
           <p className="text-muted max-w-lg mx-auto text-sm md:text-base pt-1">
             Pilih paket layanan yang sesuai dengan kebutuhan momen spesial Anda.
           </p>
@@ -246,12 +246,12 @@ export default function Services() {
               key={index}
               className={`relative rounded-2xl md:rounded-3xl p-6 md:p-8 flex flex-col transition-all hover:-translate-y-1 hover:shadow-xl ${
                 pkg.popular
-                  ? "bg-charcoal text-white ring-2 ring-primary shadow-glow"
+                  ? "bg-black text-white ring-2 ring-white/20"
                   : "bg-white shadow-card border border-charcoal/5"
               }`}
             >
               {pkg.popular && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-4 py-1 rounded-full tracking-wider uppercase">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-black text-white text-xs font-bold px-4 py-1 rounded-full tracking-wider uppercase">
                   Recommended
                 </div>
               )}
@@ -271,7 +271,7 @@ export default function Services() {
                 <span className="text-2xl md:text-3xl">{pkg.icon}</span>
               </div>
               <p
-                className={`text-2xl md:text-3xl font-serif font-bold mb-5 md:mb-6 ${pkg.popular ? "text-primary" : "text-charcoal"}`}
+                className={`text-2xl md:text-3xl font-serif font-bold mb-5 md:mb-6 ${pkg.popular ? "text-white" : "text-black"}`}
               >
                 {pkg.price}
               </p>
@@ -279,7 +279,7 @@ export default function Services() {
                 {pkg.features.map((feature, i) => (
                   <li key={i} className="flex items-start gap-2.5 text-sm">
                     <svg
-                      className={`w-4 h-4 mt-0.5 shrink-0 ${pkg.popular ? "text-primary" : "text-primary"}`}
+                      className={`w-4 h-4 mt-0.5 shrink-0 ${pkg.popular ? "text-white" : "text-black"}`}
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -303,8 +303,8 @@ export default function Services() {
                 href={`https://wa.me/6281234567890?text=Halo%20Nuryanti%20MUA,%20saya%20tertarik%20paket%20${encodeURIComponent(pkg.name)}.`}
                 className={`block text-center py-3 rounded-full font-semibold text-sm transition-all ${
                   pkg.popular
-                    ? "bg-primary hover:bg-accent text-white shadow-md"
-                    : "bg-charcoal hover:bg-primary text-white"
+                    ? "bg-white hover:bg-white/80 text-black shadow-md"
+                    : "bg-black hover:bg-black/80 text-white"
                 }`}
               >
                 Book via WhatsApp

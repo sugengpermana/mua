@@ -18,13 +18,13 @@ export default function Gallery() {
       <div className="max-w-7xl mx-auto px-5 md:px-8">
         {/* Header */}
         <div className="text-center mb-10 md:mb-14 space-y-3">
-          <p className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">
+          <p className="text-black text-sm font-semibold tracking-[0.2em] uppercase">
             Portfolio
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-charcoal">
             Our Masterpieces
           </h2>
-          <div className="w-16 h-[2px] bg-primary mx-auto rounded-full" />
+          <div className="w-16 h-[2px] bg-black mx-auto rounded-full" />
         </div>
 
         {/* Category Filter */}
@@ -93,7 +93,7 @@ export default function Gallery() {
 
                 {/* Subdued Overlay with Text */}
                 <div className="absolute inset-0 z-10 bg-linear-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 md:p-6">
-                  <span className="text-primary text-[10px] md:text-xs font-semibold tracking-wider uppercase">
+                  <span className="text-white/70 text-[10px] md:text-xs font-semibold tracking-wider uppercase">
                     {item.category}
                   </span>
                   <h3 className="text-white font-serif text-sm md:text-lg font-semibold mt-1">
@@ -117,7 +117,7 @@ export default function Gallery() {
             href="https://instagram.com/nuryantimua"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors text-sm"
+            className="inline-flex items-center gap-2 text-black font-semibold hover:text-black/60 transition-colors text-sm"
           >
             Follow on Instagram for more
             <svg

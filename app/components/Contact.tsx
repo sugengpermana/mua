@@ -2,17 +2,17 @@
 
 export default function Contact() {
   return (
-    <section id="contact" className="section-padding bg-[#faf8f5]">
+    <section id="contact" className="section-padding bg-white">
       <div className="max-w-7xl mx-auto px-5 md:px-8">
         {/* Header */}
         <div className="text-center mb-10 md:mb-14 space-y-3">
-          <p className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">
+          <p className="text-black text-sm font-semibold tracking-[0.2em] uppercase">
             Get In Touch
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-charcoal">
             Hubungi Kami
           </h2>
-          <div className="w-16 h-[2px] bg-primary mx-auto rounded-full" />
+          <div className="w-16 h-[2px] bg-black mx-auto rounded-full" />
           <p className="text-charcoal/70 max-w-lg mx-auto text-sm md:text-base pt-1">
             Siap membantu Anda tampil cantik di hari spesial. Hubungi kami untuk
             konsultasi gratis!
@@ -24,9 +24,9 @@ export default function Contact() {
           <div className="space-y-6 md:space-y-8">
             {/* Location */}
             <div className="flex items-start gap-4">
-              <div className="w-11 h-11 md:w-12 md:h-12 bg-primary/15 rounded-xl flex items-center justify-center shrink-0">
+              <div className="w-11 h-11 md:w-12 md:h-12 bg-black/10 rounded-xl flex items-center justify-center shrink-0">
                 <svg
-                  className="w-5 h-5 text-primary"
+                  className="w-5 h-5 text-black"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -55,9 +55,9 @@ export default function Contact() {
 
             {/* Phone */}
             <div className="flex items-start gap-4">
-              <div className="w-11 h-11 md:w-12 md:h-12 bg-primary/15 rounded-xl flex items-center justify-center shrink-0">
+              <div className="w-11 h-11 md:w-12 md:h-12 bg-black/10 rounded-xl flex items-center justify-center shrink-0">
                 <svg
-                  className="w-5 h-5 text-primary"
+                  className="w-5 h-5 text-black"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -82,9 +82,9 @@ export default function Contact() {
 
             {/* Email */}
             <div className="flex items-start gap-4">
-              <div className="w-11 h-11 md:w-12 md:h-12 bg-primary/15 rounded-xl flex items-center justify-center shrink-0">
+              <div className="w-11 h-11 md:w-12 md:h-12 bg-black/10 rounded-xl flex items-center justify-center shrink-0">
                 <svg
-                  className="w-5 h-5 text-primary"
+                  className="w-5 h-5 text-black"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -109,9 +109,9 @@ export default function Contact() {
 
             {/* Hours */}
             <div className="flex items-start gap-4">
-              <div className="w-11 h-11 md:w-12 md:h-12 bg-primary/15 rounded-xl flex items-center justify-center shrink-0">
+              <div className="w-11 h-11 md:w-12 md:h-12 bg-black/10 rounded-xl flex items-center justify-center shrink-0">
                 <svg
-                  className="w-5 h-5 text-primary"
+                  className="w-5 h-5 text-black"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -144,7 +144,7 @@ export default function Contact() {
                   href="https://instagram.com/nuryantimua"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 md:w-11 md:h-11 rounded-xl bg-charcoal/5 hover:bg-primary/20 flex items-center justify-center text-charcoal/60 hover:text-primary transition-all"
+                  className="w-10 h-10 md:w-11 md:h-11 rounded-xl bg-charcoal/5 hover:bg-black/10 flex items-center justify-center text-charcoal/60 hover:text-black transition-all"
                   aria-label="Instagram"
                 >
                   <svg
@@ -159,7 +159,7 @@ export default function Contact() {
                   href="https://tiktok.com/@nuryantimua"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 md:w-11 md:h-11 rounded-xl bg-charcoal/5 hover:bg-primary/20 flex items-center justify-center text-charcoal/60 hover:text-primary transition-all"
+                  className="w-10 h-10 md:w-11 md:h-11 rounded-xl bg-charcoal/5 hover:bg-black/10 flex items-center justify-center text-charcoal/60 hover:text-black transition-all"
                   aria-label="TikTok"
                 >
                   <svg
@@ -174,7 +174,7 @@ export default function Contact() {
                   href="https://wa.me/6281234567890"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 md:w-11 md:h-11 rounded-xl bg-charcoal/5 hover:bg-primary/20 flex items-center justify-center text-charcoal/60 hover:text-primary transition-all"
+                  className="w-10 h-10 md:w-11 md:h-11 rounded-xl bg-charcoal/5 hover:bg-black/10 flex items-center justify-center text-charcoal/60 hover:text-black transition-all"
                   aria-label="WhatsApp"
                 >
                   <svg
@@ -192,9 +192,9 @@ export default function Contact() {
           {/* Right — CTA Card */}
           <div className="bg-white shadow-card border border-charcoal/5 rounded-2xl md:rounded-3xl p-6 md:p-8 flex flex-col justify-center space-y-6">
             <div className="text-center space-y-3">
-              <div className="w-16 h-16 md:w-20 md:h-20 bg-primary/15 rounded-full flex items-center justify-center mx-auto">
+              <div className="w-16 h-16 md:w-20 md:h-20 bg-black/10 rounded-full flex items-center justify-center mx-auto">
                 <svg
-                  className="w-8 h-8 md:w-10 md:h-10 text-primary"
+                  className="w-8 h-8 md:w-10 md:h-10 text-black"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -212,7 +212,7 @@ export default function Contact() {
 
             <a
               href="https://wa.me/6281234567890?text=Halo%20Nuryanti%20MUA,%20saya%20ingin%20konsultasi%20gratis%20tentang%20layanan%20makeup."
-              className="block bg-primary hover:bg-accent text-white text-center py-3.5 md:py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl text-sm md:text-base"
+              className="block bg-black hover:bg-black/80 text-white text-center py-3.5 md:py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl text-sm md:text-base"
             >
               Chat via WhatsApp →
             </a>

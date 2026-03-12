@@ -4,9 +4,9 @@ import FloatingWA from "../components/FloatingWA";
 
 export default function ContactPage() {
   return (
-    <main className="overflow-x-hidden min-h-screen flex flex-col bg-cream">
+    <main className="overflow-x-hidden min-h-screen flex flex-col bg-white">
       <Breadcrumb pageName="Contact Us" />
-      <div className="grow flex items-center justify-center py-20 bg-cream">
+      <div className="grow flex items-center justify-center py-20 bg-white">
         <ContactSection />
       </div>
       <FloatingWA />

@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {/* Navigation */}
           <div className="space-y-4">
-            <h4 className="text-xs font-semibold uppercase tracking-[0.15em] text-primary">
+            <h4 className="text-xs font-semibold uppercase tracking-[0.15em] text-white">
               Navigasi
             </h4>
             <ul className="space-y-2.5">
@@ -30,7 +30,7 @@ export default function Footer() {
 
           {/* Services */}
           <div className="space-y-4">
-            <h4 className="text-xs font-semibold uppercase tracking-[0.15em] text-primary">
+            <h4 className="text-xs font-semibold uppercase tracking-[0.15em] text-white">
               Layanan
             </h4>
             <ul className="space-y-2.5">
@@ -56,7 +56,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div className="space-y-4">
-            <h4 className="text-xs font-semibold uppercase tracking-[0.15em] text-primary">
+            <h4 className="text-xs font-semibold uppercase tracking-[0.15em] text-white">
               Kontak
             </h4>
             <ul className="space-y-2.5 text-white/40 text-sm">
