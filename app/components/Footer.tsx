@@ -66,9 +66,6 @@ export default function Footer() {
               <li className="flex items-center gap-2">
                 <span>📱</span> +628568890683
               </li>
-              <li className="flex items-center gap-2">
-                <span>✉️</span> nury@gmail.com
-              </li>
             </ul>
           </div>
         </div>

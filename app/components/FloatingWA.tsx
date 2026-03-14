@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 export default function FloatingWA() {
   const [isOpen, setIsOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
 
   const openModal = () => {
     setIsOpen(true);
@@ -28,6 +29,19 @@ export default function FloatingWA() {
     };
   }, [isOpen]);
 
+  // Scroll to top visibility
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 300);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   const waNumber = "628568890683";
   const waMessage = encodeURIComponent(
     "Halo, ingin bertanya seputar layanan makeup?",
@@ -35,12 +49,38 @@ export default function FloatingWA() {
 
   return (
     <>
-      {/* Floating WA Button */}
-      <button
-        onClick={openModal}
-        className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-30 group flex items-center cursor-pointer"
-        aria-label="Contact on WhatsApp"
-      >
+      {/* Floating Buttons Container */}
+      <div className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-30 flex flex-col gap-4 items-end">
+        {/* Scroll To Top Button */}
+        <div
+          className={`transition-all duration-300 ${
+            showScrollTop
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-8 pointer-events-none"
+          }`}
+        >
+          <button
+            onClick={scrollToTop}
+            className="w-10 h-10 md:w-11 md:h-11 bg-black/20 hover:bg-black/40 text-white rounded-xl shadow-lg flex items-center justify-center transition-all backdrop-blur-sm"
+            aria-label="Scroll to top"
+          >
+            <svg
+              className="w-5 h-5 md:w-6 md:h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 15l7-7 7 7" />
+            </svg>
+          </button>
+        </div>
+
+        {/* Floating WA Button */}
+        <button
+          onClick={openModal}
+          className="group flex items-center cursor-pointer relative"
+          aria-label="Contact on WhatsApp"
+        >
         <div className="mr-3 bg-white px-4 py-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-all translate-x-4 group-hover:translate-x-0 font-semibold text-charcoal text-sm hidden sm:block">
           Booking via WA?
         </div>
@@ -55,6 +95,7 @@ export default function FloatingWA() {
           </svg>
         </div>
       </button>
+      </div>
 
       {/* Chat Modal */}
       {isOpen && (

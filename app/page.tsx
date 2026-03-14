@@ -1,6 +1,7 @@
 import Hero from "./components/Hero";
 import BrandCarousel from "./components/BrandCarousel";
 import FloatingWA from "./components/FloatingWA";
+import TrustedArtists from "./components/TrustedArtists";
 import Link from "next/link";
 import { featuredWorks } from "./data/portfolio";
 
@@ -117,11 +118,8 @@ export default function Page() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-5 md:px-8">
           <div className="text-center mb-16 space-y-3">
-            <p className="text-black text-sm font-semibold tracking-[0.2em] uppercase">
-              Portfolio
-            </p>
             <h2 className="text-3xl md:text-[40px] font-sans text-charcoal font-normal tracking-wide">
-              Our Signature Looks
+              Best Portfolio
             </h2>
             <div className="w-16 h-[2px] bg-black mx-auto rounded-full" />
             <p className="text-muted max-w-lg mx-auto text-sm md:text-base pt-1">
@@ -159,13 +157,15 @@ export default function Page() {
           <div className="text-center">
             <Link
               href="/gallery"
-              className="inline-block border border-charcoal text-charcoal px-10 py-3 rounded-full hover:bg-charcoal hover:text-white transition-colors duration-300 font-sans text-[15px] tracking-wide"
+              className="inline-block border border-charcoal text-charcoal p-3 rounded-xl hover:bg-charcoal hover:text-white transition-colors duration-300 font-sans text-[15px]"
             >
-              Lihat Semua Koleksi
+              Cari tahu lebih banyak →
             </Link>
           </div>
         </div>
       </section>
+
+      <TrustedArtists />
 
       <FloatingWA />
     </main>

@@ -11,7 +11,8 @@ export default function Contact() {
           </h2>
           <div className="w-30 h-[2px] bg-black mx-auto rounded-full" />
           <p className="text-charcoal/70 max-w-lg mx-auto text-sm md:text-base pt-1">
-            anda bisa menghubungi kami untuk informasi lebih lanjut tentang jasa makeup kami
+            anda bisa menghubungi kami untuk informasi lebih lanjut tentang jasa
+            makeup kami
           </p>
         </div>
 
@@ -76,33 +77,6 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Email */}
-            <div className="flex items-start gap-4">
-              <div className="w-11 h-11 md:w-12 md:h-12 bg-black/10 rounded-xl flex items-center justify-center shrink-0">
-                <svg
-                  className="w-5 h-5 text-black"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <p className="text-charcoal font-semibold text-sm md:text-base">
-                  Email
-                </p>
-                <p className="text-charcoal/60 text-sm mt-0.5">
-                  hello@nuryantimua.com
-                </p>
-              </div>
-            </div>
-
             {/* Hours */}
             <div className="flex items-start gap-4">
               <div className="w-11 h-11 md:w-12 md:h-12 bg-black/10 rounded-xl flex items-center justify-center shrink-0">
@@ -124,9 +98,7 @@ export default function Contact() {
                 <p className="text-charcoal font-semibold text-sm md:text-base">
                   Jam Operasional
                 </p>
-                <p className="text-charcoal/60 text-sm mt-0.5">
-                  Senin — Minggu: 08:00 — 21:00 WIB
-                </p>
+                <p className="text-charcoal/60 text-sm mt-0.5">Setiap Hari</p>
               </div>
             </div>
 
@@ -149,21 +121,6 @@ export default function Contact() {
                     viewBox="0 0 24 24"
                   >
                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                  </svg>
-                </a>
-                <a
-                  href="https://tiktok.com/@nuryantimua"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 md:w-11 md:h-11 rounded-xl bg-charcoal/5 hover:bg-black/10 flex items-center justify-center text-charcoal/60 hover:text-black transition-all"
-                  aria-label="TikTok"
-                >
-                  <svg
-                    className="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.49a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.73a8.19 8.19 0 004.76 1.52v-3.4a4.85 4.85 0 01-1-.16z" />
                   </svg>
                 </a>
                 <a
@@ -198,7 +155,7 @@ export default function Contact() {
                 </svg>
               </div>
               <h3 className="text-charcoal text-xl md:text-2xl font-serif font-bold">
-                Konsultasi Gratis
+                Butuh bantuan? Segera konsultasi dengan kami!
               </h3>
               <p className="text-charcoal/70 text-sm leading-relaxed">
                 Chat langsung via WhatsApp untuk diskusi kebutuhan makeup Anda.
@@ -207,15 +164,15 @@ export default function Contact() {
             </div>
 
             <a
-              href="https://wa.me/6281234567890?text=Halo%20Nuryanti%20MUA,%20saya%20ingin%20konsultasi%20gratis%20tentang%20layanan%20makeup."
+              href="https://wa.me/628568890683?"
               className="block bg-black hover:bg-black/80 text-white text-center py-3.5 md:py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl text-sm md:text-base"
             >
-              Chat via WhatsApp →
+              Klik di sini untuk konsultasi gratis!
             </a>
 
             <div className="text-center">
               <p className="text-charcoal/50 text-xs">
-                Respon rata-rata dalam 15 menit
+                Respon rata-rata dalam 5 - 10 menit
               </p>
             </div>
           </div>

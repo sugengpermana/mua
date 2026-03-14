@@ -60,8 +60,9 @@ export default function Services() {
           </h2>
           <div className="w-30 h-[2px] bg-black mx-auto rounded-full" />
           <p className="text-charcoal/70 max-w-lg mx-auto text-sm md:text-base pt-1 mt-4">
-             Kami Menyediakan jasa makeup yang murah dan cocok untuk anda
-             untuk berbagai acara seperti wedding, prewedding, photoshoot, dan event spesial lainnya
+            Kami Menyediakan jasa makeup yang murah dan cocok untuk anda untuk
+            berbagai acara seperti wedding, prewedding, photoshoot, dan event
+            spesial lainnya
           </p>
         </div>
 
@@ -95,8 +96,79 @@ export default function Services() {
           ))}
         </div>
 
+        {/* Makeup Package Details */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 mb-24 px-4 md:px-12">
+          {/* Left Column: Services list */}
+          <div>
+            <h3 className="text-3xl md:text-4xl font-serif text-[#8B5E5C] text-center mb-8 leading-snug">
+              Makeup Package
+              <br />
+              Bronze & Gold
+            </h3>
+            <ul className="flex flex-col gap-4 text-[17px] text-charcoal/80">
+              {[
+                "Prewedding",
+                "Engagement / Sangjit",
+                "Wedding",
+                "Mature (Mama) of Bride",
+                "Mature (Tante) of Bride",
+                "Sister of Bride",
+                "Bridesmaid of Bride",
+                "Angpao Girls of Bride",
+                "Photoshoot for Event",
+                "Graduation / Wisuda",
+              ].map((item, i) => (
+                <li key={i} className="border-b border-black/10 pb-3 pl-2">
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Right Column: T&C and Packages */}
+          <div className="flex flex-col gap-10">
+            <div>
+              <h3 className="text-3xl md:text-4xl font-serif text-[#8B5E5C] text-center mb-6">
+                Syarat & Ketentuan
+              </h3>
+              <ul className="list-disc list-outside space-y-3 text-[17px] text-charcoal/80 ml-6">
+                <li>DP Minimal 30% Dari Total Layanan</li>
+                <li>Pelunasan Maksimal H-1 Acara</li>
+                <li>Harga Layanan Belum Termasuk Transport</li>
+                <li>Bisa Melakukan Reschedule Maksimal 1x</li>
+                <li>DP Tidak Bisa di Refund</li>
+              </ul>
+            </div>
+
+            <div className="mt-2">
+              <h3 className="text-3xl md:text-4xl font-serif text-[#8B5E5C] text-center mb-6">
+                Bronze Package
+              </h3>
+              <ul className="list-disc list-outside space-y-3 text-[17px] text-charcoal/80 ml-6">
+                <li>Bronze Package No Standby & No Retouch</li>
+              </ul>
+            </div>
+
+            <div className="mt-2">
+              <h3 className="text-3xl md:text-4xl font-serif text-[#8B5E5C] text-center mb-6">
+                Gold Package
+              </h3>
+              <ul className="list-disc list-outside space-y-3 text-[17px] text-charcoal/80 ml-6">
+                <li>Retouch Makeup Dan Hairdo (1x)</li>
+                <li>Standby (Sesuai Kesepakatan)</li>
+                <li>
+                  Pilihan Mahkota / Hairpiece / Aksesoris (Bisa Dipilih Saat
+                  Fitting / Konsultasi H-1 Bulan)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-20 md:w-140 h-[3px] bg-black mx-auto rounded-full" />
+
         {/* Track Record Stats — Individual Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-6 mt-10">
           {trackRecordStats.map((stat, index) => (
             <div
               key={index}
@@ -110,6 +182,25 @@ export default function Services() {
               </p>
             </div>
           ))}
+        </div>
+
+        <div className="text-center pb-10 mt-12">
+          <Link
+            href="https://wa.me/628568890683"
+            className="border border-charcoal text-charcoal px-5 py-3 flex justify-center items-center w-fit mx-auto  gap-2 rounded-xl hover:bg-charcoal hover:text-white transition-colors duration-300 font-sans text-[15px]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M16 2a1 1 0 0 1 .993 .883l.007 .117v1h1a3 3 0 0 1 2.995 2.824l.005 .176v12a3 3 0 0 1 -2.824 2.995l-.176 .005h-12a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-12a3 3 0 0 1 2.824 -2.995l.176 -.005h1v-1a1 1 0 0 1 1.993 -.117l.007 .117v1h6v-1a1 1 0 0 1 1 -1m3 8h-14v8.625c0 .705 .386 1.286 .883 1.366l.117 .009h12c.513 0 .936 -.53 .993 -1.215l.007 -.16zm-9 4a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1z" />
+            </svg>
+            Make an Appointment Now
+          </Link>
         </div>
       </div>
     </section>

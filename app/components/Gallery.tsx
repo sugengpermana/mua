@@ -22,7 +22,8 @@ export default function Gallery() {
           </h2>
           <div className="w-30 h-[2px] bg-black mx-auto rounded-full" />
           <p className="text-charcoal/70 max-w-lg mx-auto text-sm md:text-base pt-1">
-            anda bisa mencari refrensi yang cocok dari beberapa kategori yang kami sediakan
+            anda bisa mencari refrensi yang cocok dari beberapa kategori yang
+            kami sediakan
           </p>
         </div>
 
@@ -112,27 +113,30 @@ export default function Gallery() {
 
         {/* CTA */}
         <div className="text-center mt-12 md:mt-16">
-          <a
+          <Link
             href="https://instagram.com/nuryantimua"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-black font-semibold hover:text-black/60 transition-colors text-sm"
+            className="border border-charcoal text-charcoal px-5 py-3 flex justify-center items-center w-fit mx-auto  gap-2 rounded-xl hover:bg-charcoal hover:text-white transition-colors duration-300 font-sans text-[15px]"
           >
-            Follow on Instagram for more
             <svg
-              className="w-4 h-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4l0 -8" />
+              <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+              <path d="M16.5 7.5v.01" />
             </svg>
-          </a>
+            kunjungi instagram kami
+          </Link>
         </div>
       </div>
     </section>

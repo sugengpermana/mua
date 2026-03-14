@@ -23,13 +23,13 @@ const desktopLinks = [
 ];
 
 const mobileLinks = [
-  { name: "Home", href: "/" },
+  { name: "Gallery", href: "/gallery" },
+  { name: "Services", href: "/services" },
   { name: "- Makeup Wisuda", href: "/services#wisuda" },
   { name: "- Wedding", href: "/services#wedding" },
   { name: "- Prewedding", href: "/services#prewedding" },
   { name: "- Photoshoot", href: "/services#photoshoot" },
   { name: "- Engagement", href: "/services#engagement" },
-  { name: "Contact Us", href: "/contact" },
 ];
 
 export default function Navbar() {
