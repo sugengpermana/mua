@@ -11,8 +11,7 @@ export default function Contact() {
           </h2>
           <div className="w-30 h-[2px] bg-black mx-auto rounded-full" />
           <p className="text-charcoal/70 max-w-lg mx-auto text-sm md:text-base pt-1">
-            Siap membantu Anda tampil cantik di hari spesial. Hubungi kami untuk
-            konsultasi gratis!
+            anda bisa menghubungi kami untuk informasi lebih lanjut tentang jasa makeup kami
           </p>
         </div>
 

@@ -86,8 +86,8 @@ export default function Navbar() {
                 className={`flex items-center gap-1 relative px-4 py-2 text-sm font-medium tracking-wide transition-colors rounded-full ${
                   pathname === link.href ||
                   (link.href !== "/" && pathname.startsWith(link.href))
-                    ? "text-primary"
-                    : "text-white/70 hover:text-white"
+                    ? "text-white"
+                    : "text-white/60 hover:text-white"
                 }`}
               >
                 {link.name}

@@ -22,7 +22,7 @@ export default function Gallery() {
           </h2>
           <div className="w-30 h-[2px] bg-black mx-auto rounded-full" />
           <p className="text-charcoal/70 max-w-lg mx-auto text-sm md:text-base pt-1">
-            Kami memberikan referensi makeup untuk anda
+            anda bisa mencari refrensi yang cocok dari beberapa kategori yang kami sediakan
           </p>
         </div>
 

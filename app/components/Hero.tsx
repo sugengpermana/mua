@@ -76,14 +76,14 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-5 md:px-8 text-center space-y-6 md:space-y-8 pt-20 mb-30">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-serif text-white leading-[1.1] animate-fade-in-up">
-          Makeup Beauty by <span className="italic">Nuryanti</span>
+          Makeup Artist by <span className="italic">Nuryanti</span>
         </h1>
 
         <p
           className="text-sm md:text-lg lg:text-2xl text-white/70 max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-200"
           style={{ animationFillMode: "backwards", animationDelay: "0.3s" }}
         >
-          Kami menyediakan makeup profesional untuk wedding, engagement,
+          Kami Menyediakan makeup profesional untuk wedding, engagement,
           photoshoot, dan event spesial lainnya dengan sentuhan makeup
           profesional, kami membantu kamu tampil percaya diri, cantik dan
           flawless
