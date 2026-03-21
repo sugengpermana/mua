@@ -85,7 +85,7 @@ export default function Gallery() {
                     <img
                       src={item.src}
                       alt={item.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform vduration-700"
                       loading="lazy"
                     />
                   )}

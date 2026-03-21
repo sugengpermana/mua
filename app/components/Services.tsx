@@ -60,9 +60,9 @@ export default function Services() {
           </h2>
           <div className="w-30 h-[2px] bg-black mx-auto rounded-full" />
           <p className="text-charcoal/70 max-w-lg mx-auto text-sm md:text-base pt-1 mt-4">
-            Kami Menyediakan jasa makeup yang murah dan cocok untuk anda untuk
-            berbagai acara seperti wedding, prewedding, photoshoot, dan event
-            spesial lainnya
+            Kami Menyediakan jasa makeup yang murah dan cocok untuk berbagai
+            acara seperti wedding, prewedding, photoshoot, dan event spesial
+            lainnya
           </p>
         </div>
 
