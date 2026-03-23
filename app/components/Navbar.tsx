@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const desktopLinks = [
@@ -25,6 +26,7 @@ const desktopLinks = [
 const mobileLinks = [
   { name: "Gallery", href: "/gallery" },
   { name: "Services", href: "/services" },
+  { name: "About us", href: "/about" },
   { name: "- Makeup Wisuda", href: "/services#wisuda" },
   { name: "- Wedding", href: "/services#wedding" },
   { name: "- Prewedding", href: "/services#prewedding" },
@@ -64,12 +66,16 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-5 md:px-8 flex justify-between items-center">
         <Link
           href="/"
-          className="text-lg md:text-xl lg:text-2xl font-serif font-bold tracking-[0.2em] text-white hover:opacity-80 transition-opacity z-50"
+          className="hover:opacity-80 transition-opacity z-50"
         >
-          <span className="md:hidden">NURY</span>
-          <span className="hidden md:inline">
-            NURYANTI<span className="font-light"> MUA</span>
-          </span>
+          <Image
+            src="/remove.png"
+            alt="Nuryanti MUA"
+            width={120}
+            height={40}
+            className="h-8 md:h-10 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}

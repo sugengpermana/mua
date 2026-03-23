@@ -77,6 +77,7 @@ export default function Services() {
                 <img
                   src={service.image}
                   alt={service.title}
+                  loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 {/* Hover overlay */}
@@ -90,7 +91,6 @@ export default function Services() {
                 <h3 className="text-lg md:text-xl font-sans text-charcoal font-medium mb-2">
                   {service.title}
                 </h3>
-                <p className="text-muted text-sm">{service.startingPrice}</p>
               </div>
             </Link>
           ))}
@@ -101,32 +101,32 @@ export default function Services() {
           {/* Left Column: Services list */}
           <div>
             <h3 className="text-3xl md:text-4xl font-serif text-[#8B5E5C] text-center mb-8 leading-snug">
-              Makeup Package
-              <br />
-              Bronze & Gold
+              List Makeup
             </h3>
             <ul className="flex flex-col gap-4 text-[17px] text-charcoal/80">
               {[
-                "Prewedding",
-                "Engagement / Sangjit",
-                "Wedding",
-                "Mature (Mama) of Bride",
-                "Mature (Tante) of Bride",
-                "Sister of Bride",
-                "Bridesmaid of Bride",
-                "Angpao Girls of Bride",
-                "Photoshoot for Event",
-                "Graduation / Wisuda",
+                { name: "Prewedding", badge: "Ready" },
+                { name: "Engagement" },
+                { name: "Wedding" },
+                { name: "Photoshoot for Event" },
+                { name: "Graduation" },
+                { name: "Makeup Party" },
+                { name: "Course Makeup" },
               ].map((item, i) => (
-                <li key={i} className="border-b border-black/10 pb-3 pl-2">
-                  {item}
+                <li key={i} className="border-b border-black/10 pb-3 pl-2 flex items-center justify-between">
+                  {item.name}
+                  {item.badge && (
+                    <span className="bg-emerald-500 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+                      {item.badge}
+                    </span>
+                  )}
                 </li>
               ))}
             </ul>
           </div>
 
           {/* Right Column: T&C and Packages */}
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-10 mt-3">
             <div>
               <h3 className="text-3xl md:text-4xl font-serif text-[#8B5E5C] text-center mb-6">
                 Syarat & Ketentuan
@@ -139,33 +139,10 @@ export default function Services() {
                 <li>DP Tidak Bisa di Refund</li>
               </ul>
             </div>
-
-            <div className="mt-2">
-              <h3 className="text-3xl md:text-4xl font-serif text-[#8B5E5C] text-center mb-6">
-                Bronze Package
-              </h3>
-              <ul className="list-disc list-outside space-y-3 text-[17px] text-charcoal/80 ml-6">
-                <li>Bronze Package No Standby & No Retouch</li>
-              </ul>
-            </div>
-
-            <div className="mt-2">
-              <h3 className="text-3xl md:text-4xl font-serif text-[#8B5E5C] text-center mb-6">
-                Gold Package
-              </h3>
-              <ul className="list-disc list-outside space-y-3 text-[17px] text-charcoal/80 ml-6">
-                <li>Retouch Makeup Dan Hairdo (1x)</li>
-                <li>Standby (Sesuai Kesepakatan)</li>
-                <li>
-                  Pilihan Mahkota / Hairpiece / Aksesoris (Bisa Dipilih Saat
-                  Fitting / Konsultasi H-1 Bulan)
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
 
-        <div className="w-20 md:w-140 h-[3px] bg-black mx-auto rounded-full" />
+        <div className="w-50 md:w-140 h-[2px] bg-black mx-auto rounded-full" />
 
         {/* Track Record Stats — Individual Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-6 mt-10">
