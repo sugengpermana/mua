@@ -106,11 +106,11 @@ export default function TrustedArtists() {
 
       <div className="max-w-7xl mx-auto px-5 md:px-8 relative z-10">
         <div className="text-center mb-14 space-y-4">
-          <h2 className="text-3xl md:text-[42px] font-serif font-medium tracking-wide leading-tight">
+          <h2 className="text-3xl md:text-[42px] font-serif font-medium tracking-wide leading-tight animate-fade-in-up delay-100">
             Dipercaya Oleh Artis Terkenal
           </h2>
 
-          <p className="text-white/50 text-sm md:text-base max-w-lg mx-auto">
+          <p className="text-white/50 text-sm md:text-base max-w-lg mx-auto animate-fade-in-up delay-200">
             Koleksi Foto Make up Kami, Bersama Artis Terkenal
           </p>
         </div>
@@ -122,7 +122,7 @@ export default function TrustedArtists() {
           onMouseUp={handleMouseUp}
           onMouseLeave={handleMouseLeave}
           onMouseMove={handleMouseMove}
-          className={`flex gap-5 overflow-x-auto pb-4 scrollbar-hide ${
+          className={`flex gap-5 overflow-x-auto pb-4 scrollbar-hide animate-fade-in-up ${
             isDragging ? "cursor-grabbing" : "cursor-grab"
           }`}
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
@@ -166,7 +166,7 @@ export default function TrustedArtists() {
         </div>
 
         {/* Scroll hint */}
-        <div className="flex justify-center mt-6 gap-1.5">
+        <div className="flex justify-center mt-6 gap-1.5 ">
           {galleryPhotos.map((_, i) => (
             <div key={i} className="w-8 h-1 bg-white/15 rounded-full" />
           ))}

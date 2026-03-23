@@ -38,15 +38,13 @@ export default function About() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 md:gap-8 pt-4 border-t border-black/10">
               <div>
-                <p className="text-2xl md:text-3xl font-serif text-black font-bold">
-                  13+
-                </p>
+                <p className="text-xl md:text-3xl text-black font-bold">13+</p>
                 <p className="text-xs text-black/50 uppercase tracking-wider mt-1">
                   experience
                 </p>
               </div>
               <div>
-                <p className="text-2xl md:text-3xl font-serif text-black font-bold">
+                <p className="text-xl md:text-3xl text-black font-bold">
                   2248+
                 </p>
                 <p className="text-xs text-black/50 uppercase tracking-wider mt-1">
@@ -54,9 +52,7 @@ export default function About() {
                 </p>
               </div>
               <div>
-                <p className="text-2xl md:text-3xl font-serif text-black font-bold">
-                  98%
-                </p>
+                <p className="text-xl md:text-3xl text-black font-bold">98%</p>
                 <p className="text-xs text-black/50 uppercase tracking-wider mt-1">
                   happy client
                 </p>

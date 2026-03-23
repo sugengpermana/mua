@@ -14,17 +14,17 @@ export default function Page() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-5 md:px-8">
           <div className="text-center mb-16 space-y-3">
-            <h2 className="text-3xl md:text-[40px] font-sans text-charcoal font-normal tracking-wide">
+            <h2 className="text-3xl md:text-[40px] font-sans text-charcoal font-normal tracking-wide animate-fade-in-up delay-100">
               Best Portfolio
             </h2>
-            <div className="w-16 h-[2px] bg-black mx-auto rounded-full" />
-            <p className="text-muted max-w-lg mx-auto text-sm md:text-base pt-1">
+            <div className="w-16 h-[2px] bg-black mx-auto rounded-full animate-fade-in-up delay-200" />
+            <p className="text-muted max-w-lg mx-auto text-sm md:text-base pt-1 animate-fade-in-up delay-400">
               Lihat beberapa koleksi tampilan makeup terbaik kami untuk berbagai
               acara spesial.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16 animate-fade-in-up delay-600">
             {featuredWorks.map((work, index) => (
               <Link
                 href={`/gallery/${work.slug}`}
@@ -54,7 +54,7 @@ export default function Page() {
           <div className="text-center">
             <Link
               href="/gallery"
-              className="inline-block border border-charcoal text-charcoal p-3 rounded-xl hover:bg-charcoal hover:text-white transition-colors duration-300 font-sans text-[15px]"
+              className="inline-block border border-charcoal text-charcoal p-3 rounded-xl hover:bg-charcoal hover:text-white transition-colors duration-300 font-sans text-[15px] animate-fade-in-up delay-800"
             >
               Cari tahu lebih banyak →
             </Link>

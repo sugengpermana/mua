@@ -165,7 +165,7 @@ export default function Contact() {
 
             <a
               href="https://wa.me/628568890683?"
-              className="block bg-black hover:bg-black/80 text-white text-center py-3.5 md:py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl text-sm md:text-base"
+              className="block bg-black hover:bg-black/80 text-white text-center py-3.5 md:py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl text-xs md:text-sm lg:text-base"
             >
               Klik di sini untuk konsultasi gratis!
             </a>
