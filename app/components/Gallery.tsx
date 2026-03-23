@@ -13,12 +13,12 @@ export default function Gallery() {
   }, [activeCategory]);
 
   return (
-    <section id="gallery" className="py-20 bg-white">
+    <section id="gallery" className="section-padding bg-white">
       <div className="max-w-7xl mx-auto px-5 md:px-8">
         {/* Header */}
         <div className="text-center mb-10 md:mb-14 lg:mt-16 space-y-3">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-charcoal">
-            Our Portfolio
+            Portfolio Kami
           </h2>
           <div className="w-30 h-[2px] bg-black mx-auto rounded-full" />
           <p className="text-charcoal/70 max-w-lg mx-auto text-sm md:text-base pt-1">

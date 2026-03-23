@@ -76,16 +76,9 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-5 md:px-8 text-center space-y-6 md:space-y-8 pt-10 mb-30 flex flex-col items-center">
-        <Image
-          src="/remove.png"
-          alt="Nuryanti MUA"
-          width={400}
-          height={130}
-          className="w-[250px] md:w-[350px] lg:w-[400px] h-auto animate-fade-in-up"
-          priority
-        />
-        <p className="text-white/70 text-sm md:text-base tracking-[0.25em] uppercase font-sans animate-fade-in-up delay-200">
-          Professional Makeup Artist
+        <p className="text-white/70 text-sm md:text-base lg:text-xl tracking-[0.25em] uppercase font-sans animate-fade-in-up delay-200">
+          Professional Makeup by{" "}
+          <span className="text-white font-bold">Nuryanti</span>
         </p>
       </div>
     </section>

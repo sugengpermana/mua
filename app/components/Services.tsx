@@ -51,15 +51,15 @@ function AnimatedCounter({
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="section-padding bg-white">
       <div className="max-w-7xl mx-auto px-5 md:px-8">
         {/* Makeup Artist Service Categories */}
-        <div className="text-center mb-16 lg:mt-16">
-          <h2 className="text-3xl md:text-[40px] font-sans text-charcoal font-normal tracking-wide mb-2">
+        <div className="text-center mb-10 md:mb-14 lg:mt-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-sans text-charcoal mb-3">
             Paket & Layanan
           </h2>
           <div className="w-30 h-[2px] bg-black mx-auto rounded-full" />
-          <p className="text-charcoal/70 max-w-lg mx-auto text-sm md:text-base pt-1 mt-4">
+          <p className="text-charcoal/70 max-w-2xl mx-auto text-sm md:text-base pt-1 mt-4">
             Kami Menyediakan jasa makeup yang murah dan cocok untuk berbagai
             acara seperti wedding, prewedding, photoshoot, dan event spesial
             lainnya
@@ -97,7 +97,7 @@ export default function Services() {
         </div>
 
         {/* Makeup Package Details */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 mb-24 px-4 md:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 mb-16 px-4 md:px-12">
           {/* Left Column: Services list */}
           <div>
             <h3 className="text-3xl md:text-4xl font-serif text-[#8B5E5C] text-center mb-8 leading-snug">
@@ -106,14 +106,17 @@ export default function Services() {
             <ul className="flex flex-col gap-4 text-[17px] text-charcoal/80">
               {[
                 { name: "Prewedding", badge: "Ready" },
-                { name: "Engagement" },
-                { name: "Wedding" },
-                { name: "Photoshoot for Event" },
-                { name: "Graduation" },
-                { name: "Makeup Party" },
-                { name: "Course Makeup" },
+                { name: "Engagement", badge: "Ready" },
+                { name: "Wedding", badge: "Ready" },
+                { name: "Photoshoot for Event", badge: "Ready" },
+                { name: "Graduation", badge: "Ready" },
+                { name: "Makeup Party", badge: "Ready" },
+                { name: "Course Makeup", badge: "Ready" },
               ].map((item, i) => (
-                <li key={i} className="border-b border-black/10 pb-3 pl-2 flex items-center justify-between">
+                <li
+                  key={i}
+                  className="border-b border-black/10 pb-3 pl-2 flex items-center justify-between"
+                >
                   {item.name}
                   {item.badge && (
                     <span className="bg-emerald-500 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
@@ -139,27 +142,12 @@ export default function Services() {
                 <li>DP Tidak Bisa di Refund</li>
               </ul>
             </div>
+
+            <div></div>
           </div>
         </div>
 
-        <div className="w-50 md:w-140 h-[2px] bg-black mx-auto rounded-full" />
-
-        {/* Track Record Stats — Individual Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-6 mt-10">
-          {trackRecordStats.map((stat, index) => (
-            <div
-              key={index}
-              className="border border-black/10 rounded-2xl p-8 md:p-10 text-center hover:border-black/25 hover:shadow-card transition-all duration-300 bg-white"
-            >
-              <p className="text-4xl md:text-5xl font-serif font-bold text-charcoal mb-3">
-                <AnimatedCounter target={stat.value} suffix={stat.suffix} />
-              </p>
-              <p className="text-muted text-sm md:text-base tracking-wide uppercase font-medium">
-                {stat.label}
-              </p>
-            </div>
-          ))}
-        </div>
+        <div className="w-50 md:w-100 h-[2px] bg-black mx-auto rounded-full" />
 
         <div className="text-center pb-10 mt-12">
           <Link

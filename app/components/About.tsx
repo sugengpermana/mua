@@ -13,10 +13,8 @@ export default function About() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
-
           {/* Description Right */}
           <div className="space-y-6 md:space-y-8 order-1 md:order-2">
-            
             <div className="space-y-4 text-black/70 leading-relaxed text-sm md:text-base">
               <p>
                 Halo, saya <strong className="text-black">Nuryanti</strong>.
@@ -41,26 +39,26 @@ export default function About() {
             <div className="grid grid-cols-3 gap-4 md:gap-8 pt-4 border-t border-black/10">
               <div>
                 <p className="text-2xl md:text-3xl font-serif text-black font-bold">
-                  5+
+                  13+
                 </p>
                 <p className="text-xs text-black/50 uppercase tracking-wider mt-1">
-                  Tahun
+                  experience
                 </p>
               </div>
               <div>
                 <p className="text-2xl md:text-3xl font-serif text-black font-bold">
-                  500+
+                  2248+
                 </p>
                 <p className="text-xs text-black/50 uppercase tracking-wider mt-1">
-                  Klien
+                  client
                 </p>
               </div>
               <div>
                 <p className="text-2xl md:text-3xl font-serif text-black font-bold">
-                  4.9/5
+                  98%
                 </p>
                 <p className="text-xs text-black/50 uppercase tracking-wider mt-1">
-                  Rating
+                  happy client
                 </p>
               </div>
             </div>
@@ -107,17 +105,17 @@ export default function About() {
             </p>
             <p>
               Di tahun pertama, saya belajar otodidak melalui ratusan video
-              tutorial, berlatih pada teman-teman dan keluarga. Tekad untuk terus
-              berkembang membawa saya mengikuti kursus profesional dan mendapatkan
-              sertifikasi resmi.
+              tutorial, berlatih pada teman-teman dan keluarga. Tekad untuk
+              terus berkembang membawa saya mengikuti kursus profesional dan
+              mendapatkan sertifikasi resmi.
             </p>
             <p>
               Kini, setelah <strong className="text-black">5+ tahun</strong> dan{" "}
-              <strong className="text-black">500+ klien</strong>, setiap sentuhan
-              kuas bukan lagi sekadar pekerjaan — melainkan dedikasi untuk membuat
-              setiap wanita merasa percaya diri dan cantik di hari terpenting mereka.
-              Dari rias wisuda hingga akad nikah sakral, saya hadir untuk mewujudkan
-              tampilan impian Anda.
+              <strong className="text-black">500+ klien</strong>, setiap
+              sentuhan kuas bukan lagi sekadar pekerjaan — melainkan dedikasi
+              untuk membuat setiap wanita merasa percaya diri dan cantik di hari
+              terpenting mereka. Dari rias wisuda hingga akad nikah sakral, saya
+              hadir untuk mewujudkan tampilan impian Anda.
             </p>
           </div>
         </div>
@@ -135,8 +133,18 @@ export default function About() {
             {[
               {
                 icon: (
-                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+                  <svg
+                    className="w-7 h-7"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
+                    />
                   </svg>
                 ),
                 title: "Produk Premium",
@@ -144,8 +152,18 @@ export default function About() {
               },
               {
                 icon: (
-                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.438 60.438 0 00-.491 6.347A48.62 48.62 0 0112 20.904a48.62 48.62 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.636 50.636 0 00-2.658-.813A59.906 59.906 0 0112 3.493a59.903 59.903 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                  <svg
+                    className="w-7 h-7"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M4.26 10.147a60.438 60.438 0 00-.491 6.347A48.62 48.62 0 0112 20.904a48.62 48.62 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.636 50.636 0 00-2.658-.813A59.906 59.906 0 0112 3.493a59.903 59.903 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
+                    />
                   </svg>
                 ),
                 title: "Bersertifikasi",
@@ -153,8 +171,18 @@ export default function About() {
               },
               {
                 icon: (
-                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                  <svg
+                    className="w-7 h-7"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                    />
                   </svg>
                 ),
                 title: "Personal Touch",
@@ -162,9 +190,23 @@ export default function About() {
               },
               {
                 icon: (
-                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  <svg
+                    className="w-7 h-7"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                    />
                   </svg>
                 ),
                 title: "On-Location Service",

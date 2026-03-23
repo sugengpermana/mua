@@ -1,5 +1,5 @@
 import Hero from "./components/Hero";
-import BrandCarousel from "./components/BrandCarousel";
+import BrandCarousel from "./components/liveStatHome";
 import FloatingWA from "./components/FloatingWA";
 import TrustedArtists from "./components/TrustedArtists";
 import Link from "next/link";

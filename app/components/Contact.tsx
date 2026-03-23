@@ -3,10 +3,10 @@
 export default function Contact() {
   return (
     <section id="contact" className="section-padding bg-white">
-      <div className="max-w-7xl mx-auto px-5 md:px-8">
+      <div className="max-w-7xl mx-auto px-5 md:px-8 ">
         {/* Header */}
-        <div className="text-center mb-10 md:mb-14 space-y-3">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-charcoal">
+        <div className="text-center mb-10 md:mb-14 space-y-3 lg:mt-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-charcoal mb-3">
             Hubungi Kami
           </h2>
           <div className="w-30 h-[2px] bg-black mx-auto rounded-full" />
