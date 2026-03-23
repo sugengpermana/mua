@@ -77,8 +77,12 @@ export default function TrustedArtists() {
 
     animationId = requestAnimationFrame(autoScroll);
 
-    const pause = () => { paused = true; };
-    const resume = () => { paused = false; };
+    const pause = () => {
+      paused = true;
+    };
+    const resume = () => {
+      paused = false;
+    };
 
     el.addEventListener("mouseenter", pause);
     el.addEventListener("mouseleave", resume);
@@ -102,17 +106,12 @@ export default function TrustedArtists() {
 
       <div className="max-w-7xl mx-auto px-5 md:px-8 relative z-10">
         <div className="text-center mb-14 space-y-4">
-          <p className="text-primary font-semibold tracking-widest uppercase text-sm md:text-base">
-            Galeri Momen
-          </p>
           <h2 className="text-3xl md:text-[42px] font-serif font-medium tracking-wide leading-tight">
-            Momen Bersama <br className="hidden md:block" />
-            <span className="italic font-light">Klien Tercinta</span>
+            Dipercaya Oleh Artis Terkenal
           </h2>
-          <div className="w-16 h-[2px] bg-primary mx-auto rounded-full mt-6" />
+
           <p className="text-white/50 text-sm md:text-base max-w-lg mx-auto">
-            Koleksi foto landscape bersama artis dan klien yang telah saya rias.
-            Geser untuk melihat lebih banyak.
+            Koleksi Foto Make up Kami, Bersama Artis Terkenal
           </p>
         </div>
 
@@ -123,7 +122,7 @@ export default function TrustedArtists() {
           onMouseUp={handleMouseUp}
           onMouseLeave={handleMouseLeave}
           onMouseMove={handleMouseMove}
-          className={`flex gap-5 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory ${
+          className={`flex gap-5 overflow-x-auto pb-4 scrollbar-hide ${
             isDragging ? "cursor-grabbing" : "cursor-grab"
           }`}
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
@@ -147,11 +146,19 @@ export default function TrustedArtists() {
                   {photo.caption}
                 </p>
                 <div className="flex items-center gap-1.5 mt-1.5">
-                  <svg className="w-3.5 h-3.5 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  <svg
+                    className="w-3.5 h-3.5 text-white/60"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                  >
+                    <path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                   </svg>
-                  <span className="text-white/60 text-xs tracking-wide">{photo.location}</span>
+                  <span className="text-white/60 text-xs tracking-wide">
+                    {photo.location}
+                  </span>
                 </div>
               </div>
             </div>

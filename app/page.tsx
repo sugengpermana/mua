@@ -1,7 +1,7 @@
 import Hero from "./components/Hero";
 import BrandCarousel from "./components/liveStatHome";
 import FloatingWA from "./components/FloatingWA";
-import TrustedArtists from "./components/TrustedArtists";
+import TrustedArtists from "./components/FotoArtist";
 import Link from "next/link";
 import { featuredWorks } from "./data/portfolio";
 

@@ -71,7 +71,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-10 md:mt-14 pt-6 md:pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4 text-white/30 text-xs">
+        <div className="mt-8 md:mt-12 pt-6 md:pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-around items-center gap-4 text-white/80 text-xs md:text-sm">
           <p>
             &copy; {new Date().getFullYear()} Nuryanti MUA. All rights reserved.
           </p>
