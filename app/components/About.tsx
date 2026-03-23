@@ -6,16 +6,16 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-5 md:px-8">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16 lg:mt-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-black">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-black animate-fade-in-up delay-100">
             Tentang Saya
           </h2>
-          <div className="w-35 h-0.5 bg-black mx-auto mt-4 rounded-full" />
+          <div className="w-35 h-0.5 bg-black mx-auto mt-4 rounded-full animate-fade-in-up delay-200" />
         </div>
 
         <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
           {/* Description Right */}
           <div className="space-y-6 md:space-y-8 order-1 md:order-2">
-            <div className="space-y-4 text-black/70 leading-relaxed text-sm md:text-base">
+            <div className="space-y-4 text-black/70 leading-relaxed text-sm md:text-base animate-fade-in-up delay-300">
               <p>
                 Halo, saya <strong className="text-black">Nuryanti</strong>.
                 Berawal dari kecintaan pada dunia seni dan kecantikan, saya
@@ -36,7 +36,7 @@ export default function About() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 md:gap-8 pt-4 border-t border-black/10">
+            <div className="grid grid-cols-3 gap-4 md:gap-8 pt-4 border-t border-black/10 animate-fade-in-up delay-400">
               <div>
                 <p className="text-xl md:text-3xl text-black font-bold">13+</p>
                 <p className="text-xs text-black/50 uppercase tracking-wider mt-1">
@@ -62,7 +62,7 @@ export default function About() {
 
           {/* Photo Left */}
           <div className="relative order-2 md:order-1">
-            <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl aspect-4/4 max-w-md mx-auto">
+            <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl aspect-4/4 max-w-md mx-auto animate-fade-in-left delay-500">
               <img
                 src="profile.jpeg"
                 alt="Nuryanti - Professional Makeup Artist"
