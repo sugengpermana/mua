@@ -1,12 +1,14 @@
 export const categories = [
   "All",
   "Video",
-  "Prewedding",
   "Wedding",
-  "Photoshoot for Event",
-  "Graduation / Wisuda",
-  "Sweet Seventeen",
+  "Prewedding",
+  "Wisuda",
+  "Engagement",
+  "Photoshoot",
+  "Makeup Daily",
   "Makeup Party",
+  "Makeup Character",
 ];
 
 export const portfolioItems = [
@@ -23,9 +25,8 @@ export const portfolioItems = [
   {
     id: "elegant-makeup-tutorial",
     type: "video",
-    src: "https://cdn.pixabay.com/video/2021/08/23/85934-591866380_large.mp4",
-    poster:
-      "https://images.unsplash.com/photo-1595991209266-5126c15bf2f0?auto=format&fit=crop&q=80&w=800",
+    src: "/video/video-1.mp4",
+    poster: "/video/video-1.mp4",
     title: "Elegant Makeup Tutorial",
     category: "Video",
     aspect: "aspect-6",
@@ -136,43 +137,103 @@ export const portfolioItems = [
     description:
       "Riasan wisuda klasik yang timeless. Sangat mendukung penggunaan dress atau kebaya, tahan seharian meski cuaca panas.",
   },
+  {
+    id: "featured-wedding",
+    type: "image",
+    src: "/foto/foto-8.jpeg",
+    title: "Wedding",
+    category: "Wedding",
+    aspect: "aspect-[4/5]",
+    description:
+      "Tampil bak ratu di hari pernikahan Anda. Riasan flawless yang memikat, dirancang khusus untuk memancarkan pesona di hari spesial Anda.",
+  },
+  {
+    id: "featured-makeup-karakter",
+    type: "image",
+    src: "/foto/foto-1.jpeg",
+    title: "Makeup Karakter",
+    category: "Makeup Karakter",
+    aspect: "aspect-[4/5]",
+    description:
+      "Ekspresikan diri Anda dengan makeup karakter kreatif dan profesional kami. Cocok untuk acara tematik atau pentas seni.",
+  },
+  {
+    id: "featured-prewedding",
+    type: "image",
+    src: "/foto/foto-2.jpeg",
+    title: "Prewedding",
+    category: "Prewedding",
+    aspect: "aspect-[4/5]",
+    description:
+      "Konsep prewedding outdoor/indoor dengan sentuhan riasan flawless natural yang menonjolkan kecantikan alami Anda.",
+  },
+  {
+    id: "featured-engagement",
+    type: "image",
+    src: "/foto/foto-7.jpeg",
+    title: "Engagement",
+    category: "Engagement",
+    aspect: "aspect-[4/5]",
+    description:
+      "Tampil mempesona di hari lamaran dengan riasan elegan. Makeup hangat yang menyatu sempurna memberikan kesan anggun.",
+  },
+  {
+    id: "featured-party-makeup",
+    type: "image",
+    src: "/foto/foto-4.jpeg",
+    title: "Party Makeup",
+    category: "Makeup Party",
+    aspect: "aspect-[4/5]",
+    description:
+      "Tampil berani menawan di setiap acara pesta. Makeup dengan statement look yang tak terlupakan dan mencuri perhatian.",
+  },
+  {
+    id: "featured-photoshoot",
+    type: "image",
+    src: "/foto/foto-5.jpeg",
+    title: "PhotoShoot",
+    category: "Photoshoot for Event",
+    aspect: "aspect-[4/5]",
+    description:
+      "Layanan makeup khusus untuk kebutuhan photoshoot, studio, maupun komersial, menjamin penampilan memukau di depan lensa.",
+  },
 ];
 
 export const featuredWorks = [
   {
-    slug: "Akad Nikah",
-    title: "Akad Nikah",
+    slug: "featured-wedding",
+    title: "Wedding",
     category: "Wedding",
-    src: "https://images.unsplash.com/photo-1594462215124-91d1e463a429?auto=format&fit=crop&q=80&w=800",
+    src: "/foto/foto-8.jpeg",
   },
   {
-    slug: "fresh-graduation-glow",
-    title: "Fresh Graduation Glow",
-    category: "Wisuda",
-    src: "https://images.unsplash.com/photo-1523240715630-971c034747a2?auto=format&fit=crop&q=80&w=800",
+    slug: "featured-makeup-karakter",
+    title: "Makeup Karakter",
+    category: "Makeup Karakter",
+    src: "/foto/foto-1.jpeg",
   },
   {
-    slug: "Prewedding",
-    title: "Romantic Garden",
+    slug: "featured-prewedding",
+    title: "Prewedding",
     category: "Prewedding",
-    src: "https://images.unsplash.com/photo-1621607512214-68297480165e?auto=format&fit=crop&q=80&w=800",
+    src: "/foto/foto-2.jpeg",
   },
   {
-    slug: "elegant-engagement-look",
-    title: "Elegant Engagement",
+    slug: "featured-engagement",
+    title: "Engagement",
     category: "Engagement",
-    src: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=80&w=800",
+    src: "/foto/foto-7.jpeg",
   },
   {
-    slug: "bold-party-makeup",
-    title: "Bold Party Makeup",
-    category: "Party",
-    src: "https://images.unsplash.com/photo-1526045612212-70caf35c11bc?auto=format&fit=crop&q=80&w=800",
+    slug: "featured-party-makeup",
+    title: "Party Makeup",
+    category: "Makeup Party",
+    src: "/foto/foto-4.jpeg",
   },
   {
-    slug: "classic-graduation",
-    title: "Classic Glamour",
-    category: "Photoshoot",
-    src: "https://images.unsplash.com/photo-1512413316925-fd4b93f31521?auto=format&fit=crop&q=80&w=800",
+    slug: "featured-photoshoot",
+    title: "PhotoShoot",
+    category: "Photoshoot for Event",
+    src: "/foto/foto-5.jpeg",
   },
 ];

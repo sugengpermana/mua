@@ -70,7 +70,7 @@ export default async function ServiceDetailPage({
                 {service.title}
               </h1>
 
-              <div className="w-12 h-[2px] bg-black rounded-full mb-6" />
+              <div className="w-12 h-0.5 bg-black rounded-full mb-6" />
 
               <p className="text-muted leading-relaxed text-base md:text-lg mb-8">
                 {service.description}

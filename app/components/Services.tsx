@@ -58,7 +58,7 @@ export default function Services() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-sans text-charcoal mb-3">
             Paket & Layanan
           </h2>
-          <div className="w-30 h-[2px] bg-black mx-auto rounded-full" />
+          <div className="w-30 h-0.5 bg-black mx-auto rounded-full" />
           <p className="text-charcoal/70 max-w-2xl mx-auto text-sm md:text-base pt-1 mt-4">
             Kami Menyediakan jasa makeup yang murah dan cocok untuk berbagai
             acara seperti wedding, prewedding, photoshoot, dan event spesial
@@ -106,12 +106,14 @@ export default function Services() {
             <ul className="flex flex-col gap-4 text-[17px] text-charcoal/80">
               {[
                 { name: "Prewedding", badge: "Ready" },
-                { name: "Engagement", badge: "Ready" },
                 { name: "Wedding", badge: "Ready" },
-                { name: "Photoshoot for Event", badge: "Ready" },
-                { name: "Graduation", badge: "Ready" },
+                { name: "Widuda", badge: "Ready" },
+                { name: "Engagement", badge: "Ready" },
+                { name: "Photoshoot", badge: "Ready" },
                 { name: "Makeup Party", badge: "Ready" },
-                { name: "Course Makeup", badge: "Ready" },
+                { name: "Makeup Daily", badge: "Ready" },
+                { name: "Makeup Character", badge: "Ready" },
+
               ].map((item, i) => (
                 <li
                   key={i}
@@ -147,7 +149,7 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="w-50 md:w-100 h-[2px] bg-black mx-auto rounded-full" />
+        <div className="w-50 md:w-100 h-0.5 bg-black mx-auto rounded-full" />
 
         <div className="text-center pb-10 mt-12">
           <Link

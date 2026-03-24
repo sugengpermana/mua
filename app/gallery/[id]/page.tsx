@@ -54,13 +54,13 @@ export default async function GalleryDetailPage({
                   poster={item.poster}
                   controls
                   autoPlay
-                  className="w-full aspect-6/5 sm:aspect-10/7 object-cover"
+                  className="w-full aspect-8/14 md:aspect-8/10 lg:aspect-8/10 object-cover"
                 />
               ) : (
                 <img
                   src={item.src}
                   alt={item.title}
-                  className="w-full h-auto max-h-[80vh] object-cover"
+                  className="w-full h-auto max-h-60vh object-cover"
                 />
               )}
             </div>

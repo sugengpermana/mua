@@ -17,7 +17,7 @@ export default function Page() {
             <h2 className="text-3xl md:text-[40px] font-sans text-charcoal font-normal tracking-wide animate-fade-in-up delay-100">
               Best Portfolio
             </h2>
-            <div className="w-16 h-[2px] bg-black mx-auto rounded-full animate-fade-in-up delay-200" />
+            <div className="w-16 h-0.5 bg-black mx-auto rounded-full animate-fade-in-up delay-200" />
             <p className="text-muted max-w-lg mx-auto text-sm md:text-base pt-1 animate-fade-in-up delay-400">
               Lihat beberapa koleksi tampilan makeup terbaik kami untuk berbagai
               acara spesial.

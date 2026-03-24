@@ -1,16 +1,42 @@
 "use client";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import { categories, portfolioItems } from "../data/portfolio";
 
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState("All");
+  const [visibleCount, setVisibleCount] = useState(10);
+  const [defaultLimit, setDefaultLimit] = useState(10);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const limit = window.innerWidth >= 1024 ? 20 : 10;
+      setDefaultLimit(limit);
+    };
+    
+    // Initial setup
+    const initialLimit = window.innerWidth >= 1024 ? 20 : 10;
+    setDefaultLimit(initialLimit);
+    setVisibleCount(initialLimit);
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Kalo kategori berubah, reset hitungan image sesuai limit
+  useEffect(() => {
+    if (defaultLimit) {
+      setVisibleCount(defaultLimit);
+    }
+  }, [activeCategory, defaultLimit]);
 
   const filteredItems = useMemo(() => {
     return portfolioItems.filter((item) => {
       return activeCategory === "All" || item.category === activeCategory;
     });
   }, [activeCategory]);
+
+  const displayedItems = filteredItems.slice(0, visibleCount);
 
   return (
     <section id="gallery" className="section-padding bg-white">
@@ -20,7 +46,7 @@ export default function Gallery() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-charcoal">
             Portfolio Kami
           </h2>
-          <div className="w-30 h-[2px] bg-black mx-auto rounded-full" />
+          <div className="w-30 h-0.5 bg-black mx-auto rounded-full" />
           <p className="text-charcoal/70 max-w-lg mx-auto text-sm md:text-base pt-1">
             anda bisa mencari refrensi yang cocok dari beberapa kategori yang
             kami sediakan
@@ -46,8 +72,9 @@ export default function Gallery() {
 
         {/* 4-Column Grid Gallery */}
         {filteredItems.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-            {filteredItems.map((item) => (
+          <>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+              {displayedItems.map((item) => (
               <Link
                 href={`/gallery/${item.id}`}
                 key={item.id}
@@ -102,7 +129,20 @@ export default function Gallery() {
                 </div>
               </Link>
             ))}
-          </div>
+            </div>
+            
+            {/* View More Button */}
+            {filteredItems.length > visibleCount && (
+              <div className="text-center mt-10 md:mt-12">
+                <button
+                  onClick={() => setVisibleCount((prev) => prev + defaultLimit)}
+                  className="inline-block border border-charcoal text-charcoal px-8 py-3 rounded-xl hover:bg-charcoal hover:text-white transition-colors duration-300 font-sans text-[15px]"
+                >
+                  View More
+                </button>
+              </div>
+            )}
+          </>
         ) : (
           <div className="text-center py-20">
             <p className="text-muted text-lg font-serif italic">

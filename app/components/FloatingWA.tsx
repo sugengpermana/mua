@@ -115,7 +115,7 @@ export default function FloatingWA() {
 
           {/* Modal */}
           <div
-            className={`relative w-full max-w-[380px] bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col transition-all duration-300 ease-out ${
+            className={`relative w-full max-w-95 bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col transition-all duration-300 ease-out ${
               isAnimating
                 ? "opacity-100 translate-y-0 scale-100"
                 : "opacity-0 translate-y-8 scale-95"
