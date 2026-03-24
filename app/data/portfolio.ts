@@ -140,8 +140,8 @@ export const portfolioItems = [
 
 export const featuredWorks = [
   {
-    slug: "sacred-akad-nikah",
-    title: "Sacred Akad Nikah",
+    slug: "Akad Nikah",
+    title: "Akad Nikah",
     category: "Wedding",
     src: "https://images.unsplash.com/photo-1594462215124-91d1e463a429?auto=format&fit=crop&q=80&w=800",
   },
