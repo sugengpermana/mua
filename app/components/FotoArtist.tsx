@@ -4,34 +4,29 @@ import { useRef, useState, useEffect } from "react";
 
 const galleryPhotos = [
   {
-    src: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=1200",
-    caption: "Bersama klien di sesi makeup wedding",
+    src: "/foto/artis-1.jpeg",
+    caption: "",
     location: "Jakarta",
   },
   {
-    src: "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=1200",
-    caption: "Behind the scene prewedding session",
-    location: "Bandung",
+    src: "/foto/artis-2.jpeg",
+    caption: "",
+    location: "jakarta",
   },
   {
-    src: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=1200",
-    caption: "Makeup untuk artis di event spesial",
-    location: "Bali",
+    src: "/foto/artis-3.jpeg",
+    caption: "",
+    location: "jakarta",
   },
   {
-    src: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=1200",
-    caption: "Sesi foto bersama setelah rias wisuda",
-    location: "Surabaya",
+    src: "/foto/artis-4.jpeg",
+    caption: "",
+    location: "jakarta",
   },
   {
-    src: "https://images.unsplash.com/photo-1595991209266-5126c15bf2f0?auto=format&fit=crop&q=80&w=1200",
-    caption: "Makeup photoshoot editorial bersama tim",
-    location: "Yogyakarta",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1594462215124-91d1e463a429?auto=format&fit=crop&q=80&w=1200",
-    caption: "Persiapan akad nikah klien tercinta",
-    location: "Jakarta",
+    src: "/foto/artis-5.jpeg",
+    caption: "",
+    location: "jakarta",
   },
 ];
 
@@ -130,7 +125,7 @@ export default function TrustedArtists() {
           {galleryPhotos.map((photo, index) => (
             <div
               key={index}
-              className="group relative shrink-0 w-[85vw] sm:w-[60vw] md:w-[45vw] lg:w-[35vw] aspect-16/10 rounded-2xl overflow-hidden snap-center"
+              className="group relative shrink-0 w-[60vw] sm:w-[45vw] md:w-[35vw] lg:w-[30vw] aspect-8/9 lg:aspect-9/10 rounded-2xl overflow-hidden snap-center"
             >
               <img
                 src={photo.src}
