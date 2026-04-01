@@ -13,7 +13,7 @@ export default function Gallery() {
       const limit = window.innerWidth >= 1024 ? 20 : 10;
       setDefaultLimit(limit);
     };
-    
+
     // Initial setup
     const initialLimit = window.innerWidth >= 1024 ? 20 : 10;
     setDefaultLimit(initialLimit);
@@ -75,62 +75,62 @@ export default function Gallery() {
           <>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
               {displayedItems.map((item) => (
-              <Link
-                href={`/gallery/${item.id}`}
-                key={item.id}
-                className="relative group rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 block"
-              >
-                {/* Media */}
-                <div className="w-full aspect-4/5 bg-gray-100 relative">
-                  {item.type === "video" ? (
-                    <>
-                      <video
+                <Link
+                  href={`/gallery/${item.id}`}
+                  key={item.id}
+                  className="relative group rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 block"
+                >
+                  {/* Media */}
+                  <div className="w-full aspect-3/4 md:aspect-4/5 bg-gray-100 relative">
+                    {item.type === "video" ? (
+                      <>
+                        <video
+                          src={item.src}
+                          poster={item.poster}
+                          loop
+                          muted
+                          playsInline
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                          onMouseEnter={(e) => e.currentTarget.play()}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.pause();
+                            e.currentTarget.currentTime = 0;
+                          }}
+                        />
+                        {/* Video Indicator Icon */}
+                        <div className="absolute top-3 right-3 bg-black/50 backdrop-blur-sm rounded-full p-2 text-white pointer-events-none">
+                          <svg
+                            className="w-4 h-4"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path d="M8 5v14l11-7z" />
+                          </svg>
+                        </div>
+                      </>
+                    ) : (
+                      <img
                         src={item.src}
-                        poster={item.poster}
-                        loop
-                        muted
-                        playsInline
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                        onMouseEnter={(e) => e.currentTarget.play()}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.pause();
-                          e.currentTarget.currentTime = 0;
-                        }}
+                        alt={item.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform vduration-700"
+                        loading="lazy"
                       />
-                      {/* Video Indicator Icon */}
-                      <div className="absolute top-3 right-3 bg-black/50 backdrop-blur-sm rounded-full p-2 text-white pointer-events-none">
-                        <svg
-                          className="w-4 h-4"
-                          fill="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M8 5v14l11-7z" />
-                        </svg>
-                      </div>
-                    </>
-                  ) : (
-                    <img
-                      src={item.src}
-                      alt={item.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform vduration-700"
-                      loading="lazy"
-                    />
-                  )}
-                </div>
+                    )}
+                  </div>
 
-                {/* Subdued Overlay with Text */}
-                <div className="absolute inset-0 z-10 bg-linear-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 md:p-6">
-                  <span className="text-white/70 text-[10px] md:text-xs font-semibold tracking-wider uppercase">
-                    {item.category}
-                  </span>
-                  <h3 className="text-white font-serif text-sm md:text-lg font-semibold mt-1">
-                    {item.title}
-                  </h3>
-                </div>
-              </Link>
-            ))}
+                  {/* Subdued Overlay with Text */}
+                  <div className="absolute inset-0 z-10 bg-linear-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 md:p-6">
+                    <span className="text-white/70 text-[10px] md:text-xs font-semibold tracking-wider uppercase">
+                      {item.category}
+                    </span>
+                    <h3 className="text-white font-serif text-sm md:text-lg font-semibold mt-1">
+                      {item.title}
+                    </h3>
+                  </div>
+                </Link>
+              ))}
             </div>
-            
+
             {/* View More Button */}
             {filteredItems.length > visibleCount && (
               <div className="text-center mt-10 md:mt-12">

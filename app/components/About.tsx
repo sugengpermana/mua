@@ -24,7 +24,7 @@ export default function About() {
               </p>
               <p>
                 Dengan teknik riasan yang terus berkembang dan penggunaan produk
-                premium, saya memastikan setiap klien mendapatkan hasil yang{" "}
+                yang berkualitas, saya berusaha memberikan hasil yang{" "}
                 <em>flawless</em>, tahan lama, dan tetap terasa ringan di wajah.
               </p>
               <p>
@@ -94,24 +94,18 @@ export default function About() {
           <div className="w-16 h-0.5 bg-black mx-auto mb-8 rounded-full" />
           <div className="space-y-4 text-black/65 leading-relaxed text-sm md:text-base">
             <p>
-              Perjalanan saya dimulai dari kamar kecil dengan satu set kuas dan
-              mimpi besar. Sejak kecil, saya selalu terpesona oleh seni — mulai
-              dari melukis kanvas hingga akhirnya menemukan wajah sebagai media
+              Perjalanan saya dimulai dari mimpi besar. dulu saya berlatih dan
+              bekerja di LT PRO tahun 2012, Sejak saat itu, saya selalu tertarik
+              dengan seni, hingga akhirnya menemukan wajah sebagai media
               ekspresi terbaik.
             </p>
             <p>
-              Di tahun pertama, saya belajar otodidak melalui ratusan video
-              tutorial, berlatih pada teman-teman dan keluarga. Tekad untuk
-              terus berkembang membawa saya mengikuti kursus profesional dan
-              mendapatkan sertifikasi resmi.
-            </p>
-            <p>
-              Kini, setelah <strong className="text-black">5+ tahun</strong> dan{" "}
-              <strong className="text-black">500+ klien</strong>, setiap
-              sentuhan kuas bukan lagi sekadar pekerjaan — melainkan dedikasi
+              Kini, setelah <strong className="text-black">13+ tahun</strong>{" "}
+              dan <strong className="text-black">2000+ klien</strong>, setiap
+              sentuhan kuas bukan lagi sekadar pekerjaan melainkan dedikasi
               untuk membuat setiap wanita merasa percaya diri dan cantik di hari
               terpenting mereka. Dari rias wisuda hingga akad nikah sakral, saya
-              hadir untuk mewujudkan tampilan impian Anda.
+              hadir untuk mewujudkan tampilan impian yang menarik.
             </p>
           </div>
         </div>
@@ -143,8 +137,8 @@ export default function About() {
                     />
                   </svg>
                 ),
-                title: "Produk Premium",
-                desc: "Hanya menggunakan produk berkualitas tinggi dari brand ternama untuk hasil yang sempurna dan tahan lama.",
+                title: "Produk Berkualitas",
+                desc: "Menggunakan produk berkualitas tinggi dari brand ternama untuk hasil yang sempurna dan tahan lama.",
               },
               {
                 icon: (
@@ -162,8 +156,8 @@ export default function About() {
                     />
                   </svg>
                 ),
-                title: "Bersertifikasi",
-                desc: "Terlatih dan bersertifikat resmi dari lembaga kecantikan profesional yang terpercaya.",
+                title: "Berpengalaman",
+                desc: "Berpengalaman lebih dari 13 tahun dalam merias berbagai jenis wajah dan kebutuhan klien.",
               },
               {
                 icon: (
@@ -182,7 +176,7 @@ export default function About() {
                   </svg>
                 ),
                 title: "Personal Touch",
-                desc: "Setiap klien mendapat konsultasi personal sesuai bentuk wajah & skin tone unik mereka.",
+                desc: "Setiap klien mendapatkan konsultasi personal dengan bentuk wajah & skin tone unik.",
               },
               {
                 icon: (
@@ -206,7 +200,7 @@ export default function About() {
                   </svg>
                 ),
                 title: "On-Location Service",
-                desc: "Layanan langsung di lokasi Anda — rumah, venue, atau studio. Fleksibel & nyaman.",
+                desc: "Bisa melayani langsung di lokasi rumah anda, hotel, venue, studio, dll. tetap nyaman dan fleksibel.",
               },
             ].map((item, i) => (
               <div

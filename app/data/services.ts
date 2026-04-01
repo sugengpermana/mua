@@ -10,9 +10,8 @@ export interface Service {
 export const services: Service[] = [
   {
     slug: "makeup-karakter",
-    title: "Makeup Karakter",
-    image:
-      "https://images.unsplash.com/photo-1595991209266-5126c15bf2f0?auto=format&fit=crop&q=80&w=800",
+    title: "Makeup Character",
+    image: "/foto/foto-15.jpeg",
     description:
       "Layanan makeup karakter profesional untuk kebutuhan teater, film, cosplay, dan acara bertema. Kami menggunakan teknik khusus dan produk berkualitas tinggi untuk menciptakan transformasi karakter yang luar biasa dan tahan lama. Setiap detail diperhatikan untuk menghasilkan look yang autentik dan memukau.",
     features: [
@@ -27,8 +26,7 @@ export const services: Service[] = [
   {
     slug: "makeup-wedding",
     title: "Makeup Wedding",
-    image:
-      "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=80&w=800",
+    image: "/foto/foto-8.jpeg",
     description:
       "Paket makeup pernikahan lengkap untuk hari terpenting dalam hidup Anda. Mulai dari akad nikah hingga resepsi, kami memastikan penampilan Anda sempurna sepanjang hari. Menggunakan teknik airbrush dan produk premium yang tahan lama, disesuaikan dengan tema dan dress code pernikahan Anda.",
     features: [
@@ -58,10 +56,9 @@ export const services: Service[] = [
     startingPrice: "Mulai dari Rp 350.000",
   },
   {
-    slug: "makeup-reguler",
-    title: "Makeup Reguler",
-    image:
-      "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=800",
+    slug: "makeup-prewedding",
+    title: "Makeup Prewedding",
+    image: "/foto/foto-2.jpeg",
     description:
       "Layanan makeup untuk berbagai acara sehari-hari maupun formal. Cocok untuk pesta, gathering, photoshoot, hingga acara kantor. Kami menyesuaikan riasan dengan kebutuhan dan preferensi Anda agar tampil percaya diri di setiap momen.",
     features: [
@@ -74,10 +71,9 @@ export const services: Service[] = [
     startingPrice: "Mulai dari Rp 250.000",
   },
   {
-    slug: "makeup-prewedding",
-    title: "Makeup Prewedding",
-    image:
-      "https://images.unsplash.com/photo-1621607512214-68297480165e?auto=format&fit=crop&q=80&w=800",
+    slug: "makeup-photoshoot",
+    title: "Makeup Photoshoot",
+    image: "/foto/foto-5.jpeg",
     description:
       "Riasan prewedding yang dirancang untuk menghasilkan foto-foto terbaik Anda. Dari konsep natural romantis hingga glamour editorial, kami menyesuaikan makeup dengan tema, lokasi, dan pencahayaan sesi foto Anda. Hasil sempurna di setiap angle kamera.",
     features: [
@@ -90,10 +86,39 @@ export const services: Service[] = [
     startingPrice: "Mulai dari Rp 1.500.000",
   },
   {
+    slug: "makeup-engagement",
+    title: "Makeup Engagement",
+    image: "/foto/foto-7.jpeg",
+    description:
+      "Tampil bold dan memukau di setiap pesta. Layanan makeup party dengan fokus pada riasan mata yang dramatic dan bibir yang statement. Sempurna untuk ulang tahun, sweet seventeen, prom night, dan event malam lainnya.",
+    features: [
+      "Bold & dramatic look",
+      "Glitter & smokey eye specialist",
+      "Tahan untuk acara malam",
+      "Paket grup tersedia",
+      "Free false lashes premium",
+    ],
+    startingPrice: "Mulai dari Rp 300.000",
+  },
+  {
+    slug: "makeup-daily",
+    title: "Makeup Daily",
+    image: "/foto/foto-17.jpeg",
+    description:
+      "Tampil bold dan memukau di setiap pesta. Layanan makeup party dengan fokus pada riasan mata yang dramatic dan bibir yang statement. Sempurna untuk ulang tahun, sweet seventeen, prom night, dan event malam lainnya.",
+    features: [
+      "Bold & dramatic look",
+      "Glitter & smokey eye specialist",
+      "Tahan untuk acara malam",
+      "Paket grup tersedia",
+      "Free false lashes premium",
+    ],
+    startingPrice: "Mulai dari Rp 300.000",
+  },
+  {
     slug: "makeup-party",
     title: "Makeup Party",
-    image:
-      "https://images.unsplash.com/photo-1526045612212-70caf35c11bc?auto=format&fit=crop&q=80&w=800",
+    image: "/foto/foto-4.jpeg",
     description:
       "Tampil bold dan memukau di setiap pesta. Layanan makeup party dengan fokus pada riasan mata yang dramatic dan bibir yang statement. Sempurna untuk ulang tahun, sweet seventeen, prom night, dan event malam lainnya.",
     features: [

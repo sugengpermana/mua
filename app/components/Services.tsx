@@ -73,7 +73,7 @@ export default function Services() {
               key={service.slug}
               className="group flex flex-col items-center bg-white border border-black/8 rounded-2xl overflow-hidden hover:shadow-xl hover:border-black/15 transition-all duration-500 hover:-translate-y-1"
             >
-              <div className="w-full aspect-4/3 overflow-hidden bg-gray-100 relative">
+              <div className="w-full aspect-3/4 overflow-hidden bg-gray-100 relative">
                 <img
                   src={service.image}
                   alt={service.title}
@@ -113,7 +113,6 @@ export default function Services() {
                 { name: "Makeup Party", badge: "Ready" },
                 { name: "Makeup Daily", badge: "Ready" },
                 { name: "Makeup Character", badge: "Ready" },
-
               ].map((item, i) => (
                 <li
                   key={i}
