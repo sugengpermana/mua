@@ -42,9 +42,9 @@ export default function FloatingWA() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const waNumber = "628568890683";
+  const waNumber = "+6281299755483";
   const waMessage = encodeURIComponent(
-    "Halo, ingin bertanya seputar layanan makeup?",
+    "Halo, saya ingin bertanya tentang layanan makeup",
   );
 
   return (
@@ -137,7 +137,7 @@ export default function FloatingWA() {
                 <div>
                   <p className="font-semibold text-sm">Nuryanti MUA</p>
                   <p className="text-[11px] text-white/70">
-                    Biasanya membalas dalam 1 jam
+                    Biasanya membalas dalam 10 menit
                   </p>
                 </div>
               </div>
@@ -179,8 +179,8 @@ export default function FloatingWA() {
                 }`}
               >
                 <p className="text-[13px] text-gray-800 leading-relaxed">
-                  Halo 👋, ingin bertanya seputar layanan makeup? Jangan ragu
-                  chat kami.
+                  Halo kak, ingin bertanya soal layanan makeup kami? jangan
+                  ragu, bisa langsung chat kami ya kak
                 </p>
                 <p className="text-[10px] text-gray-400 text-right mt-1">
                   {new Date().toLocaleTimeString("id-ID", {

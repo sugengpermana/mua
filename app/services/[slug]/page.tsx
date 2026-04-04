@@ -118,7 +118,7 @@ export default async function ServiceDetailPage({
 
               {/* CTA */}
               <a
-                href={`https://wa.me/6281234567890?text=${encodeURIComponent(`Halo, saya tertarik dengan paket ${service.title}. Boleh info lebih lanjut?`)}`}
+                href={`https://wa.me/+6281299755483?text=${encodeURIComponent(`Halo, saya tertarik dengan paket ${service.title}. Boleh info lebih lanjut?`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-charcoal text-white px-10 py-4 rounded-full font-semibold transition-all duration-300 shadow-lg text-[15px] tracking-wide hover:bg-charcoal/85 hover:shadow-xl w-full sm:w-auto text-center"

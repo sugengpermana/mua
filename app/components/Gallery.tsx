@@ -154,7 +154,7 @@ export default function Gallery() {
         {/* CTA */}
         <div className="text-center mt-12 md:mt-16">
           <Link
-            href="https://instagram.com/nuryantimua"
+            href="https://www.instagram.com/nury_yantie_mua?igsh=MjQ5YzZ1MWkwYWI0"
             target="_blank"
             rel="noopener noreferrer"
             className="border border-charcoal text-charcoal px-5 py-3 flex justify-center items-center w-fit mx-auto  gap-2 rounded-xl hover:bg-charcoal hover:text-white transition-colors duration-300 font-sans text-[15px]"

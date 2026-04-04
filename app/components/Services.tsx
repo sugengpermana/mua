@@ -105,11 +105,11 @@ export default function Services() {
             </h3>
             <ul className="flex flex-col gap-4 text-[17px] text-charcoal/80">
               {[
-                { name: "Prewedding", badge: "Ready" },
                 { name: "Wedding", badge: "Ready" },
-                { name: "Widuda", badge: "Ready" },
-                { name: "Engagement", badge: "Ready" },
+                { name: "Prewedding", badge: "Ready" },
+                { name: "Wisuda", badge: "Ready" },
                 { name: "Photoshoot", badge: "Ready" },
+                { name: "Engagement", badge: "Ready" },
                 { name: "Makeup Party", badge: "Ready" },
                 { name: "Makeup Daily", badge: "Ready" },
                 { name: "Makeup Character", badge: "Ready" },
@@ -152,7 +152,7 @@ export default function Services() {
 
         <div className="text-center pb-10 mt-12">
           <Link
-            href="https://wa.me/628568890683"
+            href="https://wa.me/+6281299755483"
             className="border border-charcoal text-charcoal px-5 py-3 flex justify-center items-center w-fit mx-auto  gap-2 rounded-xl hover:bg-charcoal hover:text-white transition-colors duration-300 font-sans text-[15px]"
           >
             <svg

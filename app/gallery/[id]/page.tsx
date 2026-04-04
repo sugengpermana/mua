@@ -82,7 +82,9 @@ export default async function GalleryDetailPage({
               <hr className="mt-5 mb-5 max-w-xs" />
               <div className="pt-4">
                 <a
-                  href={`https://wa.me/6281234567890?text=${encodeURIComponent(`Hi aku tertarik dengan Makeup ${item.title}`)}`}
+                  href={`https://wa.me/+6281299755483?text=${encodeURIComponent(`Halo kak, saya tertarik dengan layanan ${item.title}. Boleh info lebih lanjut?`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block bg-charcoal hover:bg-primary text-white px-10 py-4 rounded-full font-semibold transition-colors duration-300 shadow-lg text-[15px] tracking-wide"
                 >
                   Booking Sekarang

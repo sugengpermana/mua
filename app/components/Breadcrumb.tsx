@@ -8,8 +8,8 @@ export default function Breadcrumb({ pageName }: { pageName: string }) {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "About Us", href: "/about" },
-    { name: "Services", href: "/services" },
+    { name: "Tentang Saya", href: "/about" },
+    { name: "Paket & Layanan", href: "/services" },
     { name: "Gallery", href: "/gallery" },
     { name: "Contact", href: "/contact" },
   ];

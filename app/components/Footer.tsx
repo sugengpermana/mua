@@ -11,9 +11,9 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {[
                 { name: "Home", href: "/" },
-                { name: "About", href: "/about" },
+                { name: "Tentang Saya", href: "/about" },
+                { name: "Paket & Layanan", href: "/services" },
                 { name: "Gallery", href: "/gallery" },
-                { name: "Services", href: "/services" },
                 { name: "Contact", href: "/contact" },
               ].map((link) => (
                 <li key={link.name}>
@@ -35,12 +35,26 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5">
               {[
-                { name: "Wedding", href: "/services/#wedding" },
-                { name: "Graduation", href: "/services/#wisuda" },
-                { name: "Prewedding", href: "/services/#prewedding" },
-                { name: "Engagement", href: "/services/#engagement" },
-                { name: "Sweet 17", href: "/services/#sweet-17" },
-                { name: "Party", href: "/services/#party" },
+                { name: "Wedding", href: "/services/makeup-wedding" },
+                { name: "Prewedding", href: "/services/makeup-prewedding" },
+                { name: "Wisuda", href: "/services/makeup-wisuda" },
+                {
+                  name: "Photoshoot",
+                  href: "/services/makeup-photoshoot",
+                },
+                {
+                  name: "Engagement",
+                  href: "/services/makeup-engagement",
+                },
+                { name: "Makeup Party", href: "/services/makeup-party" },
+                {
+                  name: "Makeup Daily",
+                  href: "/services/makeup-daily",
+                },
+                {
+                  name: "Makeup Character",
+                  href: "/services/makeup-character",
+                },
               ].map((service) => (
                 <li key={service.name}>
                   <a
@@ -59,12 +73,12 @@ export default function Footer() {
             <h4 className="text-xs font-semibold uppercase tracking-[0.15em] text-white">
               Kontak
             </h4>
-            <ul className="space-y-2.5 text-white/40 text-sm">
+            <ul className="space-y-3 text-white/40 text-sm">
               <li className="flex items-center gap-2">
                 <span>📍</span> Jabodetabek
               </li>
-              <li className="flex items-center gap-2">
-                <span>📱</span> +628568890683
+              <li className="flex items-center gap-1">
+                <span>📱</span> +6281299755483
               </li>
             </ul>
           </div>

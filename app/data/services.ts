@@ -9,21 +9,6 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    slug: "makeup-karakter",
-    title: "Makeup Character",
-    image: "/foto/foto-15.jpeg",
-    description:
-      "Layanan makeup karakter profesional untuk kebutuhan teater, film, cosplay, dan acara bertema. Kami menggunakan teknik khusus dan produk berkualitas tinggi untuk menciptakan transformasi karakter yang luar biasa dan tahan lama. Setiap detail diperhatikan untuk menghasilkan look yang autentik dan memukau.",
-    features: [
-      "Konsultasi konsep karakter",
-      "Teknik SFX & body painting",
-      "Produk hypoallergenic & skin-safe",
-      "Durasi tahan hingga 12 jam",
-      "Touch-up kit selama acara",
-    ],
-    startingPrice: "Mulai dari Rp 500.000",
-  },
-  {
     slug: "makeup-wedding",
     title: "Makeup Wedding",
     image: "/foto/foto-8.jpeg",
@@ -40,6 +25,21 @@ export const services: Service[] = [
     startingPrice: "Mulai dari Rp 2.500.000",
   },
   {
+    slug: "makeup-prewedding",
+    title: "Makeup Prewedding",
+    image: "/foto/foto-2.jpeg",
+    description:
+      "Layanan makeup untuk berbagai acara sehari-hari maupun formal. Cocok untuk pesta, gathering, photoshoot, hingga acara kantor. Kami menyesuaikan riasan dengan kebutuhan dan preferensi Anda agar tampil percaya diri di setiap momen.",
+    features: [
+      "Look natural hingga bold",
+      "Cocok untuk segala acara",
+      "Hairdo sederhana termasuk",
+      "Durability hingga 8 jam",
+      "Konsultasi look gratis",
+    ],
+    startingPrice: "Mulai dari Rp 250.000",
+  },
+  {
     slug: "makeup-wisuda",
     title: "Makeup Wisuda",
     image:
@@ -54,21 +54,6 @@ export const services: Service[] = [
       "Paket hemat untuk grup wisuda",
     ],
     startingPrice: "Mulai dari Rp 350.000",
-  },
-  {
-    slug: "makeup-prewedding",
-    title: "Makeup Prewedding",
-    image: "/foto/foto-2.jpeg",
-    description:
-      "Layanan makeup untuk berbagai acara sehari-hari maupun formal. Cocok untuk pesta, gathering, photoshoot, hingga acara kantor. Kami menyesuaikan riasan dengan kebutuhan dan preferensi Anda agar tampil percaya diri di setiap momen.",
-    features: [
-      "Look natural hingga bold",
-      "Cocok untuk segala acara",
-      "Hairdo sederhana termasuk",
-      "Durability hingga 8 jam",
-      "Konsultasi look gratis",
-    ],
-    startingPrice: "Mulai dari Rp 250.000",
   },
   {
     slug: "makeup-photoshoot",
@@ -101,6 +86,21 @@ export const services: Service[] = [
     startingPrice: "Mulai dari Rp 300.000",
   },
   {
+    slug: "makeup-party",
+    title: "Makeup Party",
+    image: "/foto/foto-4.jpeg",
+    description:
+      "Tampil bold dan memukau di setiap pesta. Layanan makeup party dengan fokus pada riasan mata yang dramatic dan bibir yang statement. Sempurna untuk ulang tahun, sweet seventeen, prom night, dan event malam lainnya.",
+    features: [
+      "Bold & dramatic look",
+      "Glitter & smokey eye specialist",
+      "Tahan untuk acara malam",
+      "Paket grup tersedia",
+      "Free false lashes premium",
+    ],
+    startingPrice: "Mulai dari Rp 300.000",
+  },
+  {
     slug: "makeup-daily",
     title: "Makeup Daily",
     image: "/foto/foto-17.jpeg",
@@ -116,19 +116,19 @@ export const services: Service[] = [
     startingPrice: "Mulai dari Rp 300.000",
   },
   {
-    slug: "makeup-party",
-    title: "Makeup Party",
-    image: "/foto/foto-4.jpeg",
+    slug: "makeup-character",
+    title: "Makeup Character",
+    image: "/foto/foto-15.jpeg",
     description:
-      "Tampil bold dan memukau di setiap pesta. Layanan makeup party dengan fokus pada riasan mata yang dramatic dan bibir yang statement. Sempurna untuk ulang tahun, sweet seventeen, prom night, dan event malam lainnya.",
+      "Layanan makeup karakter profesional untuk kebutuhan teater, film, cosplay, dan acara bertema. Kami menggunakan teknik khusus dan produk berkualitas tinggi untuk menciptakan transformasi karakter yang luar biasa dan tahan lama. Setiap detail diperhatikan untuk menghasilkan look yang autentik dan memukau.",
     features: [
-      "Bold & dramatic look",
-      "Glitter & smokey eye specialist",
-      "Tahan untuk acara malam",
-      "Paket grup tersedia",
-      "Free false lashes premium",
+      "Konsultasi konsep karakter",
+      "Teknik SFX & body painting",
+      "Produk hypoallergenic & skin-safe",
+      "Durasi tahan hingga 12 jam",
+      "Touch-up kit selama acara",
     ],
-    startingPrice: "Mulai dari Rp 300.000",
+    startingPrice: "Mulai dari Rp 500.000",
   },
 ];
 

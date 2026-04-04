@@ -18,7 +18,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "| Professional Makeup Artist — Wedding, Wisuda & Event",
+  title: "Nuryanti MUA | Professional Makeup Artist",
   description:
     "Jasa makeup artist profesional untuk wedding, wisuda, prewedding, engagement, sweet seventeen & event. Hasil flawless, produk premium, pengalaman 5+ tahun. Booking sekarang via WhatsApp!",
   keywords: [
