@@ -1,3 +1,4 @@
+// Category Portfolio
 export const categories = [
   "All",
   "Video",
@@ -11,6 +12,7 @@ export const categories = [
   "Makeup Character",
 ];
 
+// Galerry Portfolio
 export const portfolioItems = [
   {
     id: "1",
@@ -155,41 +157,54 @@ export const portfolioItems = [
   },
 ];
 
+// Best Portfolio
 export const featuredWorks = [
   {
     slug: "8",
     title: "Wedding",
     category: "Wedding",
-    src: "/foto/foto-8.jpeg",
+    src: "/foto/wedding-2.webp",
   },
   {
     slug: "9",
     title: "Makeup Karakter",
     category: "Makeup Karakter",
-    src: "/foto/foto-1.jpeg",
+    src: "/foto/m-char-2.webp",
   },
   {
     slug: "10",
     title: "Prewedding",
     category: "Prewedding",
-    src: "/foto/foto-2.jpeg",
+    src: "/foto/Prewedding-2.webp",
   },
   {
     slug: "11",
     title: "Engagement",
     category: "Engagement",
-    src: "/foto/foto-7.jpeg",
+    src: "/foto/eng-1.webp",
   },
   {
     slug: "12",
     title: "Party Makeup",
     category: "Makeup Party",
-    src: "/foto/foto-4.jpeg",
+    src: "/foto/m-party-8.webp",
   },
   {
     slug: "13",
     title: "PhotoShoot",
     category: "Photoshoot for Event",
-    src: "/foto/foto-5.jpeg",
+    src: "/foto/fts-6.webp",
+  },
+  {
+    slug: "14",
+    title: "Makeup Daily",
+    category: "Makeup Daily",
+    src: "/foto/m-daily-2.webp",
+  },
+  {
+    slug: "15",
+    title: "Wisuda",
+    category: "Wisuda",
+    src: "/foto/foto-18.jpeg",
   },
 ];

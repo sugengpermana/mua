@@ -9,17 +9,7 @@ const desktopLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Gallery", href: "/gallery" },
-  {
-    name: "Services",
-    href: "/services",
-    dropdown: [
-      { name: "Makeup Wisuda", href: "/services#wisuda" },
-      { name: "Wedding", href: "/services#wedding" },
-      { name: "Prewedding", href: "/services#prewedding" },
-      { name: "Photoshoot", href: "/services#photoshoot" },
-      { name: "Engagement", href: "/services#engagement" },
-    ],
-  },
+  { name: "Services", href: "/services" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -76,59 +66,21 @@ export default function Navbar() {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-1">
           {desktopLinks.map((link) => (
-            <div
+            <Link
               key={link.name}
-              className="relative"
-              onMouseEnter={() => link.dropdown && setActiveDropdown(true)}
-              onMouseLeave={() => link.dropdown && setActiveDropdown(false)}
+              href={link.href}
+              className={`flex items-center gap-1 relative px-4 py-2 text-sm font-medium tracking-wide transition-colors rounded-full ${
+                pathname === link.href ||
+                (link.href !== "/" && pathname.startsWith(link.href))
+                  ? "text-white"
+                  : "text-white/60 hover:text-white"
+              }`}
             >
-              <Link
-                href={link.href}
-                className={`flex items-center gap-1 relative px-4 py-2 text-sm font-medium tracking-wide transition-colors rounded-full ${
-                  pathname === link.href ||
-                  (link.href !== "/" && pathname.startsWith(link.href))
-                    ? "text-white"
-                    : "text-white/60 hover:text-white"
-                }`}
-              >
-                {link.name}
-                {link.dropdown && (
-                  <svg
-                    className="w-4 h-4"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                )}
-                {pathname === link.href && (
-                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-primary rounded-full" />
-                )}
-              </Link>
-
-              {/* Dropdown Menu */}
-              {link.dropdown && activeDropdown && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 w-48 animate-fade-in-up">
-                  <div className="bg-white rounded-xl shadow-premium border border-black/5 overflow-hidden flex flex-col p-2">
-                    {link.dropdown.map((dropItem) => (
-                      <Link
-                        key={dropItem.name}
-                        href={dropItem.href}
-                        className="px-4 py-2.5 text-sm text-charcoal hover:bg-primary/10 hover:text-primary rounded-lg transition-colors"
-                      >
-                        {dropItem.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
+              {link.name}
+              {pathname === link.href && (
+                <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-primary rounded-full" />
               )}
-            </div>
+            </Link>
           ))}
         </div>
 
