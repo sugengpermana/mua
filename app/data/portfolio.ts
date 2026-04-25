@@ -160,16 +160,28 @@ export const portfolioItems = [
 // Best Portfolio
 export const featuredWorks = [
   {
-    slug: "8",
-    title: "Wedding",
-    category: "Wedding",
-    src: "/foto/wedding-2.webp",
+    slug: "13",
+    title: "PhotoShoot",
+    category: "Photoshoot for Event",
+    src: "/foto/fts-6.webp",
   },
   {
     slug: "9",
     title: "Makeup Karakter",
     category: "Makeup Karakter",
     src: "/foto/m-char-2.webp",
+  },
+  {
+    slug: "12",
+    title: "Party Makeup",
+    category: "Makeup Party",
+    src: "/foto/m-party-8.webp",
+  },
+  {
+    slug: "8",
+    title: "Wedding",
+    category: "Wedding",
+    src: "/foto/wedding-2.webp",
   },
   {
     slug: "10",
@@ -182,18 +194,6 @@ export const featuredWorks = [
     title: "Engagement",
     category: "Engagement",
     src: "/foto/eng-1.webp",
-  },
-  {
-    slug: "12",
-    title: "Party Makeup",
-    category: "Makeup Party",
-    src: "/foto/m-party-8.webp",
-  },
-  {
-    slug: "13",
-    title: "PhotoShoot",
-    category: "Photoshoot for Event",
-    src: "/foto/fts-6.webp",
   },
   {
     slug: "14",

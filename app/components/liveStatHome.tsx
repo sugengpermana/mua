@@ -71,8 +71,8 @@ export default function BrandCarousel() {
 
           {/* Stats */}
           <div className="flex items-center divide-x divide-white/10">
-            <AnimatedStat target={2248} suffix="+" label="client" />
-            <AnimatedStat target={13} suffix="+" label="experience" />
+            <AnimatedStat target={1689} suffix="+" label="client" />
+            <AnimatedStat target={16} suffix="+" label="experience" />
             <AnimatedStat target={98} suffix="%" label="happy client" />
           </div>
 
