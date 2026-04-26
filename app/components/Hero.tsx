@@ -63,14 +63,11 @@ export default function Hero() {
           muted
           playsInline
           className="w-full h-full object-cover"
-          poster="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=2000"
+          poster="/foto/home-ai.png"
         >
-          <source
-            src="https://cdn.pixabay.com/video/2020/05/25/40130-424930032_large.mp4"
-            type="video/mp4"
-          />
+          <source src="/video/home-video.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/50 to-black/80" />
+        <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/60 to-black/60" />
       </div>
 
       {/* Content */}

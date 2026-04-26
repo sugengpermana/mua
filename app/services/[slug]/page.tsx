@@ -106,6 +106,36 @@ export default async function ServiceDetailPage({
                 </ul>
               </div>
 
+              {/* Features */}
+              <div className="mb-8">
+                <h3 className="text-sm font-semibold tracking-[0.15em] uppercase text-charcoal mb-4">
+                  Tidak termasuk
+                </h3>
+                <ul className="space-y-3">
+                  {service.notIncluded.map((notIncluded, i) => (
+                    <li
+                      key={i}
+                      className="flex items-start gap-3 text-muted text-[15px]"
+                    >
+                      <svg
+                        className="w-5 h-5 text-charcoal shrink-0 mt-0.5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
+                      {notIncluded}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
               {/* Price */}
               <div className="border border-black/10 rounded-xl p-5 mb-8">
                 <p className="text-xs font-semibold tracking-[0.15em] uppercase text-muted mb-1">

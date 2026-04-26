@@ -4,6 +4,7 @@ export interface Service {
   image: string;
   description: string;
   features: string[];
+  notIncluded: string[];
   startingPrice: string;
 }
 
@@ -13,14 +14,13 @@ export const services: Service[] = [
     title: "Makeup Photoshoot",
     image: "/foto/fts-6.webp",
     description:
-      "Riasan prewedding yang dirancang untuk menghasilkan foto-foto terbaik Anda. Dari konsep natural romantis hingga glamour editorial, kami menyesuaikan makeup dengan tema, lokasi, dan pencahayaan sesi foto Anda. Hasil sempurna di setiap angle kamera.",
+      "Kami hadirkan tampilan wajah yang seamless dan berdimensi di depan lensa. Dengan teknik yang disesuaikan untuk pencahayaan studio maupun outdoor, riasan kami memastikan tekstur kulit tetap terlihat halus namun tertutup sempurna. Fokus kami adalah membuat kamu bisa tampil percaya diri di setiap sesi foto. dari awal sampai akhir. Jika berminat segera booking layanan kami",
     features: [
+      "Konsultasi konsep Makeup",
+      "Kualitas produk premium dan tahan lama",
       "Menyesuaikan konsep & tema foto",
-      "Cocok untuk outdoor & studio",
-      "Makeup camera-ready",
-      "Ganti look untuk beda outfit",
-      "Hairdo & styling lengkap",
     ],
+    notIncluded: ["Hairdo", "Transportasi", "Standbye", "Retouch"],
     startingPrice: "Mulai dari Rp 1.500.000",
   },
   {
@@ -28,76 +28,70 @@ export const services: Service[] = [
     title: "Makeup Character",
     image: "/foto/m-char-2.webp",
     description:
-      "Layanan makeup karakter profesional untuk kebutuhan teater, film, cosplay, dan acara bertema. Kami menggunakan teknik khusus dan produk berkualitas tinggi untuk menciptakan transformasi karakter yang luar biasa dan tahan lama. Setiap detail diperhatikan untuk menghasilkan look yang autentik dan memukau.",
+      "Layanan makeup karakter profesional untuk kebutuhan teater, film, cosplay, dan acara bertema. Kami menggunakan teknik khusus dan produk berkualitas tinggi untuk menciptakan transformasi karakter yang luar biasa dan tahan lama. Setiap detail diperhatikan untuk menghasilkan look yang autentik dan memukau. Jika berminat segera booking layanan kami",
     features: [
-      "Konsultasi konsep karakter",
-      "Teknik SFX & body painting",
-      "Produk hypoallergenic & skin-safe",
-      "Durasi tahan hingga 12 jam",
-      "Touch-up kit selama acara",
+      "Konsultasi konsep Makeup",
+      "Kualitas produk premium dan tahan lama",
+      "Menyesuaikan konsep & tema foto",
     ],
-    startingPrice: "Mulai dari Rp 500.000",
+    notIncluded: ["Hairdo", "Transportasi", "Standbye", "Retouch"],
+    startingPrice: "Mulai dari Rp 1.000.000",
   },
   {
     slug: "makeup-party",
     title: "Makeup Party",
     image: "/foto/m-party-8.webp",
     description:
-      "Tampil bold dan memukau di setiap pesta. Layanan makeup party dengan fokus pada riasan mata yang dramatic dan bibir yang statement. Sempurna untuk ulang tahun, sweet seventeen, prom night, dan event malam lainnya.",
+      "Layanan makeup party dengan fokus pada riasan mata yang dramatic dan bibir yang statement. layanan ini cocok untuk ulang tahun, pesta kantor, dan event lainnya.Jika berminat segera booking layanan kami",
     features: [
-      "Bold & dramatic look",
-      "Glitter & smokey eye specialist",
-      "Tahan untuk acara malam",
-      "Paket grup tersedia",
-      "Free false lashes premium",
+      "Konsultasi konsep Makeup",
+      "Kualitas produk premium dan tahan lama",
+      "Menyesuaikan konsep & tema foto",
     ],
-    startingPrice: "Mulai dari Rp 300.000",
+    notIncluded: ["Hairdo", "Transportasi", "Standbye", "Retouch"],
+    startingPrice: "Mulai dari Rp 1.000.000",
   },
   {
     slug: "makeup-wedding",
     title: "Makeup Wedding",
     image: "/foto/wedding-2.webp",
     description:
-      "Paket makeup pernikahan lengkap untuk hari terpenting dalam hidup Anda. Mulai dari akad nikah hingga resepsi, kami memastikan penampilan Anda sempurna sepanjang hari. Menggunakan teknik airbrush dan produk premium yang tahan lama, disesuaikan dengan tema dan dress code pernikahan Anda.",
+      "Kami menyediakan layanan makeup pernikahan lengkap untuk hari pernikahan Anda. Mulai dari akad nikah hingga resepsi, kami memastikan penampilan Anda sempurna sepanjang hari. Jika berminat segera booking layanan kami.",
     features: [
-      "Makeup akad & resepsi",
-      "Trial makeup sebelum hari H",
-      "Hairdo & pemasangan veil",
-      "Touch-up sepanjang acara",
-      "Makeup keluarga (opsional)",
-      "Produk premium & tahan lama",
+      "Konsultasi konsep Makeup",
+      "Kualitas produk premium dan tahan lama",
+      "Menyesuaikan konsep & tema foto",
     ],
-    startingPrice: "Mulai dari Rp 1.500.000",
+    notIncluded: ["Hairdo", "Transportasi", "Standbye", "Retouch"],
+    startingPrice: "Mulai dari Rp 2.500.000",
   },
   {
     slug: "makeup-prewedding",
     title: "Makeup Prewedding",
     image: "/foto/prewedding-2.webp",
     description:
-      "Layanan makeup untuk berbagai acara sehari-hari maupun formal. Cocok untuk pesta, gathering, photoshoot, hingga acara kantor. Kami menyesuaikan riasan dengan kebutuhan dan preferensi Anda agar tampil percaya diri di setiap momen.",
+      "Layanan makeup untuk berbagai acara sehari-hari maupun formal. Cocok untuk sesi foto di alam, Night Session, photoshoot, hingga acara lain nya. Kami menyesuaikan riasan dengan kebutuhan dan preferensi Anda agar tampil percaya diri di setiap momen. Jika berminat segera booking layanan kami",
     features: [
-      "Look natural hingga bold",
-      "Cocok untuk segala acara",
-      "Hairdo sederhana termasuk",
-      "Durability hingga 8 jam",
-      "Konsultasi look gratis",
+      "Konsultasi konsep Makeup",
+      "Kualitas produk premium dan tahan lama",
+      "Menyesuaikan konsep & tema foto",
     ],
-    startingPrice: "Mulai dari Rp 250.000",
+    notIncluded: ["Hairdo", "Transportasi", "Standbye", "Retouch"],
+    startingPrice: "Mulai dari Rp 1.500.000",
   },
   {
     slug: "makeup-wisuda",
     title: "Makeup Wisuda",
     image: "/foto/m-c",
     description:
-      "Tampil segar dan percaya diri di hari wisuda Anda. Riasan natural hingga glam yang disesuaikan dengan kepribadian dan outfit wisuda. Tahan lama meskipun cuaca panas, cocok untuk sesi foto indoor maupun outdoor sepanjang hari.",
+      "Abadikan pencapaian terbaik Anda dengan tampilan yang memukau dan tahan lama. Kami menghadirkan jasa makeup wisuda profesional yang dirancang khusus untuk tetap terlihat fresh sejak acara seremonial di pagi hari hingga sesi foto keluarga di siang hari. Kami memastikan riasan Anda tetap flawless tanpa perlu khawatir retak atau luntur. Jika berminat segera booking layanan kami",
     features: [
-      "Riasan natural hingga glam",
-      "Hairdo & styling hijab",
-      "Tahan cuaca panas seharian",
-      "Cocok untuk foto indoor & outdoor",
-      "Paket hemat untuk grup wisuda",
+      "Konsultasi konsep Makeup",
+      "Kualitas produk premium dan tahan lama",
+      "Menyesuaikan konsep & tema foto",
     ],
-    startingPrice: "Mulai dari Rp 350.000",
+    notIncluded: ["Hairdo", "Transportasi", "Standbye", "Retouch"],
+    startingPrice: "Mulai dari Rp 800.000",
   },
 
   {
@@ -105,15 +99,14 @@ export const services: Service[] = [
     title: "Makeup Engagement",
     image: "/foto/eng-1.webp",
     description:
-      "Tampil bold dan memukau di setiap pesta. Layanan makeup party dengan fokus pada riasan mata yang dramatic dan bibir yang statement. Sempurna untuk ulang tahun, sweet seventeen, prom night, dan event malam lainnya.",
+      "Awali langkah menuju hari bahagia Anda dengan pesona yang sempurna. Kami menghadirkan layanan makeup engagement yang memadukan keanggunan dan ketahanan. Berbekal pengalaman lebih dari 18 tahun, kami memastikan Anda tampil menonjol namun tetap menjadi diri sendiri di hadapan keluarga besar dan lensa kamera. Jika berminat segera booking layanan kami",
     features: [
-      "Bold & dramatic look",
-      "Glitter & smokey eye specialist",
-      "Tahan untuk acara malam",
-      "Paket grup tersedia",
-      "Free false lashes premium",
+      "Konsultasi konsep Makeup",
+      "Kualitas produk premium dan tahan lama",
+      "Menyesuaikan konsep & tema foto",
     ],
-    startingPrice: "Mulai dari Rp 300.000",
+    notIncluded: ["Hairdo", "Transportasi", "Standbye", "Retouch"],
+    startingPrice: "Mulai dari Rp 1.000.000",
   },
 
   {
@@ -121,15 +114,14 @@ export const services: Service[] = [
     title: "Makeup Daily",
     image: "/foto/m-daily-2.webp",
     description:
-      "Tampil bold dan memukau di setiap pesta. Layanan makeup party dengan fokus pada riasan mata yang dramatic dan bibir yang statement. Sempurna untuk ulang tahun, sweet seventeen, prom night, dan event malam lainnya.",
+      "Tampil percaya diri dengan riasan yang ringan namun mampu menonjolkan fitur terbaik wajah Anda. Layanan Makeup Daily kami dirancang untuk memberikan kesan wajah yang segar, cerah, dan bersih tanpa terlihat berlebihan. Menggunakan teknik skin-like finish, kami memastikan Anda siap menjalani hari dengan tampilan yang elegan dan nyaman. Jika berminat segera booking layanan kami",
     features: [
-      "Bold & dramatic look",
-      "Glitter & smokey eye specialist",
-      "Tahan untuk acara malam",
-      "Paket grup tersedia",
-      "Free false lashes premium",
+      "Konsultasi konsep Makeup",
+      "Kualitas produk premium dan tahan lama",
+      "Menyesuaikan konsep & tema foto",
     ],
-    startingPrice: "Mulai dari Rp 300.000",
+    notIncluded: ["Hairdo", "Transportasi", "Standbye", "Retouch"],
+    startingPrice: "Mulai dari Rp 800.000",
   },
 ];
 

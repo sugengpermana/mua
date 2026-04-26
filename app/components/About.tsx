@@ -38,7 +38,7 @@ export default function About() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 md:gap-8 pt-4 border-t border-black/10 animate-fade-in-up delay-400">
               <div>
-                <p className="text-xl md:text-3xl text-black font-bold">16+</p>
+                <p className="text-xl md:text-3xl text-black font-bold">13+</p>
                 <p className="text-xs text-black/50 uppercase tracking-wider mt-1">
                   experience
                 </p>
@@ -95,13 +95,17 @@ export default function About() {
           <div className="space-y-4 text-black/65 leading-relaxed text-sm md:text-base">
             <p>
               Perjalanan saya dimulai dari mimpi besar. dulu saya berlatih dan
-              bekerja di LT PRO tahun 2012, Sejak saat itu, saya selalu tertarik
+              bekerja di LT PRO tahun 2013, Sejak saat itu, saya selalu tertarik
               dengan seni, hingga akhirnya menemukan wajah sebagai media
               ekspresi terbaik.
             </p>
             <p>
+              sejak saat itu saya beralih untuk mencoba bekerja sebagai Makeup
+              Artist Freelance
+            </p>
+            <p>
               Kini, setelah <strong className="text-black">13+ tahun</strong>{" "}
-              dan <strong className="text-black">2000+ klien</strong>, setiap
+              dan <strong className="text-black">1600+ klien</strong>, setiap
               sentuhan kuas bukan lagi sekadar pekerjaan melainkan dedikasi
               untuk membuat setiap wanita merasa percaya diri dan cantik di hari
               terpenting mereka. Dari rias wisuda hingga akad nikah sakral, saya
